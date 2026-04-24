@@ -14,7 +14,7 @@ def post_card_html(post):
     date_str = post.get("published_date", "")
     return f"""    <article class="post-card">
       <p class="post-date">{date_str}</p>
-      <h2><a href="/blog/posts/{post['slug']}/">{post['post_title']}</a></h2>
+      <h2><a href="/posts/{post['slug']}/">{post['post_title']}</a></h2>
       <p class="post-excerpt">{post.get('meta_description', '')}</p>
     </article>"""
 
