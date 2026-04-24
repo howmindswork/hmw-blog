@@ -18,8 +18,8 @@ ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
 POSTS_DIR = ROOT / "blog/posts"
 KEYWORDS_FILE = SCRIPTS / "keywords.json"
-BLOG_URL = "https://howmindswork.org/blog"
-AUTHOR_ID = "https://howmindswork.org/blog/about/#luke"
+BLOG_URL = "https://blog.howmindswork.org"
+AUTHOR_ID = "https://blog.howmindswork.org/about/#luke"
 
 POST_TOOL = {
     "type": "function",
@@ -238,7 +238,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <meta property="og:image" content="{BLOG_URL}/assets/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="{post_url}">
-<link rel="stylesheet" href="/blog/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
 {a_schema}
 </script>
@@ -249,14 +249,14 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <body>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
-  <a href="/blog/" style="font-size:0.85rem;color:var(--text-muted)">← All posts</a>
+  <a href="/" style="font-size:0.85rem;color:var(--text-muted)">← All posts</a>
 </div></nav>
 
 <header class="post-header"><div class="container">
   <div class="post-meta">
     <span>{date_str}</span>
     <span>·</span>
-    <a href="/blog/about/">By Luke</a>
+    <a href="/about/">By Luke</a>
   </div>
   <h1>{post['title']}</h1>
 </div></header>
@@ -288,10 +288,10 @@ def render_html(post, kw, date_str, date_iso, post_url):
 </div>
 
 <div class="author-card">
-  <img src="/blog/assets/og-default.jpg" alt="Luke">
+  <img src="/assets/og-default.jpg" alt="Luke">
   <div>
     <p class="author-name">Luke</p>
-    <p class="author-bio">Creator of The Emotional Completion Ritual. Writes about grief processing, somatic healing, and emotional completion at How Minds Work. <a href="/blog/about/">About Luke →</a></p>
+    <p class="author-bio">Creator of The Emotional Completion Ritual. Writes about grief processing, somatic healing, and emotional completion at How Minds Work. <a href="/about/">About Luke →</a></p>
   </div>
 </div>
 
@@ -300,7 +300,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
 
 <footer><div class="container">
   <span>© 2026 How Minds Work</span>
-  <span><a href="/blog/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/blog/about/">About</a></span>
+  <span><a href="/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
 </body>
 </html>"""
