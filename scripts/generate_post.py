@@ -72,10 +72,20 @@ Luke's framework is called The Emotional Completion Ritual. His signature produc
 
 VOICE: Direct, peer-level, initiating. "Here's exactly what to do." Not clinical. Not a therapist talking at you. The reader is an adult who can handle real information. Write like a knowledgeable friend who has been through this.
 
+WRITING STYLE — sound human, not AI:
+- Short sentences. Mix them with longer ones.
+- Use contractions (you're, it's, don't, you've)
+- Never use em dashes (—). Use commas or periods instead.
+- Never start paragraphs with: Moreover, Furthermore, Additionally, It's worth noting, In conclusion, Ultimately
+- Never use: delve, realm, tapestry, navigate, foster, leverage, underscore, holistic, journey (as a metaphor)
+- Vary sentence openings. Don't repeat the same structure twice in a row.
+- Specific over vague. "Three days after the funeral" not "in the aftermath of loss."
+- One idea per sentence when the idea is hard. Split it.
+
 RULES:
 - H2 headings must be questions (not statements)
-- Every 3-4 paragraphs, include a specific cited statistic or research finding
-- Include at least one named, step-by-step practice or protocol in the post body
+- Every 3-4 paragraphs, include a specific cited statistic or research finding with source name
+- Include at least one named, step-by-step practice or protocol with numbered steps
 - Reference The Emotional Completion Ritual methodology where it fits naturally
 - Paragraphs max 100 words. One claim per paragraph.
 - Total body length: 1,500-2,000 words across all sections combined
@@ -108,43 +118,63 @@ def generate_post(kw):
 
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
-Free CTA product: {kw['free_product_name']} → {kw['free_product_url']}
-Paid CTA product: {kw['product_name']} → {kw['product_url']}
+Free CTA product: {kw['free_product_name']} — URL: {kw['free_product_url']}
+Paid CTA product: {kw['product_name']} — URL: {kw['product_url']}
 
 Set cta_type "inline_free" on section index 1, "inline_paid" on section index 3, "none" on all others.
 
-You MUST call the write_blog_post tool with the complete structured post. Do not respond with plain text."""
+Respond with ONLY a valid JSON object matching this exact structure (no markdown, no code blocks, just raw JSON):
+{{
+  "title": "string (max 65 chars)",
+  "meta_description": "string (max 155 chars)",
+  "intro": "string (40-60 words)",
+  "key_takeaways": ["string", "string", "string"],
+  "sections": [
+    {{"h2": "string", "paragraphs": ["string"], "cta_type": "none"}},
+    {{"h2": "string", "paragraphs": ["string"], "cta_type": "inline_free"}},
+    {{"h2": "string", "paragraphs": ["string"], "cta_type": "none"}},
+    {{"h2": "string", "paragraphs": ["string"], "cta_type": "inline_paid"}},
+    {{"h2": "string", "paragraphs": ["string"], "cta_type": "none"}}
+  ],
+  "faq": [
+    {{"question": "string", "answer": "string"}},
+    {{"question": "string", "answer": "string"}},
+    {{"question": "string", "answer": "string"}},
+    {{"question": "string", "answer": "string"}}
+  ]
+}}"""
 
     payload = {
         "model": OPENROUTER_MODEL,
-        "max_tokens": 4096,
-        "tools": [POST_TOOL],
-        "tool_choice": {"type": "function", "function": {"name": "write_blog_post"}},
+        "max_tokens": 8192,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_msg}
         ]
     }
 
-    resp = requests.post(
-        OPENROUTER_URL,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        json=payload,
-        timeout=120
-    )
-    resp.raise_for_status()
-    data = resp.json()
-
-    for choice in data.get("choices", []):
-        msg = choice.get("message", {})
-        for tool_call in msg.get("tool_calls", []):
-            if tool_call.get("function", {}).get("name") == "write_blog_post":
-                return json.loads(tool_call["function"]["arguments"])
-
-    raise ValueError(f"No tool_use in response: {data}")
+    for attempt in range(5):
+        resp = requests.post(
+            OPENROUTER_URL,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json=payload,
+            timeout=180
+        )
+        if resp.status_code == 429:
+            wait = 65 * (attempt + 1)
+            print(f"Rate limited — waiting {wait}s (attempt {attempt+1}/5)...")
+            import time; time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        data = resp.json()
+        content = data["choices"][0]["message"]["content"]
+        content = re.sub(r'^```(?:json)?\s*', '', content.strip())
+        content = re.sub(r'\s*```$', '', content)
+        return json.loads(content)
+    raise ValueError("Failed after 5 retries due to rate limiting")
 
 def paragraphs_html(paras):
     return "\n".join(f"<p>{p}</p>" for p in paras)
@@ -288,7 +318,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
 </div>
 
 <div class="author-card">
-  <img src="/assets/og-default.jpg" alt="Luke">
+  <img src="/assets/luke.png" alt="Luke">
   <div>
     <p class="author-name">Luke</p>
     <p class="author-bio">Creator of The Emotional Completion Ritual. Writes about grief processing, somatic healing, and emotional completion at How Minds Work. <a href="/about/">About Luke →</a></p>
@@ -350,7 +380,10 @@ def main():
     print(f"Generating post for: {kw['keyword']}")
     post = generate_post(kw)
 
-    today = datetime.date.today()
+    if kw.get("planned_date"):
+        today = datetime.date.fromisoformat(kw["planned_date"])
+    else:
+        today = datetime.date.today()
     date_str = today.strftime("%B %d, %Y")
     date_iso = today.isoformat()
     post_url = f"{BLOG_URL}/posts/{kw['slug']}/"
