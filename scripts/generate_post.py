@@ -343,6 +343,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
   <span>© 2026 How Minds Work</span>
   <span><a href="/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
+<script src="/assets/click.js"></script>
 </body>
 </html>"""
 
