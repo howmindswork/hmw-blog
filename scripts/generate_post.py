@@ -9,10 +9,10 @@ import os, json, re, datetime, subprocess
 from pathlib import Path
 import requests
 
-# Uses OpenRouter with Claude Haiku — no separate Anthropic key needed
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-OPENROUTER_MODEL = "anthropic/claude-haiku-4-5"
+# Uses Google Gemini via OpenAI-compatible endpoint — free with AI Studio key
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+OPENROUTER_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+OPENROUTER_MODEL = "gemini-2.5-flash"
 
 ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
@@ -102,9 +102,9 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
-    api_key = os.environ.get("OPENROUTER_API_KEY", OPENROUTER_API_KEY)
+    api_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
     if not api_key:
-        raise ValueError("OPENROUTER_API_KEY not set")
+        raise ValueError("GEMINI_API_KEY not set")
 
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
@@ -131,8 +131,6 @@ You MUST call the write_blog_post tool with the complete structured post. Do not
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://howmindswork.org",
-            "X-Title": "HMW Blog Generator"
         },
         json=payload,
         timeout=120
