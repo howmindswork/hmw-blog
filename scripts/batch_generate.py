@@ -56,10 +56,10 @@ def main():
             print(f"ERROR generating {kw['slug']} — stopping")
             sys.exit(1)
 
-        # Wait between posts to respect free tier rate limits
+        # Small wait between posts (Groq is fast, just being polite)
         if i < len(unpublished) - 1:
-            print("Waiting 30s before next post...")
-            time.sleep(30)
+            print("Waiting 5s before next post...")
+            time.sleep(5)
 
     print(f"\nDone. Generated {len(unpublished)} posts.")
 

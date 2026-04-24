@@ -9,9 +9,13 @@ import os, json, re, datetime, subprocess
 from pathlib import Path
 import requests
 
-# Uses Google Gemini via OpenAI-compatible endpoint — free with AI Studio key
+# Primary: Groq (free, fast, no rate issues at 1 post/day)
+# Fallback: Gemini 2.5 Flash
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 OPENROUTER_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+GROQ_MODEL = "llama-3.3-70b-versatile"
 OPENROUTER_MODEL = "gemini-2.5-flash"
 
 ROOT = Path(__file__).parent.parent
@@ -112,9 +116,14 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
-    api_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
-    if not api_key:
-        raise ValueError("GEMINI_API_KEY not set")
+    groq_key = os.environ.get("GROQ_API_KEY", GROQ_API_KEY)
+    gemini_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
+    if groq_key:
+        api_url, api_key, model = GROQ_URL, groq_key, GROQ_MODEL
+    elif gemini_key:
+        api_url, api_key, model = OPENROUTER_URL, gemini_key, OPENROUTER_MODEL
+    else:
+        raise ValueError("No API key set — need GROQ_API_KEY or GEMINI_API_KEY")
 
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
@@ -145,7 +154,7 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
 }}"""
 
     payload = {
-        "model": OPENROUTER_MODEL,
+        "model": model,
         "max_tokens": 8192,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
@@ -155,7 +164,7 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
 
     for attempt in range(5):
         resp = requests.post(
-            OPENROUTER_URL,
+            api_url,
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/json",
@@ -173,6 +182,8 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
         content = data["choices"][0]["message"]["content"]
         content = re.sub(r'^```(?:json)?\s*', '', content.strip())
         content = re.sub(r'\s*```$', '', content)
+        # Remove invalid control characters that break JSON parsing
+        content = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', content)
         return json.loads(content)
     raise ValueError("Failed after 5 retries due to rate limiting")
 
