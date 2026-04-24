@@ -7,8 +7,12 @@ GitHub Actions handles git commit/push after this script runs.
 """
 import os, json, re, datetime, subprocess
 from pathlib import Path
-import anthropic
 import requests
+
+# Uses OpenRouter with Claude Haiku — no separate Anthropic key needed
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_MODEL = "anthropic/claude-haiku-4-5"
 
 ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
@@ -18,36 +22,39 @@ BLOG_URL = "https://howmindswork.org/blog"
 AUTHOR_ID = "https://howmindswork.org/blog/about/#luke"
 
 POST_TOOL = {
-    "name": "write_blog_post",
-    "description": "Write a complete AEO/SEO-optimized blog post as structured data.",
-    "input_schema": {
-        "type": "object",
-        "required": ["title", "meta_description", "intro", "key_takeaways", "sections", "faq"],
-        "properties": {
-            "title": {"type": "string"},
-            "meta_description": {"type": "string"},
-            "intro": {"type": "string"},
-            "key_takeaways": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}},
-            "sections": {
-                "type": "array", "minItems": 4,
-                "items": {
-                    "type": "object",
-                    "required": ["h2", "paragraphs"],
-                    "properties": {
-                        "h2": {"type": "string"},
-                        "paragraphs": {"type": "array", "items": {"type": "string"}},
-                        "cta_type": {"type": "string", "enum": ["none", "inline_free", "inline_paid"]}
+    "type": "function",
+    "function": {
+        "name": "write_blog_post",
+        "description": "Write a complete AEO/SEO-optimized blog post as structured data.",
+        "parameters": {
+            "type": "object",
+            "required": ["title", "meta_description", "intro", "key_takeaways", "sections", "faq"],
+            "properties": {
+                "title": {"type": "string"},
+                "meta_description": {"type": "string"},
+                "intro": {"type": "string"},
+                "key_takeaways": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}},
+                "sections": {
+                    "type": "array", "minItems": 4,
+                    "items": {
+                        "type": "object",
+                        "required": ["h2", "paragraphs"],
+                        "properties": {
+                            "h2": {"type": "string"},
+                            "paragraphs": {"type": "array", "items": {"type": "string"}},
+                            "cta_type": {"type": "string", "enum": ["none", "inline_free", "inline_paid"]}
+                        }
                     }
-                }
-            },
-            "faq": {
-                "type": "array", "minItems": 4, "maxItems": 6,
-                "items": {
-                    "type": "object",
-                    "required": ["question", "answer"],
-                    "properties": {
-                        "question": {"type": "string"},
-                        "answer": {"type": "string"}
+                },
+                "faq": {
+                    "type": "array", "minItems": 4, "maxItems": 6,
+                    "items": {
+                        "type": "object",
+                        "required": ["question", "answer"],
+                        "properties": {
+                            "question": {"type": "string"},
+                            "answer": {"type": "string"}
+                        }
                     }
                 }
             }
@@ -95,26 +102,51 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    api_key = os.environ.get("OPENROUTER_API_KEY", OPENROUTER_API_KEY)
+    if not api_key:
+        raise ValueError("OPENROUTER_API_KEY not set")
+
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
 Free CTA product: {kw['free_product_name']} → {kw['free_product_url']}
 Paid CTA product: {kw['product_name']} → {kw['product_url']}
 
-Set cta_type "inline_free" on section index 1, "inline_paid" on section index 3, "none" on all others."""
+Set cta_type "inline_free" on section index 1, "inline_paid" on section index 3, "none" on all others.
 
-    resp = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=4096,
-        system=SYSTEM_PROMPT,
-        tools=[POST_TOOL],
-        tool_choice={"type": "tool", "name": "write_blog_post"},
-        messages=[{"role": "user", "content": user_msg}]
+You MUST call the write_blog_post tool with the complete structured post. Do not respond with plain text."""
+
+    payload = {
+        "model": OPENROUTER_MODEL,
+        "max_tokens": 4096,
+        "tools": [POST_TOOL],
+        "tool_choice": {"type": "function", "function": {"name": "write_blog_post"}},
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg}
+        ]
+    }
+
+    resp = requests.post(
+        OPENROUTER_URL,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://howmindswork.org",
+            "X-Title": "HMW Blog Generator"
+        },
+        json=payload,
+        timeout=120
     )
-    for block in resp.content:
-        if block.type == "tool_use" and block.name == "write_blog_post":
-            return block.input
-    raise ValueError("No tool_use block in response")
+    resp.raise_for_status()
+    data = resp.json()
+
+    for choice in data.get("choices", []):
+        msg = choice.get("message", {})
+        for tool_call in msg.get("tool_calls", []):
+            if tool_call.get("function", {}).get("name") == "write_blog_post":
+                return json.loads(tool_call["function"]["arguments"])
+
+    raise ValueError(f"No tool_use in response: {data}")
 
 def paragraphs_html(paras):
     return "\n".join(f"<p>{p}</p>" for p in paras)
