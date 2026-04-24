@@ -1,0 +1,41 @@
+name: Generate Blog Post
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests
+
+      - name: Generate post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BING_WEBMASTER_KEY: ${{ secrets.BING_WEBMASTER_KEY }}
+        run: python scripts/generate_post.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "HMW Bot"
+          git config user.email "auto@howmindswork.org"
+          git add .
+          git diff --quiet && git diff --staged --quiet && echo "Nothing to commit" && exit 0
+          git commit -m "feat(blog): auto-publish post $(date +%Y-%m-%d)"
+          git push
