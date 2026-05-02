@@ -295,7 +295,10 @@
       "product_url": "https://howmindswork.org",
       "free_product_name": "Free Audio Ritual",
       "free_product_url": "https://howmindswork.org",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-02",
+      "post_title": "Breathwork For Grief",
+      "meta_description": "Discover how breathwork can help you release emotional pain and find healing after loss, with a simple yet powerful ritual"
     },
     {
       "slug": "box-breathing-for-anxiety",
