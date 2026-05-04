@@ -1,0 +1,36 @@
+name: Keyword Harvester
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 6am ET (UTC-4 summer)
+  workflow_dispatch:
+
+jobs:
+  harvest:
+    runs-on: self-hosted
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt --quiet
+
+      - name: Harvest new keywords
+        env:
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: python scripts/harvest_keywords.py
+
+      - name: Commit if keywords updated
+        run: |
+          git config user.email "blog-bot@howmindswork.org"
+          git config user.name "Blog Bot"
+          git add scripts/keywords.json
+          git diff --staged --quiet || git commit -m "chore: add harvested keywords [skip ci]"
+          git push

@@ -1,0 +1,58 @@
+name: Blog Publisher
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # 8am ET (UTC-4 summer)
+    - cron: '0 18 * * *'   # 2pm ET
+    - cron: '0 0 * * *'    # 8pm ET
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: self-hosted
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt --quiet
+
+      - name: Generate and publish post
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: python scripts/generate_post.py
+
+      - name: Check if new post was created
+        id: check
+        run: |
+          if git diff --quiet HEAD; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.check.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy blog --project-name=hmw-blog --commit-dirty=true
+
+      - name: Commit updated files
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.email "blog-bot@howmindswork.org"
+          git config user.name "Blog Bot"
+          git add scripts/keywords.json blog/sitemap.xml blog/posts/ blog/index.html
+          git diff --staged --quiet || git commit -m "chore: publish new post + update sitemap [skip ci]"
+          git push
