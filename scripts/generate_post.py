@@ -24,6 +24,12 @@ POSTS_DIR = ROOT / "blog/posts"
 KEYWORDS_FILE = SCRIPTS / "keywords.json"
 BLOG_URL = "https://blog.howmindswork.org"
 AUTHOR_ID = "https://blog.howmindswork.org/about/#luke"
+AUTHOR_SAME_AS = [
+    "https://www.instagram.com/howmindswork/",
+    "https://www.threads.net/@howmindswork",
+    "https://www.tiktok.com/@howmindswork",
+    "https://howmindswork.org",
+]
 
 POST_TOOL = {
     "type": "function",
@@ -246,13 +252,35 @@ def article_schema(post, kw, url, date_iso):
         "url": url,
         "datePublished": date_iso,
         "dateModified": date_iso,
-        "author": {"@id": AUTHOR_ID},
-        "publisher": {
+        "author": {
+            "@id": AUTHOR_ID,
             "@type": "Person",
-            "name": "Luke",
-            "url": "https://howmindswork.org/blog/about/"
+            "name": "Luke Anthony",
+            "url": "https://howmindswork.org",
+            "sameAs": AUTHOR_SAME_AS,
         },
-        "mainEntityOfPage": {"@type": "WebPage", "@id": url}
+        "publisher": {
+            "@type": "Organization",
+            "name": "How Minds Work",
+            "url": "https://howmindswork.org",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://blog.howmindswork.org/assets/og-default.jpg"
+            }
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+        "image": f"{BLOG_URL}/assets/og-default.jpg",
+    }
+
+def breadcrumb_schema(url, title):
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://howmindswork.org"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": BLOG_URL + "/"},
+            {"@type": "ListItem", "position": 3, "name": title, "item": url},
+        ]
     }
 
 def render_html(post, kw, date_str, date_iso, post_url):
@@ -261,6 +289,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
     faq_content = faq_html(post["faq"])
     a_schema = json.dumps(article_schema(post, kw, post_url, date_iso), indent=2)
     f_schema = json.dumps(faq_schema(post["faq"]), indent=2)
+    b_schema = json.dumps(breadcrumb_schema(post_url, post["title"]), indent=2)
 
     title_escaped = post['title'].replace('"', '&quot;').replace("'", "&#39;")
     meta_escaped = post['meta_description'].replace('"', '&quot;').replace("'", "&#39;")
@@ -286,11 +315,14 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <script type="application/ld+json">
 {f_schema}
 </script>
+<script type="application/ld+json">
+{b_schema}
+</script>
 </head>
 <body>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
-  <a href="/" style="font-size:0.85rem;color:var(--text-muted)">← All posts</a>
+  <a href="/" class="nav-link">← All posts</a>
 </div></nav>
 
 <header class="post-header"><div class="container">
@@ -347,17 +379,18 @@ def render_html(post, kw, date_str, date_iso, post_url):
 </body>
 </html>"""
 
-def update_sitemap(slugs):
-    today = datetime.date.today().isoformat()
-    urls = [f"""  <url>
-    <loc>{BLOG_URL}/</loc>
+def update_sitemap(data):
+    published = [k for k in data["keywords"] if k.get("published")]
+    urls = ["""  <url>
+    <loc>https://blog.howmindswork.org/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>"""]
-    for slug in slugs:
+    for kw in published:
+        lastmod = kw.get("published_date", datetime.date.today().isoformat())
         urls.append(f"""  <url>
-    <loc>{BLOG_URL}/posts/{slug}/</loc>
-    <lastmod>{today}</lastmod>
+    <loc>{BLOG_URL}/posts/{kw['slug']}/</loc>
+    <lastmod>{lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>""")
@@ -366,21 +399,25 @@ def update_sitemap(slugs):
 {chr(10).join(urls)}
 </urlset>"""
     (ROOT / "blog/sitemap.xml").write_text(xml)
-    print(f"Sitemap updated with {len(slugs)} posts")
+    print(f"Sitemap updated: {len(published)} posts")
 
-def submit_to_bing(url):
-    key = os.environ.get("BING_WEBMASTER_KEY")
-    if not key:
-        print("BING_WEBMASTER_KEY not set — skipping Bing submission")
-        return
-    resp = requests.post(
-        "https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl",
-        params={"apikey": key},
-        json={"siteUrl": "https://howmindswork.org", "url": url},
-        headers={"Content-Type": "application/json"},
-        timeout=10
-    )
-    print(f"Bing submission: {resp.status_code} — {url}")
+def ping_indexnow(url):
+    key = os.environ.get("INDEXNOW_KEY", "8a7f3c2b1d9e4f6a")
+    try:
+        resp = requests.post(
+            "https://api.indexnow.org/indexnow",
+            json={
+                "host": "blog.howmindswork.org",
+                "key": key,
+                "keyLocation": f"https://blog.howmindswork.org/{key}.txt",
+                "urlList": [url],
+            },
+            headers={"Content-Type": "application/json"},
+            timeout=10,
+        )
+        print(f"IndexNow ping: {resp.status_code} — {url}")
+    except Exception as e:
+        print(f"IndexNow ping failed (non-fatal): {e}")
 
 def main():
     data = load_keywords()
@@ -416,10 +453,9 @@ def main():
 
     subprocess.run(["python3", str(SCRIPTS / "render_index.py")], check=True)
 
-    published_slugs = [k["slug"] for k in data["keywords"] if k.get("published")]
-    update_sitemap(published_slugs)
+    update_sitemap(data)
 
-    submit_to_bing(post_url)
+    ping_indexnow(post_url)
 
 if __name__ == "__main__":
     main()
