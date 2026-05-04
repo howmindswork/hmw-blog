@@ -3,34 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How Minds Work — Blog</title>
-<meta name="description" content="Grief rituals, somatic healing, emotional completion, and the science of letting go. Written by Luke at How Minds Work.">
-<meta property="og:title" content="How Minds Work — Blog">
-<meta property="og:description" content="Grief rituals, somatic healing, and emotional completion practices that actually work.">
+<title>Nervous System Healing Blog — Grief, Somatic Practices & Emotional Completion | How Minds Work</title>
+<meta name="description" content="Science-backed articles on grief rituals, somatic healing, and emotional completion. Learn how the nervous system processes loss — and how to actually let go.">
+<link rel="canonical" href="https://blog.howmindswork.org/">
+<meta property="og:title" content="Nervous System Healing Blog — How Minds Work">
+<meta property="og:description" content="Grief rituals, somatic healing, and the science of emotional completion. Written by Luke Anthony at How Minds Work.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://blog.howmindswork.org/">
 <meta property="og:image" content="https://blog.howmindswork.org/assets/og-default.jpg">
-<link rel="canonical" href="https://blog.howmindswork.org/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nervous System Healing Blog — How Minds Work">
+<meta name="twitter:description" content="Grief rituals, somatic healing, and the science of emotional completion. Written by Luke Anthony.">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "How Minds Work Blog",
-  "url": "https://blog.howmindswork.org/",
-  "description": "Grief rituals, somatic healing, and emotional completion practices.",
-  "publisher": {
-    "@type": "Person",
-    "name": "Luke",
-    "url": "https://blog.howmindswork.org/about/"
-  }
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://blog.howmindswork.org/",
+      "url": "https://blog.howmindswork.org/",
+      "name": "Nervous System Healing Blog — Grief, Somatic Practices & Emotional Completion | How Minds Work",
+      "description": "Science-backed articles on grief rituals, somatic healing, and emotional completion. Learn how the nervous system processes loss and how to let go.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://howmindswork.org/" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://howmindswork.org/#luke",
+      "name": "Luke Anthony",
+      "url": "https://howmindswork.org",
+      "sameAs": ["https://howmindswork.org", "https://blog.howmindswork.org/about/"]
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://blog.howmindswork.org/#blog",
+      "name": "How Minds Work Blog",
+      "url": "https://blog.howmindswork.org/",
+      "description": "Grief rituals, somatic healing, nervous system science, and emotional completion practices grounded in research.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://howmindswork.org/#luke" },
+      "author": { "@id": "https://howmindswork.org/#luke" },
+      "about": [
+        { "@type": "Thing", "name": "Grief Healing" },
+        { "@type": "Thing", "name": "Somatic Therapy" },
+        { "@type": "Thing", "name": "Nervous System Regulation" },
+        { "@type": "Thing", "name": "Emotional Completion" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is somatic grief healing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Somatic grief healing is a body-based approach to processing loss. Rather than only talking about grief, somatic practices work with physical sensation, movement, and breath to help the nervous system complete the biological stress cycle triggered by loss. Research from Peter Levine, Stephen Porges, and Bessel van der Kolk supports this approach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the nervous system process grief?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grief activates the nervous system's threat response. The body initiates a stress cycle — a biological sequence with a beginning, middle, and end. When that cycle is interrupted (by having to stay functional, perform, or care for others), the unresolved activation is stored as tension, numbness, or persistent exhaustion. Completing the cycle requires body-based practices, not just cognitive processing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is emotional completion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Emotional completion is the process of finishing an interrupted emotional stress cycle. It's based on research by Emily Nagoski (Burnout) and somatic practitioners. When an emotional event is suppressed or cut short, the nervous system stores the incomplete response. Emotional completion practices guide the body through the remaining stages of that response so it can fully resolve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are grief rituals scientifically valid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Rituals — whether cultural, spiritual, or secular — activate distinct neural pathways that help the brain mark transitions and process loss. Research shows that structured ritual behavior reduces grief intensity and helps create meaning around loss, even in people with no religious beliefs. The key elements are intentionality, symbol, and repetition."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
+<script>
+(function(){
+  var ctx;
+  function getCtx(){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();return ctx;}
+  function playClick(){try{var c=getCtx(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(800,c.currentTime);o.frequency.exponentialRampToValueAtTime(400,c.currentTime+0.08);g.gain.setValueAtTime(0.12,c.currentTime);g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.12);o.start(c.currentTime);o.stop(c.currentTime+0.12);}catch(e){}}
+  document.addEventListener('click',function(e){var t=e.target.closest('a,button,[role="button"],[tabindex]');if(t)playClick();});
+})();
+</script>
+  <script defer>window.addEventListener("load",function(){var p=window.location.pathname;var r=document.referrer;fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));});</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","wen3c18ts9");</script>
 </head>
 <body>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
-  <a href="/about/" style="font-size:0.85rem;color:var(--text-muted)">About</a>
+  <a href="/about/" class="nav-link">About</a>
 </div></nav>
 
 <header class="hero"><div class="container">
@@ -71,6 +146,112 @@
       <h2><a href="/posts/grief-ritual-for-divorce/">Grief Ritual for Divorce</a></h2>
       <p class="post-excerpt">Heal from divorce with a grief ritual, process emotions and move forward with The Emotional Completion Ritual methodology, find comfort and peace</p>
     </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-17</p>
+      <h2><a href="/posts/somatic-grief-release-at-home/">Somatic Grief Release</a></h2>
+      <p class="post-excerpt">Heal from grief with somatic release methods, find emotional relief at home with proven techniques</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-15</p>
+      <h2><a href="/posts/how-to-complete-unresolved-grief/">Complete Unresolved Grief</a></h2>
+      <p class="post-excerpt">Learn how to complete unresolved grief with Luke's Emotional Completion Ritual, a step-by-step process to heal emotional pain</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-13</p>
+      <h2><a href="/posts/what-is-emotional-completion/">What Is Emotional Completion</a></h2>
+      <p class="post-excerpt">Learn about emotional completion and find peace after loss, healing emotional numbness with The Emotional Completion Ritual</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-11</p>
+      <h2><a href="/posts/emotional-completion-ritual/">Emotional Completion Ritual</a></h2>
+      <p class="post-excerpt">Discover the emotional completion ritual to heal grief, find closure and move forward with The Emotional Completion Ritual methodology</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-11</p>
+      <h2><a href="/posts/yoga-nidra-benefits/">Yoga Nidra Benefits</a></h2>
+      <p class="post-excerpt">Discover yoga nidra benefits for brain and body, reducing stress and anxiety with deep relaxation techniques, learn to heal emotionally</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-10</p>
+      <h2><a href="/posts/yoga-nidra-for-grief/">Yoga Nidra For Grief</a></h2>
+      <p class="post-excerpt">Heal loss with yoga nidra, a sleep meditation that helps process grief, find emotional completion and peace</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-09</p>
+      <h2><a href="/posts/emotional-numbness-after-bereavement/">Emotional Numbness After Bereavement</a></h2>
+      <p class="post-excerpt">Heal emotional numbness after bereavement, find ways to process grief and feel again</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-09</p>
+      <h2><a href="/posts/somatic-breathwork-trauma/">Somatic Breathwork</a></h2>
+      <p class="post-excerpt">Discover somatic breathwork for trauma, a powerful tool to heal emotional wounds and find calm, learn how to get started</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-08</p>
+      <h2><a href="/posts/box-breathing-for-anxiety/">Box Breathing for Anxiety</a></h2>
+      <p class="post-excerpt">Learn box breathing for anxiety with a step-by-step guide, calm your mind and soothe your emotions, start feeling better today</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-07</p>
+      <h2><a href="/posts/how-to-feel-again-after-grief/">How to Feel Again</a></h2>
+      <p class="post-excerpt">Learn how to feel again after grief with The Emotional Completion Ritual, overcoming emotional numbness and finding healing</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-07</p>
+      <h2><a href="/posts/breathwork-for-grief/">Breathwork For Grief</a></h2>
+      <p class="post-excerpt">Release emotional pain with breathwork for grief, a powerful tool for healing and finding peace after loss,discover how to use breath to calm your mind</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-05</p>
+      <h2><a href="/posts/why-do-i-feel-nothing-after-a-loss/">Why Do I Feel Nothing</a></h2>
+      <p class="post-excerpt">Discover why you might feel numb after a loss and how to process your emotions with The Emotional Completion Ritual methodology</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-03</p>
+      <h2><a href="/posts/celtic-grief-ritual-for-loss/">Celtic Grief Ritual</a></h2>
+      <p class="post-excerpt">Heal from loss with a Celtic grief ritual, find emotional completion and peace with The Emotional Completion Ritual methodology</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-03</p>
+      <h2><a href="/posts/somatic-grief-exercises-step-by-step/">Somatic Grief Exercises</a></h2>
+      <p class="post-excerpt">Discover somatic grief exercises to help you process emotions, heal and find peace with The Emotional Completion Ritual methodology and step-by-step practices</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-01</p>
+      <h2><a href="/posts/caoineadh-anama-meaning/">Caoineadh Anama Meaning: The Cry of the Soul</a></h2>
+      <p class="post-excerpt">Understand Caoineadh Anama, an ancient Irish term for ancestral grief. Learn how this powerful concept guides emotional completion and healing deep sorrow.</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-01</p>
+      <h2><a href="/posts/irish-ancestral-grief-ritual/">Irish Ancestral Grief</a></h2>
+      <p class="post-excerpt">Discover the Irish ancestral grief ritual to heal emotional pain, find peace with your heritage and process grief with The Emotional Completion Ritual methodology</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-04-01</p>
+      <h2><a href="/posts/how-to-grieve-a-living-person/">Grieving a Living Person</a></h2>
+      <p class="post-excerpt">Learn how to grieve a living person with The Emotional Completion Ritual, healing emotional pain and finding closure</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-03-28</p>
+      <h2><a href="/posts/how-to-feel-again-emotional-numbness-guide/">How to Feel Again: Healing Emotional Numbness After Loss</a></h2>
+      <p class="post-excerpt">Emotional numbness after loss is your nervous system's protection—here's exactly how to wake it up again and feel what you need to feel.</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-03-21</p>
+      <h2><a href="/posts/emotional-completion-grief-guide/">Emotional Completion: How to Actually Finish Grieving</a></h2>
+      <p class="post-excerpt">Emotional completion ends endless grief cycles. Learn the exact ritual and framework to process loss fully and move forward—not bypass it.</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-03-14</p>
+      <h2><a href="/posts/grief-rituals-complete-guide/">Grief Rituals: Ancient & Modern Practices</a></h2>
+      <p class="post-excerpt">Grief rituals—ancient ceremonies and modern somatic practices—help you process loss fully. Learn why ritual matters and how to create your own.</p>
+    </article>
+    <article class="post-card">
+      <p class="post-date">2026-03-07</p>
+      <h2><a href="/posts/somatic-healing-after-loss/">Somatic Healing After Loss: A Complete Guide</a></h2>
+      <p class="post-excerpt">Somatic healing after loss helps your body process grief. Learn the science, practices, and steps to move grief through your nervous system.</p>
+    </article>
+  </div>
     <article class="post-card">
       <p class="post-date">2026-04-17</p>
       <h2><a href="/posts/somatic-grief-release-at-home/">Somatic Grief Release</a></h2>
@@ -159,5 +340,6 @@
   <span><a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
 <script src="/assets/click.js"></script>
+<script src="/assets/popup-star-audio.js"></script>
 </body>
 </html>

@@ -45,12 +45,13 @@
   }
 }
 </script>
+  <script defer>window.addEventListener("load",function(){var p=window.location.pathname;var r=document.referrer;fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));});</script>
 </head>
 <body>
 
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
-  <a href="/" style="font-size:0.85rem;color:var(--text-muted)">Blog</a>
+  <a href="/" class="nav-link">Blog</a>
 </div></nav>
 
 <header class="hero"><div class="container">
@@ -128,5 +129,6 @@
 </div></footer>
 
 <script src="/assets/click.js"></script>
+<script src="/assets/popup-star-audio.js"></script>
 </body>
 </html>
