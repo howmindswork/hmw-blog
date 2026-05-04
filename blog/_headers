@@ -1,0 +1,10 @@
+/*
+  Link: </llms.txt>; rel=alternate; type=text/plain, </sitemap.xml>; rel=sitemap
+  X-Content-Type-Options: nosniff
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/posts/*
+  Cache-Control: public, max-age=3600, must-revalidate
