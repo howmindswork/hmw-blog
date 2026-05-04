@@ -442,6 +442,12 @@ def main():
     html = render_html(post, kw, date_str, date_iso, post_url)
     (post_dir / "index.html").write_text(html)
     print(f"Written: blog/posts/{kw['slug']}/index.html")
+    import subprocess as _sp
+    _sp.run(
+        ["python3", str(SCRIPTS / "auto_linker.py"), kw["slug"]],
+        check=False,
+        cwd=str(ROOT),
+    )
 
     for entry in data["keywords"]:
         if entry["slug"] == kw["slug"]:
