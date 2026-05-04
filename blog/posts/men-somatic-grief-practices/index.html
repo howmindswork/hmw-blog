@@ -21,19 +21,33 @@
   "description": "Discover somatic grief practices for men, break free from emotional pain and find healing with The Emotional Completion Ritual",
   "url": "https://blog.howmindswork.org/posts/men-somatic-grief-practices/",
   "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
+  "dateModified": "2026-05-04",
   "author": {
-    "@id": "https://blog.howmindswork.org/about/#luke"
+    "@id": "https://blog.howmindswork.org/about/#luke",
+    "@type": "Person",
+    "name": "Luke Anthony",
+    "url": "https://howmindswork.org",
+    "sameAs": [
+      "https://www.instagram.com/howmindswork/",
+      "https://www.threads.net/@howmindswork",
+      "https://www.tiktok.com/@howmindswork",
+      "https://howmindswork.org"
+    ]
   },
   "publisher": {
-    "@type": "Person",
-    "name": "Luke",
-    "url": "https://howmindswork.org/blog/about/"
+    "@type": "Organization",
+    "name": "How Minds Work",
+    "url": "https://howmindswork.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.howmindswork.org/assets/og-default.jpg"
+    }
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://blog.howmindswork.org/posts/men-somatic-grief-practices/"
-  }
+  },
+  "image": "https://blog.howmindswork.org/assets/og-default.jpg"
 }
 </script>
 <script type="application/ld+json">
@@ -76,11 +90,47 @@
   ]
 }
 </script>
+<script>
+(function(){
+  var ctx;
+  function getCtx(){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();return ctx;}
+  function playClick(){try{var c=getCtx(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(800,c.currentTime);o.frequency.exponentialRampToValueAtTime(400,c.currentTime+0.08);g.gain.setValueAtTime(0.12,c.currentTime);g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.12);o.start(c.currentTime);o.stop(c.currentTime+0.12);}catch(e){}}
+  document.addEventListener('click',function(e){var t=e.target.closest('a,button,[role="button"],[tabindex]');if(t)playClick();});
+})();
+</script>
+  <script defer>window.addEventListener("load",function(){var p=window.location.pathname;var r=document.referrer;fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));});</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://howmindswork.org"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://blog.howmindswork.org/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Men and Somatic Grief",
+      "item": "https://blog.howmindswork.org/posts/men-somatic-grief-practices/"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
-  <a href="/" style="font-size:0.85rem;color:var(--text-muted)">← All posts</a>
+  <a href="/" class="nav-link">← All posts</a>
 </div></nav>
 
 <header class="post-header"><div class="container">
@@ -164,6 +214,21 @@
 </div>
 
 </article>
+
+<section class="product-cta">
+  <p class="product-cta__eyebrow">FROM HOW MINDS WORK</p>
+  <h3 class="product-cta__headline">The Invisible Grief Companion</h3>
+  <p class="product-cta__sub">A guided 7-day process for the losses no one else acknowledges. Pet loss. Divorce. Estrangement. Pregnancy loss. The grief that people tell you to get over.</p>
+  <ul class="product-cta__bullets">
+    <li>Works even if you've been carrying it for years</li>
+    <li>No therapy required. No talking to anyone.</li>
+    <li>1,200+ people have used it to finally name what they lost</li>
+  </ul>
+  <a class="product-cta__btn" href="https://ritual.howmindswork.org/invisible-grief-companion/">
+    GET THE INVISIBLE GRIEF COMPANION — $17 →
+  </a>
+  <p class="product-cta__guarantee">30-day unconditional guarantee. If it doesn't help, full refund — keep the guide.</p>
+</section>
 </div></main>
 
 <footer><div class="container">
@@ -171,5 +236,6 @@
   <span><a href="/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
 <script src="/assets/click.js"></script>
+<script src="/assets/popup-star-audio.js"></script>
 </body>
 </html>
