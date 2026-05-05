@@ -1,0 +1,25 @@
+name: Daily Email Sequence
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # 9am ET (14:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  run-sequence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger email sequence worker
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://hmw-email-sequence.howmindswork.workers.dev/run" \
+            -H "Authorization: Bearer ${{ secrets.EMAIL_SEQUENCE_RUN_SECRET }}" \
+            -H "Content-Type: application/json")
+          BODY=$(echo "$RESPONSE" | head -1)
+          CODE=$(echo "$RESPONSE" | tail -1)
+          echo "Status: $CODE"
+          echo "Response: $BODY"
+          if [ "$CODE" != "200" ]; then
+            echo "Error: worker returned $CODE"
+            exit 1
+          fi
