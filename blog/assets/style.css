@@ -9,18 +9,18 @@
 }
 
 :root {
-  --bg: #080706;
-  --surface: #111009;
-  --surface2: #17150f;
-  --surface3: #1e1b14;
-  --gold: #c9871c;
-  --gold-light: #e8a032;
-  --gold-dim: rgba(201, 135, 28, 0.15);
-  --text: #ede5d8;
-  --text-muted: #9a8e7e;
-  --text-faint: #5c5347;
-  --border: #252018;
-  --border-light: #2e2a20;
+  --bg: #0a0612;
+  --surface: #100d1a;
+  --surface2: #160f22;
+  --surface3: #1c1530;
+  --gold: #7c3aed;
+  --gold-light: #9d6af5;
+  --gold-dim: rgba(124, 58, 237, 0.15);
+  --text: #e8e0f0;
+  --text-muted: #9d94b0;
+  --text-faint: #5c5470;
+  --border: #1e1630;
+  --border-light: #2a2040;
   --max-width: 720px;
   --radius: 6px;
 }
@@ -31,13 +31,101 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background: linear-gradient(160deg, #0a0612 0%, #0d0820 40%, #080518 100%);
+  min-height: 100vh;
   color: var(--text);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(
+      1px 1px at 8% 12%,
+      rgba(255, 255, 255, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 22% 38%,
+      rgba(167, 139, 250, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 38% 7%,
+      rgba(255, 255, 255, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 55% 28%,
+      rgba(255, 255, 255, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 72% 14%,
+      rgba(167, 139, 250, 0.5) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 88% 42%,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 14% 58%,
+      rgba(255, 255, 255, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 45% 72%,
+      rgba(167, 139, 250, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 92% 78%,
+      rgba(255, 255, 255, 0.45) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 28% 88%,
+      rgba(255, 255, 255, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 68% 92%,
+      rgba(167, 139, 250, 0.35) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 3% 48%,
+      rgba(167, 139, 250, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 97% 32%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 60% 55%,
+      rgba(255, 255, 255, 0.15) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1px 1px at 33% 20%,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 100%
+    );
 }
 
 /* Reading progress bar */
@@ -66,6 +154,8 @@ a:hover {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Navigation ─────────────────────────────────────── */
@@ -73,7 +163,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(8, 7, 6, 0.85);
+  background: rgba(10, 6, 18, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -122,16 +212,19 @@ nav .container {
 .hero::before {
   content: "";
   position: absolute;
-  top: -60px;
-  right: -120px;
+  top: -80px;
+  right: -60px;
   width: 480px;
   height: 480px;
   background: radial-gradient(
     circle,
-    rgba(201, 135, 28, 0.04) 0%,
+    rgba(124, 58, 237, 0.12) 0%,
+    rgba(124, 58, 237, 0.04) 40%,
     transparent 70%
   );
+  border-radius: 50%;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero-label {
@@ -179,11 +272,21 @@ nav .container {
 }
 
 .post-card {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(167, 139, 250, 0.12);
   padding: 2.25rem 0;
-  transition: padding-left 0.25s ease;
+  transition:
+    padding-left 0.25s ease,
+    background 0.25s ease;
   position: relative;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.post-card:hover {
+  padding-left: 0.75rem;
+  background: rgba(124, 58, 237, 0.04);
 }
 
 .post-card::before {
@@ -199,9 +302,6 @@ nav .container {
   border-radius: 2px;
 }
 
-.post-card:hover {
-  padding-left: 0.75rem;
-}
 .post-card:hover::before {
   height: 60%;
 }
@@ -300,6 +400,8 @@ nav .container {
 /* ── Post Body ───────────────────────────────────────── */
 .post-body {
   padding: 2.5rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .post-body p {
