@@ -370,7 +370,10 @@
       "product_url": "https://howmindswork.org",
       "free_product_name": "Free Audio Ritual",
       "free_product_url": "https://howmindswork.org",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-05",
+      "post_title": "NSDR Protocol Explained",
+      "meta_description": "Discover the non-sleep deep rest technique for emotional healing and relaxation. Learn how to calm your mind and body with NSDR protocol"
     },
     {
       "slug": "grief-rituals-for-healing",
