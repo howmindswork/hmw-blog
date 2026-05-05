@@ -5,9 +5,10 @@ Picks next uncovered keyword → calls Claude API → renders HTML → updates s
 Run: python scripts/generate_post.py
 GitHub Actions handles git commit/push after this script runs.
 """
-import os, json, re, datetime, subprocess, time
+import os, json, re, datetime, subprocess, time, textwrap
 from pathlib import Path
 import requests
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # Primary: Groq (free, fast, no rate issues at 1 post/day)
 # Fallback: Gemini 2.5 Flash
@@ -22,6 +23,53 @@ ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
 POSTS_DIR = ROOT / "blog/posts"
 KEYWORDS_FILE = SCRIPTS / "keywords.json"
+OG_ASSETS_DIR = ROOT / "blog/assets/posts"
+_FONT_DIR = "/usr/share/fonts/truetype/dejavu/"
+_OG_W, _OG_H = 1200, 630
+
+
+def make_og(title, slug):
+    """Generate a branded 1200x630 WebP OG image for a blog post."""
+    OG_ASSETS_DIR.mkdir(parents=True, exist_ok=True)
+    out = OG_ASSETS_DIR / f"{slug}-og.webp"
+    img = Image.new("RGB", (_OG_W, _OG_H), color=(8, 7, 6))
+    draw = ImageDraw.Draw(img)
+    # Purple glow top-right
+    glow = Image.new("RGB", (_OG_W, _OG_H), (0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    for r in range(400, 0, -1):
+        alpha = int(80 * (1 - r / 400))
+        gd.ellipse([(_OG_W - r, -r // 2), (_OG_W + r // 2, r)], fill=(alpha * 2, 0, alpha * 3))
+    glow = glow.filter(ImageFilter.GaussianBlur(60))
+    img = Image.blend(img, glow, 0.9)
+    draw = ImageDraw.Draw(img)
+    font_brand = ImageFont.truetype(_FONT_DIR + "DejaVuSerif.ttf", 24)
+    font_title = ImageFont.truetype(_FONT_DIR + "DejaVuSerif-Bold.ttf", 68)
+    font_name  = ImageFont.truetype(_FONT_DIR + "DejaVuSerif.ttf", 22)
+    font_wm    = ImageFont.truetype(_FONT_DIR + "DejaVuSans.ttf", 18)
+    # Gold rule + brand
+    draw.rectangle([(60, 58), (400, 62)], fill=(212, 175, 55))
+    draw.text((60, 80), "HOW MINDS WORK", font=font_brand, fill=(212, 175, 55))
+    # Title (max 3 lines, wrap at 30 chars)
+    lines = textwrap.wrap(title, width=30)[:3]
+    y = 190
+    for line in lines:
+        draw.text((60, y), line, font=font_title, fill=(255, 255, 255))
+        y += 82
+    # Category label
+    draw.text((60, y + 12), "Grief Healing Guide", font=font_name, fill=(212, 175, 55))
+    # Bottom divider + author
+    draw.rectangle([(60, _OG_H - 110), (_OG_W - 60, _OG_H - 108)], fill=(80, 60, 20))
+    draw.text((60, _OG_H - 85), "Luke Anthony  ·  howmindswork.org", font=font_name, fill=(180, 155, 90))
+    # Watermark bottom-right
+    wm = "blog.howmindswork.org"
+    bbox = draw.textbbox((0, 0), wm, font=font_wm)
+    wx = _OG_W - (bbox[2] - bbox[0]) - 20
+    wy = _OG_H - (bbox[3] - bbox[1]) - 15
+    draw.text((wx + 1, wy + 1), wm, font=font_wm, fill=(0, 0, 0))
+    draw.text((wx, wy), wm, font=font_wm, fill=(180, 180, 180))
+    img.save(out, "WEBP", quality=85)
+    print(f"OG image: {out.name}")
 
 # Load pillar map once at module level; silently skip if missing
 def _load_pillar_map():
@@ -285,6 +333,20 @@ def render_html(post, kw, date_str, date_iso, post_url):
 
     title_escaped = post['title'].replace('"', '&quot;').replace("'", "&#39;")
     meta_escaped = post['meta_description'].replace('"', '&quot;').replace("'", "&#39;")
+    og_image_url = f"{BLOG_URL}/assets/posts/{kw['slug']}-og.webp"
+    i_schema = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "contentUrl": og_image_url,
+        "name": post["title"],
+        "description": post["meta_description"][:150],
+        "caption": f"{post['title']} — How Minds Work grief healing guide",
+        "encodingFormat": "image/webp",
+        "width": 1200,
+        "height": 630,
+        "author": {"@type": "Organization", "name": "How Minds Work", "url": "https://blog.howmindswork.org"},
+        "copyrightNotice": "© 2026 How Minds Work"
+    }, indent=2)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -297,8 +359,9 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <meta property="og:description" content="{meta_escaped}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{post_url}">
-<meta property="og:image" content="{BLOG_URL}/assets/og-default.jpg">
+<meta property="og:image" content="{og_image_url}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{og_image_url}">
 <link rel="canonical" href="{post_url}">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
@@ -309,6 +372,9 @@ def render_html(post, kw, date_str, date_iso, post_url):
 </script>
 <script type="application/ld+json">
 {b_schema}
+</script>
+<script type="application/ld+json">
+{i_schema}
 </script>
 </head>
 <body>
@@ -428,14 +494,19 @@ def update_sitemap(data):
   </url>"""]
     for kw in published:
         lastmod = kw.get("published_date", datetime.date.today().isoformat())
+        img_url = f"{BLOG_URL}/assets/posts/{kw['slug']}-og.webp"
         urls.append(f"""  <url>
     <loc>{BLOG_URL}/posts/{kw['slug']}/</loc>
     <lastmod>{lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>{img_url}</image:loc>
+    </image:image>
   </url>""")
     xml = f"""<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 {chr(10).join(urls)}
 </urlset>"""
     (ROOT / "blog/sitemap.xml").write_text(xml)
@@ -510,6 +581,7 @@ def main():
     html = render_html(post, kw, date_str, date_iso, post_url)
     (post_dir / "index.html").write_text(html)
     print(f"Written: blog/posts/{kw['slug']}/index.html")
+    make_og(post["title"], kw["slug"])
     subprocess.run(
         ["python3", str(SCRIPTS / "auto_linker.py"), kw["slug"]],
         check=False,

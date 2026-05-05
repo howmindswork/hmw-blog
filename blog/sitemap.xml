@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://blog.howmindswork.org/</loc>
     <changefreq>daily</changefreq>
@@ -10,144 +11,216 @@
     <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-healing-after-loss-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/emotional-completion-grief-guide/</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/emotional-completion-grief-guide-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/how-to-feel-again-emotional-numbness-guide/</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-feel-again-emotional-numbness-guide-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/grief-rituals-complete-guide/</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/grief-rituals-complete-guide-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/caoineadh-anama-meaning/</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/caoineadh-anama-meaning-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/irish-ancestral-grief-ritual/</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/irish-ancestral-grief-ritual-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/celtic-grief-ritual-for-loss/</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/celtic-grief-ritual-for-loss-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/why-do-i-feel-nothing-after-a-loss/</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/why-do-i-feel-nothing-after-a-loss-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/how-to-feel-again-after-grief/</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-feel-again-after-grief-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/emotional-numbness-after-bereavement/</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/emotional-numbness-after-bereavement-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/emotional-completion-ritual/</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/emotional-completion-ritual-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/what-is-emotional-completion/</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/what-is-emotional-completion-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/how-to-complete-unresolved-grief/</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-complete-unresolved-grief-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/somatic-grief-release-at-home/</loc>
     <lastmod>2026-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-grief-release-at-home-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/grief-ritual-for-divorce/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/grief-ritual-for-divorce-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/grief-ritual-for-atheists/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/grief-ritual-for-atheists-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/men-somatic-grief-practices/</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/men-somatic-grief-practices-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/how-to-grieve-a-living-person/</loc>
     <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-grieve-a-living-person-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/somatic-grief-exercises-step-by-step/</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-grief-exercises-step-by-step-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/breathwork-for-grief/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-for-grief-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/box-breathing-for-anxiety/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/box-breathing-for-anxiety-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/somatic-breathwork-trauma/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-breathwork-trauma-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/yoga-nidra-for-grief/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/yoga-nidra-for-grief-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/yoga-nidra-benefits/</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+      <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/yoga-nidra-benefits-og.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://blog.howmindswork.org/posts/nsdr-protocol-explained/</loc>
