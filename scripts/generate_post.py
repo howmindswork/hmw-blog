@@ -12,6 +12,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
+CEREBRAS_URL = "https://api.cerebras.ai/v1/chat/completions"
+CEREBRAS_MODEL = "llama-3.3-70b"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 GEMINI_MODEL = "gemini-2.5-flash"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -19,6 +21,10 @@ OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct"
 
 def _build_providers():
     providers = []
+    # Cerebras first — fastest inference available, free tier
+    k = os.environ.get("CEREBRAS_API_KEY", "")
+    if k:
+        providers.append(("cerebras", CEREBRAS_URL, k, CEREBRAS_MODEL))
     # All Groq keys — rotate through all before giving up
     groq_env_names = [
         "GROQ_API_KEY",
@@ -36,7 +42,7 @@ def _build_providers():
         k = os.environ.get(env, "")
         if k:
             providers.append(("gemini", GEMINI_URL, k, GEMINI_MODEL))
-    # OpenRouter as last resort
+    # OpenRouter last resort
     k = os.environ.get("OPENROUTER_API_KEY", "")
     if k:
         providers.append(("openrouter", OPENROUTER_URL, k, OPENROUTER_MODEL))
