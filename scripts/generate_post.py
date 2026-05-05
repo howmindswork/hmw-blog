@@ -122,14 +122,20 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
+    import time
     groq_key = os.environ.get("GROQ_API_KEY", GROQ_API_KEY)
     gemini_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
-    if groq_key:
-        api_url, api_key, model = GROQ_URL, groq_key, GROQ_MODEL
-    elif gemini_key:
-        api_url, api_key, model = OPENROUTER_URL, gemini_key, OPENROUTER_MODEL
-    else:
+    if not groq_key and not gemini_key:
         raise ValueError("No API key set — need GROQ_API_KEY or GEMINI_API_KEY")
+
+    # Provider rotation: start with Groq, fall back to Gemini on 429
+    providers = []
+    if groq_key:
+        providers.append(("groq", GROQ_URL, groq_key, GROQ_MODEL))
+    if gemini_key:
+        providers.append(("gemini", OPENROUTER_URL, gemini_key, OPENROUTER_MODEL))
+    provider_idx = 0
+    api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
 
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
@@ -179,9 +185,20 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
             timeout=180
         )
         if resp.status_code == 429:
-            wait = 65 * (attempt + 1)
-            print(f"Rate limited — waiting {wait}s (attempt {attempt+1}/5)...")
-            import time; time.sleep(wait)
+            # Immediately rotate to next provider instead of sleeping
+            next_idx = provider_idx + 1
+            if next_idx < len(providers):
+                provider_idx = next_idx
+                name, api_url, api_key, model = providers[provider_idx]
+                print(f"Groq rate limited — switching to {name} (attempt {attempt+1}/5)")
+                payload["model"] = model
+            else:
+                # All providers exhausted, short sleep then retry from start
+                print(f"All providers rate limited — sleeping 30s (attempt {attempt+1}/5)")
+                time.sleep(30)
+                provider_idx = 0
+                api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
+                payload["model"] = model
             continue
         resp.raise_for_status()
         data = resp.json()
@@ -445,8 +462,7 @@ def main():
     html = render_html(post, kw, date_str, date_iso, post_url)
     (post_dir / "index.html").write_text(html)
     print(f"Written: blog/posts/{kw['slug']}/index.html")
-    import subprocess as _sp
-    _sp.run(
+    subprocess.run(
         ["python3", str(SCRIPTS / "auto_linker.py"), kw["slug"]],
         check=False,
         cwd=str(ROOT),
