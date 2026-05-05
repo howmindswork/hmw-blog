@@ -385,7 +385,10 @@
       "product_url": "https://howmindswork.org",
       "free_product_name": "Free Audio Ritual",
       "free_product_url": "https://howmindswork.org",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-05",
+      "post_title": "Grief Rituals That Work",
+      "meta_description": "Discover grief rituals backed by science to help you heal and find closure, because you deserve to feel whole again"
     },
     {
       "slug": "morning-ritual-for-anxiety",
