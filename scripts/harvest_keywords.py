@@ -133,6 +133,10 @@ def main():
         print("EXA_API_KEY not set — skipping harvest")
         sys.exit(0)
 
+    if not KEYWORDS_FILE.exists():
+        data = {"keywords": []}
+        KEYWORDS_FILE.write_text(json.dumps(data, indent=2))
+        print("keywords.json not found — initialized empty file")
     data = json.loads(KEYWORDS_FILE.read_text())
     existing = data["keywords"]
     print(f"Existing keywords: {len(existing)}")

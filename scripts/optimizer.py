@@ -106,8 +106,9 @@ def check_broken_links(soup, slug):
     for a in soup.find_all("a", href=True):
         href = a["href"]
         if href.startswith("/posts/"):
-            target = POSTS_DIR / href.lstrip("/posts/")
-            if not target.exists() and not (POSTS_DIR / (href.lstrip("/posts/") + ".html")).exists():
+            post_slug = href.strip("/").split("/")[-1] if href.strip("/") else ""
+            target = POSTS_DIR / post_slug / "index.html"
+            if post_slug and not target.exists():
                 # Auto-fix: remove the href but keep the text
                 del a["href"]
                 a["data-broken-link"] = href
@@ -128,11 +129,11 @@ def scan_posts():
         print(f"Posts dir not found: {POSTS_DIR}")
         return
 
-    html_files = sorted(POSTS_DIR.glob("*.html"))
+    html_files = sorted(POSTS_DIR.glob("*/index.html"))
     print(f"Scanning {len(html_files)} posts...")
 
     for html_file in html_files:
-        slug = html_file.stem
+        slug = html_file.parent.name
         print(f"  Checking: {slug}")
         content = html_file.read_text(encoding="utf-8")
         soup = BeautifulSoup(content, "lxml")

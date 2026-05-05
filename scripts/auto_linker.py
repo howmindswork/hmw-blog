@@ -66,7 +66,8 @@ def inject_links(html_body, published_posts, current_slug):
             p_tag.replace_with(BeautifulSoup(new_html, "lxml").find("p"))
             break
 
-    return str(soup.find("article") or soup)
+    article_tag = soup.find("article")
+    return str(article_tag) if article_tag else html_body
 
 def link_post(slug):
     post_path = POSTS_DIR / slug / "index.html"
