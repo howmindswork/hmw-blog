@@ -911,6 +911,71 @@ footer a:hover {
   }
 }
 
+/* ── Pathway Split ───────────────────────────────────── */
+.pathway-split {
+  border-bottom: 1px solid var(--border);
+  padding: 2.25rem 0;
+}
+
+.pathway-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.pathway-card {
+  display: block;
+  background: var(--surface2);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.pathway-card:hover {
+  border-color: var(--gold);
+  background: var(--surface3);
+  color: var(--text);
+}
+
+.pathway-heading {
+  font-family: "Newsreader", serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.pathway-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.pathway-arrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.02em;
+}
+
+/* ── Credibility Strip ───────────────────────────────── */
+.credibility-strip {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+
 /* ── Reduced motion ──────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -958,5 +1023,8 @@ footer a:hover {
   }
   .cta-block {
     padding: 1.5rem;
+  }
+  .pathway-cards {
+    grid-template-columns: 1fr;
   }
 }
