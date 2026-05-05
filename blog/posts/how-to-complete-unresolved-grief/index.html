@@ -92,15 +92,7 @@
   ]
 }
 </script>
-<script>
-(function(){
-  var ctx;
-  function getCtx(){if(!ctx)ctx=new(window.AudioContext||window.webkitAudioContext)();return ctx;}
-  function playClick(){try{var c=getCtx(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(800,c.currentTime);o.frequency.exponentialRampToValueAtTime(400,c.currentTime+0.08);g.gain.setValueAtTime(0.12,c.currentTime);g.gain.exponentialRampToValueAtTime(0.001,c.currentTime+0.12);o.start(c.currentTime);o.stop(c.currentTime+0.12);}catch(e){}}
-  document.addEventListener('click',function(e){var t=e.target.closest('a,button,[role="button"],[tabindex]');if(t)playClick();});
-})();
-</script>
-  <script defer>window.addEventListener("load",function(){var p=window.location.pathname;var r=document.referrer;fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));});</script>
+<script defer>window.addEventListener("load",function(){var p=window.location.pathname;var r=document.referrer;fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));});</script>
 
 <script type="application/ld+json">
 {
