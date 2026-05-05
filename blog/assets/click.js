@@ -75,32 +75,21 @@
   function playPop() {
     try {
       var c = getCtx();
+      if (c.state === "suspended") c.resume();
       var t = c.currentTime;
-      // Crisp transient (very brief high tap)
-      var o1 = c.createOscillator(),
-        g1 = c.createGain();
-      o1.connect(g1);
-      g1.connect(c.destination);
-      o1.type = "sine";
-      o1.frequency.setValueAtTime(1100, t);
-      o1.frequency.exponentialRampToValueAtTime(500, t + 0.01);
-      g1.gain.setValueAtTime(0, t);
-      g1.gain.linearRampToValueAtTime(0.055, t + 0.003);
-      g1.gain.exponentialRampToValueAtTime(0.001, t + 0.022);
-      o1.start(t);
-      o1.stop(t + 0.025);
-      // Warm body resonance
-      var o2 = c.createOscillator(),
-        g2 = c.createGain();
-      o2.connect(g2);
-      g2.connect(c.destination);
-      o2.type = "sine";
-      o2.frequency.setValueAtTime(240, t);
-      o2.frequency.exponentialRampToValueAtTime(110, t + 0.045);
-      g2.gain.setValueAtTime(0.06, t);
-      g2.gain.exponentialRampToValueAtTime(0.001, t + 0.048);
-      o2.start(t);
-      o2.stop(t + 0.05);
+      // Soft woody tap — low sine drop, very quiet, 30ms total
+      var o = c.createOscillator();
+      var g = c.createGain();
+      o.connect(g);
+      g.connect(c.destination);
+      o.type = "sine";
+      o.frequency.setValueAtTime(320, t);
+      o.frequency.exponentialRampToValueAtTime(90, t + 0.028);
+      g.gain.setValueAtTime(0, t);
+      g.gain.linearRampToValueAtTime(0.022, t + 0.002);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.03);
+      o.start(t);
+      o.stop(t + 0.032);
     } catch (e) {}
   }
   document.addEventListener(

@@ -116,20 +116,6 @@
   </form>
 </div></header>
 
-<section class="pathway-split"><div class="container">
-  <div class="pathway-cards">
-    <a href="/posts/somatic-healing-after-loss/" class="pathway-card">
-      <p class="pathway-heading">Just lost someone. I need something now.</p>
-      <p class="pathway-desc">Body-based tools to get through the next few days.</p>
-      <span class="pathway-arrow">Read this first &rarr;</span>
-    </a>
-    <a href="/posts/emotional-completion-grief-guide/" class="pathway-card">
-      <p class="pathway-heading">Been stuck for months or years. Nothing works.</p>
-      <p class="pathway-desc">Why grief gets trapped and how to complete it.</p>
-      <span class="pathway-arrow">Read this first &rarr;</span>
-    </a>
-  </div>
-</div></section>
 
 <script>
 (function(){
@@ -153,215 +139,142 @@
 
 <main><div class="container">
   <p class="credibility-strip">1,200+ people have completed the Emotional Completion Ritual.</p>
+  <div class="filter-tabs" id="filter-tabs" role="tablist" aria-label="Filter posts by topic">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="breathwork">Breathwork</button>
+    <button class="filter-btn" data-filter="somatic">Somatic</button>
+    <button class="filter-btn" data-filter="grief-ritual">Grief Rituals</button>
+    <button class="filter-btn" data-filter="completion">Completion</button>
+    <button class="filter-btn" data-filter="numbness">Numbness</button>
+  </div>
   <div class="posts-grid" id="posts">
-    <article class="post-card">
+    <article class="post-card" data-cat="breathwork">
       <p class="post-date">2026-05-05</p>
       <h2><a href="/posts/yoga-nidra-for-grief/">Yoga Nidra for Grief: Sleep Meditation That Heals Loss</a></h2>
       <p class="post-excerpt">Discover how Yoga Nidra, a powerful sleep meditation, helps process deep grief and trauma. Find rest, release pain, and move towards emotional completion.</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="breathwork">
       <p class="post-date">2026-05-05</p>
       <h2><a href="/posts/yoga-nidra-benefits/">Yoga Nidra Benefits: What Happens to Your Brain and Body?</a></h2>
       <p class="post-excerpt">Discover yoga nidra benefits. Learn what happens to your brain and body during this deep relaxation practice, and how it helps heal emotional wounds.</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="breathwork">
       <p class="post-date">2026-05-05</p>
       <h2><a href="/posts/nsdr-protocol-explained/">NSDR Protocol Explained</a></h2>
       <p class="post-excerpt">Discover the non-sleep deep rest technique for emotional healing and relaxation. Learn how to calm your mind and body with NSDR protocol</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-05-05</p>
       <h2><a href="/posts/grief-rituals-for-healing/">Grief Rituals That Work</a></h2>
       <p class="post-excerpt">Discover grief rituals backed by science to help you heal and find closure, because you deserve to feel whole again</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="somatic breathwork">
       <p class="post-date">2026-05-04</p>
       <h2><a href="/posts/somatic-breathwork-trauma/">Somatic Breathwork</a></h2>
       <p class="post-excerpt">Discover somatic breathwork for trauma, a powerful tool to release emotional pain and find calm, learn how it works and start your healing journey</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="breathwork">
       <p class="post-date">2026-05-03</p>
       <h2><a href="/posts/box-breathing-for-anxiety/">Box Breathing For Anxiety</a></h2>
       <p class="post-excerpt">Learn box breathing for anxiety with a step-by-step guide and free audio ritual to calm your mind and body, easing emotional pain</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="breathwork">
       <p class="post-date">2026-05-02</p>
       <h2><a href="/posts/breathwork-for-grief/">Breathwork For Grief</a></h2>
       <p class="post-excerpt">Discover how breathwork can help you release emotional pain and find healing after loss, with a simple yet powerful ritual</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="somatic">
       <p class="post-date">2026-04-21</p>
       <h2><a href="/posts/men-somatic-grief-practices/">Men and Somatic Grief</a></h2>
       <p class="post-excerpt">Discover somatic grief practices for men, break free from emotional pain and find healing with The Emotional Completion Ritual</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-04-20</p>
       <h2><a href="/posts/grief-ritual-for-atheists/">Grief Ritual for Atheists</a></h2>
       <p class="post-excerpt">Find a grief ritual that works for you, even without faith. Discover emotional completion and start healing with a free somatic grief release audio</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-04-18</p>
       <h2><a href="/posts/grief-ritual-for-divorce/">Grief Ritual for Divorce</a></h2>
       <p class="post-excerpt">Heal from divorce with a grief ritual, process emotions and move forward with The Emotional Completion Ritual methodology, find comfort and peace</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="somatic">
       <p class="post-date">2026-04-17</p>
       <h2><a href="/posts/somatic-grief-release-at-home/">Somatic Grief Release</a></h2>
       <p class="post-excerpt">Heal from grief with somatic release methods, find emotional relief at home with proven techniques</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="completion">
       <p class="post-date">2026-04-15</p>
       <h2><a href="/posts/how-to-complete-unresolved-grief/">Complete Unresolved Grief</a></h2>
       <p class="post-excerpt">Learn how to complete unresolved grief with Luke's Emotional Completion Ritual, a step-by-step process to heal emotional pain</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="completion">
       <p class="post-date">2026-04-13</p>
       <h2><a href="/posts/what-is-emotional-completion/">What Is Emotional Completion</a></h2>
       <p class="post-excerpt">Learn about emotional completion and find peace after loss, healing emotional numbness with The Emotional Completion Ritual</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="completion">
       <p class="post-date">2026-04-11</p>
       <h2><a href="/posts/emotional-completion-ritual/">Emotional Completion Ritual</a></h2>
       <p class="post-excerpt">Discover the emotional completion ritual to heal grief, find closure and move forward with The Emotional Completion Ritual methodology</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="numbness">
       <p class="post-date">2026-04-09</p>
       <h2><a href="/posts/emotional-numbness-after-bereavement/">Emotional Numbness After Bereavement</a></h2>
       <p class="post-excerpt">Heal emotional numbness after bereavement, find ways to process grief and feel again</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="numbness">
       <p class="post-date">2026-04-07</p>
       <h2><a href="/posts/how-to-feel-again-after-grief/">How to Feel Again</a></h2>
       <p class="post-excerpt">Learn how to feel again after grief with The Emotional Completion Ritual, overcoming emotional numbness and finding healing</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="numbness">
       <p class="post-date">2026-04-05</p>
       <h2><a href="/posts/why-do-i-feel-nothing-after-a-loss/">Why Do I Feel Nothing</a></h2>
       <p class="post-excerpt">Discover why you might feel numb after a loss and how to process your emotions with The Emotional Completion Ritual methodology</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-04-03</p>
       <h2><a href="/posts/celtic-grief-ritual-for-loss/">Celtic Grief Ritual</a></h2>
       <p class="post-excerpt">Heal from loss with a Celtic grief ritual, find emotional completion and peace with The Emotional Completion Ritual methodology</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="somatic">
       <p class="post-date">2026-04-03</p>
       <h2><a href="/posts/somatic-grief-exercises-step-by-step/">Somatic Grief Exercises</a></h2>
       <p class="post-excerpt">Discover somatic grief exercises to help you process emotions, heal and find peace with The Emotional Completion Ritual methodology and step-by-step practices</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-04-01</p>
       <h2><a href="/posts/caoineadh-anama-meaning/">Caoineadh Anama Meaning: The Cry of the Soul</a></h2>
       <p class="post-excerpt">Understand Caoineadh Anama, an ancient Irish term for ancestral grief. Learn how this powerful concept guides emotional completion and healing deep sorrow.</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-04-01</p>
       <h2><a href="/posts/irish-ancestral-grief-ritual/">Irish Ancestral Grief</a></h2>
       <p class="post-excerpt">Discover the Irish ancestral grief ritual to heal emotional pain, find peace with your heritage and process grief with The Emotional Completion Ritual methodology</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="completion">
       <p class="post-date">2026-04-01</p>
       <h2><a href="/posts/how-to-grieve-a-living-person/">Grieving a Living Person</a></h2>
       <p class="post-excerpt">Learn how to grieve a living person with The Emotional Completion Ritual, healing emotional pain and finding closure</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="numbness">
       <p class="post-date">2026-03-28</p>
       <h2><a href="/posts/how-to-feel-again-emotional-numbness-guide/">How to Feel Again: Healing Emotional Numbness After Loss</a></h2>
       <p class="post-excerpt">Emotional numbness after loss is your nervous system's protection—here's exactly how to wake it up again and feel what you need to feel.</p>
     </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-21</p>
+    <article class="post-card post-card--featured" data-cat="completion">
+      <p class="post-date"><span class="post-badge">Start Here</span> 2026-03-21</p>
       <h2><a href="/posts/emotional-completion-grief-guide/">Emotional Completion: How to Actually Finish Grieving</a></h2>
       <p class="post-excerpt">Emotional completion ends endless grief cycles. Learn the exact ritual and framework to process loss fully and move forward—not bypass it.</p>
     </article>
-    <article class="post-card">
+    <article class="post-card" data-cat="grief-ritual">
       <p class="post-date">2026-03-14</p>
       <h2><a href="/posts/grief-rituals-complete-guide/">Grief Rituals: Ancient & Modern Practices</a></h2>
       <p class="post-excerpt">Grief rituals—ancient ceremonies and modern somatic practices—help you process loss fully. Learn why ritual matters and how to create your own.</p>
     </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-07</p>
-      <h2><a href="/posts/somatic-healing-after-loss/">Somatic Healing After Loss: A Complete Guide</a></h2>
-      <p class="post-excerpt">Somatic healing after loss helps your body process grief. Learn the science, practices, and steps to move grief through your nervous system.</p>
-    </article>
-  </div>
-    <article class="post-card">
-      <p class="post-date">2026-04-17</p>
-      <h2><a href="/posts/somatic-grief-release-at-home/">Somatic Grief Release</a></h2>
-      <p class="post-excerpt">Heal from grief with somatic release methods, find emotional relief at home with proven techniques</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-15</p>
-      <h2><a href="/posts/how-to-complete-unresolved-grief/">Complete Unresolved Grief</a></h2>
-      <p class="post-excerpt">Learn how to complete unresolved grief with Luke's Emotional Completion Ritual, a step-by-step process to heal emotional pain</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-13</p>
-      <h2><a href="/posts/what-is-emotional-completion/">What Is Emotional Completion</a></h2>
-      <p class="post-excerpt">Learn about emotional completion and find peace after loss, healing emotional numbness with The Emotional Completion Ritual</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-11</p>
-      <h2><a href="/posts/emotional-completion-ritual/">Emotional Completion Ritual</a></h2>
-      <p class="post-excerpt">Discover the emotional completion ritual to heal grief, find closure and move forward with The Emotional Completion Ritual methodology</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-09</p>
-      <h2><a href="/posts/emotional-numbness-after-bereavement/">Emotional Numbness After Bereavement</a></h2>
-      <p class="post-excerpt">Heal emotional numbness after bereavement, find ways to process grief and feel again</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-07</p>
-      <h2><a href="/posts/how-to-feel-again-after-grief/">How to Feel Again</a></h2>
-      <p class="post-excerpt">Learn how to feel again after grief with The Emotional Completion Ritual, overcoming emotional numbness and finding healing</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-05</p>
-      <h2><a href="/posts/why-do-i-feel-nothing-after-a-loss/">Why Do I Feel Nothing</a></h2>
-      <p class="post-excerpt">Discover why you might feel numb after a loss and how to process your emotions with The Emotional Completion Ritual methodology</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-03</p>
-      <h2><a href="/posts/celtic-grief-ritual-for-loss/">Celtic Grief Ritual</a></h2>
-      <p class="post-excerpt">Heal from loss with a Celtic grief ritual, find emotional completion and peace with The Emotional Completion Ritual methodology</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-03</p>
-      <h2><a href="/posts/somatic-grief-exercises-step-by-step/">Somatic Grief Exercises</a></h2>
-      <p class="post-excerpt">Discover somatic grief exercises to help you process emotions, heal and find peace with The Emotional Completion Ritual methodology and step-by-step practices</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-01</p>
-      <h2><a href="/posts/caoineadh-anama-meaning/">Caoineadh Anama Meaning: The Cry of the Soul</a></h2>
-      <p class="post-excerpt">Understand Caoineadh Anama, an ancient Irish term for ancestral grief. Learn how this powerful concept guides emotional completion and healing deep sorrow.</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-01</p>
-      <h2><a href="/posts/irish-ancestral-grief-ritual/">Irish Ancestral Grief</a></h2>
-      <p class="post-excerpt">Discover the Irish ancestral grief ritual to heal emotional pain, find peace with your heritage and process grief with The Emotional Completion Ritual methodology</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-04-01</p>
-      <h2><a href="/posts/how-to-grieve-a-living-person/">Grieving a Living Person</a></h2>
-      <p class="post-excerpt">Learn how to grieve a living person with The Emotional Completion Ritual, healing emotional pain and finding closure</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-28</p>
-      <h2><a href="/posts/how-to-feel-again-emotional-numbness-guide/">How to Feel Again: Healing Emotional Numbness After Loss</a></h2>
-      <p class="post-excerpt">Emotional numbness after loss is your nervous system's protection. Here's exactly how to wake it up again and feel what you need to feel.</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-21</p>
-      <h2><a href="/posts/emotional-completion-grief-guide/">Emotional Completion: How to Actually Finish Grieving</a></h2>
-      <p class="post-excerpt">Emotional completion ends endless grief cycles. Learn the exact ritual and framework to process loss fully and move forward, not bypass it.</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-14</p>
-      <h2><a href="/posts/grief-rituals-complete-guide/">Grief Rituals: Ancient & Modern Practices</a></h2>
-      <p class="post-excerpt">Grief rituals, ancient ceremonies and modern somatic practices, help you process loss fully. Learn why ritual matters and how to create your own.</p>
-    </article>
-    <article class="post-card">
-      <p class="post-date">2026-03-07</p>
+    <article class="post-card post-card--featured" data-cat="somatic">
+      <p class="post-date"><span class="post-badge">Start Here</span> 2026-03-07</p>
       <h2><a href="/posts/somatic-healing-after-loss/">Somatic Healing After Loss: A Complete Guide</a></h2>
       <p class="post-excerpt">Somatic healing after loss helps your body process grief. Learn the science, practices, and steps to move grief through your nervous system.</p>
     </article>
@@ -372,13 +285,27 @@
   <span>© 2026 How Minds Work</span>
   <span><a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
+
 <script>
-document.querySelectorAll('.post-card').forEach(function(card){
-  var link = card.querySelector('a');
-  if(link) card.addEventListener('click', function(e){
-    if(!e.target.closest('a')) window.location.href = link.href;
+(function(){
+  var tabs = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.posts-grid .post-card');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      cards.forEach(function(card){
+        if(filter === 'all'){
+          card.style.display = '';
+        } else {
+          var cats = (card.dataset.cat || '').split(' ');
+          card.style.display = cats.indexOf(filter) > -1 ? '' : 'none';
+        }
+      });
+    });
   });
-});
+})();
 </script>
 </body>
 </html>
