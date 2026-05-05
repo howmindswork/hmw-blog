@@ -10,14 +10,37 @@ from pathlib import Path
 import requests
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-# Primary: Groq (free, fast, no rate issues at 1 post/day)
-# Fallback: Gemini 2.5 Flash
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-OPENROUTER_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
-OPENROUTER_MODEL = "gemini-2.5-flash"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+GEMINI_MODEL = "gemini-2.5-flash"
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct"
+
+def _build_providers():
+    providers = []
+    # All Groq keys — rotate through all before giving up
+    groq_env_names = [
+        "GROQ_API_KEY",
+        "GROQ_API_KEY_2","GROQ_API_KEY_3","GROQ_API_KEY_4",
+        "GROQ_API_KEY_5","GROQ_API_KEY_6","GROQ_API_KEY_7","GROQ_API_KEY_8",
+        "GROQ_API_KEY_NEW_1","GROQ_API_KEY_NEW_2","GROQ_API_KEY_NEW_3",
+        "GROQ_API_KEY_NEW_4","GROQ_API_KEY_NEW_5","GROQ_API_KEY_NEW_6","GROQ_API_KEY_NEW_7",
+    ]
+    for env in groq_env_names:
+        k = os.environ.get(env, "")
+        if k:
+            providers.append(("groq", GROQ_URL, k, GROQ_MODEL))
+    # Gemini fallbacks
+    for env in ("GEMINI_API_KEY_BLOG", "GEMINI_API_KEY"):
+        k = os.environ.get(env, "")
+        if k:
+            providers.append(("gemini", GEMINI_URL, k, GEMINI_MODEL))
+    # OpenRouter as last resort
+    k = os.environ.get("OPENROUTER_API_KEY", "")
+    if k:
+        providers.append(("openrouter", OPENROUTER_URL, k, OPENROUTER_MODEL))
+    return providers
 
 ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
@@ -143,17 +166,9 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
-    groq_key = os.environ.get("GROQ_API_KEY", GROQ_API_KEY)
-    gemini_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
-    if not groq_key and not gemini_key:
-        raise ValueError("No API key set — need GROQ_API_KEY or GEMINI_API_KEY")
-
-    # Provider rotation: start with Groq, fall back to Gemini on 429
-    providers = []
-    if groq_key:
-        providers.append(("groq", GROQ_URL, groq_key, GROQ_MODEL))
-    if gemini_key:
-        providers.append(("gemini", OPENROUTER_URL, gemini_key, OPENROUTER_MODEL))
+    providers = _build_providers()
+    if not providers:
+        raise ValueError("No API keys configured — set GROQ_API_KEY or GEMINI_API_KEY")
     provider_idx = 0
     api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
 
@@ -209,13 +224,13 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
             if next_idx < len(providers):
                 provider_idx = next_idx
                 name, api_url, api_key, model = providers[provider_idx]
-                print(f"Provider error {resp.status_code} — switching to {name} (attempt {attempt+1}/5)")
+                print(f"Provider {providers[provider_idx-1][0]} error {resp.status_code} — rotating to {name} [{provider_idx+1}/{len(providers)}]")
                 payload["model"] = model
             else:
-                print(f"All providers unavailable ({resp.status_code}) — sleeping 30s (attempt {attempt+1}/5)")
+                print(f"All {len(providers)} providers exhausted — sleeping 30s then restarting rotation")
                 time.sleep(30)
                 provider_idx = 0
-                api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
+                name, api_url, api_key, model = providers[0]
                 payload["model"] = model
             continue
         resp.raise_for_status()
