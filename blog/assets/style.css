@@ -878,136 +878,120 @@ footer a:hover {
 /* ── Email Capture ───────────────────────────────────── */
 .email-capture {
   margin: 2rem 0 0;
-  padding: 1.75rem 2rem;
-  background: var(--surface2);
-  border: 1px solid var(--gold);
-  border-radius: var(--radius);
+  padding: 2rem;
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
 }
-
 .email-capture::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 50%, transparent 100%);
 }
-
 .capture-hook {
   font-family: "Newsreader", serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: var(--text);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -0.01em;
 }
-
 .capture-fields {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
-
 .capture-fields input[type="email"],
 .inline-capture input[type="email"] {
   flex: 1;
-  min-width: 180px;
-  background: var(--surface);
-  border: 1px solid var(--border-light);
-  border-radius: 4px;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
   color: var(--text);
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
-  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.1rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
-
 .capture-fields input[type="email"]:focus,
 .inline-capture input[type="email"]:focus {
-  border-color: var(--gold);
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
-
 .capture-fields input[type="email"]::placeholder,
 .inline-capture input[type="email"]::placeholder {
-  color: var(--text-faint);
+  color: rgba(255, 255, 255, 0.3);
 }
-
 .capture-fields button,
 .inline-capture button {
-  background: var(--gold);
-  color: #0a0706;
+  background: linear-gradient(135deg, #7c3aed 0%, #9d6af5 100%);
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 0.875rem;
-  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.6rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   transition:
-    background 0.2s,
-    transform 0.15s;
-  letter-spacing: 0.01em;
+    transform 0.15s,
+    box-shadow 0.15s;
   white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.3);
 }
-
 .capture-fields button:hover,
 .inline-capture button:hover {
-  background: var(--gold-light);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
 }
-
 .capture-fine {
   font-size: 0.75rem;
   color: var(--text-faint);
   margin-top: 0.6rem;
 }
-
 .capture-success {
-  color: var(--gold);
+  color: #a78bfa;
   font-size: 0.92rem;
   font-weight: 500;
   margin-top: 0.75rem;
 }
-
-/* Inline capture (inside posts) */
 .inline-capture {
   margin: 2.5rem 0;
-  padding: 1.5rem;
-  background: var(--surface);
-  border-left: 2px solid var(--gold);
-  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.75rem;
+  background: rgba(124, 58, 237, 0.05);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 12px;
 }
-
 .inline-capture p {
   font-size: 0.95rem;
   color: var(--text-muted);
   margin-bottom: 0.9rem !important;
   max-width: 100% !important;
 }
-
 .inline-capture form {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
-
 @media (max-width: 600px) {
   .email-capture {
     padding: 1.25rem;
   }
-  .capture-fields {
-    flex-direction: column;
-  }
-  .capture-fields button {
-    width: 100%;
-  }
+  .capture-fields,
   .inline-capture form {
     flex-direction: column;
   }
+  .capture-fields button,
   .inline-capture button {
     width: 100%;
   }
