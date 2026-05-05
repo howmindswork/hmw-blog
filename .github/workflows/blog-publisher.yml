@@ -55,4 +55,4 @@ jobs:
           git config user.name "Blog Bot"
           git add scripts/keywords.json blog/sitemap.xml blog/posts/ blog/index.html
           git diff --staged --quiet || git commit -m "chore: publish new post + update sitemap [skip ci]"
-          git push
+          git pull --rebase origin main && git push
