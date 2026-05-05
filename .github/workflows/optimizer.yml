@@ -1,0 +1,51 @@
+name: Weekly SEO Optimizer
+
+on:
+  schedule:
+    - cron: '0 16 * * 0'  # Sunday noon ET (16:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt --quiet
+
+      - name: Run optimizer
+        run: python scripts/optimizer.py
+        env:
+          ANALYTICS_URL: ${{ secrets.ANALYTICS_URL }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.changes.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy blog --project-name=hmw-blog --commit-dirty=true
+
+      - name: Commit fixes + report
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "HMW Optimizer Bot"
+          git config user.email "action@github.com"
+          git add -A
+          git commit -m "chore: weekly SEO optimizer fixes + report [$(date +%Y-%m-%d)]"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
