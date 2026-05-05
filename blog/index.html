@@ -112,7 +112,34 @@
   <p class="hero-label">The Blog</p>
   <h1>Grief, Healing &amp; Emotional Completion</h1>
   <p class="subtitle">Practical rituals, somatic tools, and honest writing about what it actually takes to process loss. And feel again.</p>
+  <form class="email-capture" id="hero-capture" action="https://hmw-email-sequence.howmindswork.workers.dev/subscribe" method="POST">
+    <p class="capture-hook">Get the free Stone Release Ritual audio</p>
+    <div class="capture-fields">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Send it to me</button>
+    </div>
+    <p class="capture-fine">Free. No spam.</p>
+  </form>
 </div></header>
+<script>
+(function(){
+  var form = document.getElementById('hero-capture');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = form.querySelector('input[name="email"]').value;
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
+    }).then(function() {
+      form.innerHTML = '<p class="capture-success">Check your inbox.</p>';
+    }).catch(function() {
+      form.innerHTML = '<p class="capture-success">Check your inbox.</p>';
+    });
+  });
+})();
+</script>
 
 <main><div class="container">
   <div class="posts-grid" id="posts">

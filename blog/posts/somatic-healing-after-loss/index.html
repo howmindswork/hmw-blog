@@ -189,6 +189,15 @@
 <p>According to research in Psychosomatic Medicine, 70% of grief symptoms are experienced primarily as physical sensations, chest pain, throat constriction, fatigue, disconnection, before they surface as sadness. Your body is speaking. Most of us just aren't listening.</p>
 <p>The Emotional Completion Ritual works directly with this: it creates conditions for your nervous system to feel safe enough to move the stuck energy of loss. Not to eliminate the grief, but to complete it, to let it move through you instead of staying trapped.</p>
 
+<!-- email-capture-injected -->
+
+<div class="inline-capture">
+  <p>Get the free Stone Release Ritual audio. Start tonight.</p>
+  <form action="https://hmw-email-sequence.howmindswork.workers.dev/subscribe" method="POST">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">Get it free</button>
+  </form>
+</div>
 <div class="cta-block">
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready, begin with this</h3>
@@ -278,5 +287,25 @@
 </div></footer>
 <script src="/assets/click.js"></script>
 <script src="/assets/popup-star-audio.js"></script>
+<script>
+(function(){
+  var forms = document.querySelectorAll('.inline-capture form');
+  forms.forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = form.querySelector('input[name="email"]').value;
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      }).then(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      }).catch(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

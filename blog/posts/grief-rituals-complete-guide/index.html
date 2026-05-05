@@ -188,6 +188,15 @@
 <p>Similarly, the Jewish tradition of rending one's garment (keriah) combines physical action with narrative. You tear your clothing, which activates touch receptors, grounds you in body sensation, and marks the moment when 'before' becomes 'after.' The ritual doesn't erase loss, it integrates it.</p>
 <p>What these practices share: they involve the body, they involve sound or movement, they have clear beginnings and endings, and they're witnessed (or witnessed internally). You're not just thinking about grief; you're moving it through flesh.</p>
 
+<!-- email-capture-injected -->
+
+<div class="inline-capture">
+  <p>Get the free Stone Release Ritual audio. Start tonight.</p>
+  <form action="https://hmw-email-sequence.howmindswork.workers.dev/subscribe" method="POST">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">Get it free</button>
+  </form>
+</div>
 <div class="cta-block">
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready, begin with this</h3>
@@ -278,5 +287,25 @@
 </div></footer>
 <script src="/assets/click.js"></script>
 <script src="/assets/popup-star-audio.js"></script>
+<script>
+(function(){
+  var forms = document.querySelectorAll('.inline-capture form');
+  forms.forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = form.querySelector('input[name="email"]').value;
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      }).then(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      }).catch(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

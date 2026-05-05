@@ -188,6 +188,15 @@
 <p>Incomplete grief gets recycled. You think you've moved on, then a song hits and you're right back there. A smell. A date. A photo. Each time your nervous system tries to complete the cycle and you interrupt it again, the pattern deepens. The grief doesn't resolve; it fragments.</p>
 <p>The other trap is spiritual bypassing. 'They're in a better place.' 'It was meant to happen.' These narratives can bypass the actual feeling work. Your body doesn't care about meaning yet. It needs to cry, shake, rage, or scream first. Completion comes after that, not before.</p>
 
+<!-- email-capture-injected -->
+
+<div class="inline-capture">
+  <p>Get the free Stone Release Ritual audio. Start tonight.</p>
+  <form action="https://hmw-email-sequence.howmindswork.workers.dev/subscribe" method="POST">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">Get it free</button>
+  </form>
+</div>
 <div class="cta-block">
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready, begin with this</h3>
@@ -279,5 +288,25 @@
 </div></footer>
 <script src="/assets/click.js"></script>
 <script src="/assets/popup-star-audio.js"></script>
+<script>
+(function(){
+  var forms = document.querySelectorAll('.inline-capture form');
+  forms.forEach(function(form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = form.querySelector('input[name="email"]').value;
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+      }).then(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      }).catch(function() {
+        form.parentElement.innerHTML = '<p style="color:var(--gold);font-size:0.92rem;font-weight:500;">Check your inbox.</p>';
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
