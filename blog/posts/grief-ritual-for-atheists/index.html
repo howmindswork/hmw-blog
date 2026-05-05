@@ -128,6 +128,11 @@
 </script>
 </head>
 <body>
+<div id="sticky-cta-bar" class="sticky-cta-bar" style="display:none">
+  <span>Free: Stone Release Ritual Audio</span>
+  <a href="https://lukeisthere.gumroad.com/l/stoneritual" class="sticky-btn">Get it free</a>
+  <button class="sticky-dismiss" onclick="document.getElementById('sticky-cta-bar').style.display='none'">x</button>
+</div>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
   <a href="/" class="nav-link">← All posts</a>
@@ -214,11 +219,18 @@
   <a href="https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio" class="btn-secondary">Stone Release Ritual →</a>
 </div>
 
+<section class="related-posts">
+  <h3>You might also like</h3>
+  <ul>
+    <li><a href="/posts/grief-rituals-complete-guide/">Grief Rituals: Ancient & Modern Practices</a></li>
+    <li><a href="/posts/emotional-completion-grief-guide/">Emotional Completion: How to Actually Finish Grieving</a></li>
+  </ul>
+</section>
 <div class="author-card">
   <img src="/assets/luke.png" alt="Luke">
   <div>
     <p class="author-name">Luke</p>
-    <p class="author-bio">Creator of The Emotional Completion Ritual. Writes about grief processing, somatic healing, and emotional completion at How Minds Work. <a href="/about/">About Luke →</a></p>
+    <p class="author-bio">Luke Anthony built The Emotional Completion Ritual from somatic trauma work, Irish keening tradition, and Peter Levine's nervous system research. Not a therapist. A practitioner. 1,200+ people have completed the ritual. <a href="/about/">About Luke →</a></p>
   </div>
 </div>
 
@@ -264,6 +276,19 @@
       });
     });
   });
+})();
+</script>
+<script>
+(function(){
+  var bar = document.getElementById('sticky-cta-bar');
+  if(!bar) return;
+  window.addEventListener('scroll', function(){
+    var scrolled = window.scrollY || document.documentElement.scrollTop;
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    if(total > 0 && scrolled / total >= 0.30){
+      bar.style.display = 'flex';
+    }
+  }, {passive: true});
 })();
 </script>
 </body>
