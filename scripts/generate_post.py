@@ -204,17 +204,15 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
             json=payload,
             timeout=180
         )
-        if resp.status_code == 429:
-            # Immediately rotate to next provider instead of sleeping
+        if resp.status_code in (429, 503, 502, 500):
             next_idx = provider_idx + 1
             if next_idx < len(providers):
                 provider_idx = next_idx
                 name, api_url, api_key, model = providers[provider_idx]
-                print(f"Groq rate limited — switching to {name} (attempt {attempt+1}/5)")
+                print(f"Provider error {resp.status_code} — switching to {name} (attempt {attempt+1}/5)")
                 payload["model"] = model
             else:
-                # All providers exhausted, short sleep then retry from start
-                print(f"All providers rate limited — sleeping 30s (attempt {attempt+1}/5)")
+                print(f"All providers unavailable ({resp.status_code}) — sleeping 30s (attempt {attempt+1}/5)")
                 time.sleep(30)
                 provider_idx = 0
                 api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
@@ -539,7 +537,11 @@ def main():
 
     print(f"Generating post for: {kw['keyword']}")
     recent_titles = get_recent_titles(10)
-    post = generate_post(kw)
+    try:
+        post = generate_post(kw)
+    except Exception as e:
+        print(f"All providers failed, skipping this run: {e}")
+        return
     # Uniqueness check: max 2 regeneration attempts
     for _attempt in range(2):
         duplicate = next(
