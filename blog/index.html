@@ -114,7 +114,7 @@
   <h1>Grief, Healing &amp; Emotional Completion</h1>
   <p class="subtitle">Practical rituals, somatic tools, and honest writing about what it actually takes to process loss. And feel again.</p>
   <form class="email-capture" id="hero-capture" action="https://hmw-email-sequence.howmindswork.workers.dev/subscribe" method="POST">
-    <p class="capture-hook">Get the free Stone Release Ritual audio</p>
+    <p class="capture-hook">Join 1,200+ people healing through grief. Get the free Stone Release Ritual audio.</p>
     <div class="capture-fields">
       <input type="email" name="email" placeholder="your@email.com" required>
       <button type="submit">Send it to me</button>
@@ -379,5 +379,13 @@
   <span>© 2026 How Minds Work</span>
   <span><a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
+<script>
+document.querySelectorAll('.post-card').forEach(function(card){
+  var link = card.querySelector('a');
+  if(link) card.addEventListener('click', function(e){
+    if(!e.target.closest('a')) window.location.href = link.href;
+  });
+});
+</script>
 </body>
 </html>
