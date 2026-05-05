@@ -22,6 +22,16 @@ ROOT = Path(__file__).parent.parent
 SCRIPTS = ROOT / "scripts"
 POSTS_DIR = ROOT / "blog/posts"
 KEYWORDS_FILE = SCRIPTS / "keywords.json"
+
+# Load pillar map once at module level; silently skip if missing
+def _load_pillar_map():
+    _path = SCRIPTS / "pillar_map.json"
+    try:
+        return json.loads(_path.read_text())
+    except Exception:
+        return {}
+
+PILLAR_MAP = _load_pillar_map()
 BLOG_URL = "https://blog.howmindswork.org"
 AUTHOR_ID = "https://blog.howmindswork.org/about/#luke"
 AUTHOR_SAME_AS = [
@@ -273,7 +283,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
     title_escaped = post['title'].replace('"', '&quot;').replace("'", "&#39;")
     meta_escaped = post['meta_description'].replace('"', '&quot;').replace("'", "&#39;")
 
-    return f"""<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -357,6 +367,54 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <script src="/assets/click.js"></script>
 </body>
 </html>"""
+    return inject_pillar_link(html)
+
+def word_overlap(a, b):
+    a_words = set(a.lower().split())
+    b_words = set(b.lower().split())
+    if not a_words or not b_words:
+        return 0.0
+    return len(a_words & b_words) / len(a_words | b_words)
+
+def get_recent_titles(n=10):
+    """Return up to n most-recently-modified post titles extracted from index.html <h1>."""
+    if not POSTS_DIR.exists():
+        return []
+    dirs = sorted(
+        [d for d in POSTS_DIR.iterdir() if d.is_dir()],
+        key=lambda d: d.stat().st_mtime,
+        reverse=True,
+    )[:n]
+    titles = []
+    for d in dirs:
+        html_file = d / "index.html"
+        if not html_file.exists():
+            continue
+        text = html_file.read_text(errors="ignore")
+        m = re.search(r'<h1[^>]*>(.*?)</h1>', text, re.IGNORECASE | re.DOTALL)
+        if m:
+            # Strip any inner tags
+            raw = re.sub(r'<[^>]+>', '', m.group(1))
+            titles.append(raw.strip())
+    return titles
+
+def inject_pillar_link(body_html):
+    """Scan body_html for pillar keywords; inject one link block before </article>."""
+    if not PILLAR_MAP:
+        return body_html
+    body_lower = body_html.lower()
+    # Multi-word keywords checked before single-word to avoid partial matches
+    sorted_keys = sorted(PILLAR_MAP.keys(), key=len, reverse=True)
+    for keyword in sorted_keys:
+        if keyword in body_lower:
+            entry = PILLAR_MAP[keyword]
+            link_block = (
+                f'\n<p class="pillar-link">Want to go deeper? '
+                f'Read the complete guide: '
+                f'<a href="{entry["url"]}">{entry["title"]}</a></p>\n'
+            )
+            return body_html.replace('</article>', link_block + '</article>', 1)
+    return body_html
 
 def update_sitemap(data):
     published = [k for k in data["keywords"] if k.get("published")]
@@ -406,7 +464,35 @@ def main():
         return
 
     print(f"Generating post for: {kw['keyword']}")
+    recent_titles = get_recent_titles(10)
     post = generate_post(kw)
+    # Uniqueness check: max 2 regeneration attempts
+    for _attempt in range(2):
+        duplicate = next(
+            (t for t in recent_titles if word_overlap(post["title"], t) > 0.7),
+            None,
+        )
+        if duplicate is None:
+            break
+        print(
+            f"Title too similar to recent post '{duplicate}' "
+            f"(overlap > 0.7) — regenerating (attempt {_attempt + 1}/2)"
+        )
+        # Patch keyword dict with re-topic instruction for this call only
+        kw_patched = dict(kw)
+        kw_patched["_regen_hint"] = (
+            f"This topic was recently covered. "
+            f"Write about a different specific aspect: {kw['keyword']}"
+        )
+        # Temporarily inject hint into user message via a thin wrapper
+        orig_keyword = kw_patched["keyword"]
+        kw_patched["keyword"] = (
+            f"{orig_keyword} — NOTE: {kw_patched['_regen_hint']}"
+        )
+        post = generate_post(kw_patched)
+    else:
+        # After 2 failed attempts, proceed with whatever was generated last
+        pass
 
     if kw.get("planned_date"):
         today = datetime.date.fromisoformat(kw["planned_date"])
