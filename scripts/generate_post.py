@@ -5,7 +5,7 @@ Picks next uncovered keyword → calls Claude API → renders HTML → updates s
 Run: python scripts/generate_post.py
 GitHub Actions handles git commit/push after this script runs.
 """
-import os, json, re, datetime, subprocess
+import os, json, re, datetime, subprocess, time
 from pathlib import Path
 import requests
 
@@ -31,46 +31,6 @@ AUTHOR_SAME_AS = [
     "https://howmindswork.org",
 ]
 
-POST_TOOL = {
-    "type": "function",
-    "function": {
-        "name": "write_blog_post",
-        "description": "Write a complete AEO/SEO-optimized blog post as structured data.",
-        "parameters": {
-            "type": "object",
-            "required": ["title", "meta_description", "intro", "key_takeaways", "sections", "faq"],
-            "properties": {
-                "title": {"type": "string"},
-                "meta_description": {"type": "string"},
-                "intro": {"type": "string"},
-                "key_takeaways": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}},
-                "sections": {
-                    "type": "array", "minItems": 4,
-                    "items": {
-                        "type": "object",
-                        "required": ["h2", "paragraphs"],
-                        "properties": {
-                            "h2": {"type": "string"},
-                            "paragraphs": {"type": "array", "items": {"type": "string"}},
-                            "cta_type": {"type": "string", "enum": ["none", "inline_free", "inline_paid"]}
-                        }
-                    }
-                },
-                "faq": {
-                    "type": "array", "minItems": 4, "maxItems": 6,
-                    "items": {
-                        "type": "object",
-                        "required": ["question", "answer"],
-                        "properties": {
-                            "question": {"type": "string"},
-                            "answer": {"type": "string"}
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 SYSTEM_PROMPT = """You write blog posts for How Minds Work (howmindswork.org), a personal brand by Luke focused on emotional healing, grief processing, somatic rituals, and emotional completion.
 
@@ -122,7 +82,6 @@ def next_keyword(data):
     return None
 
 def generate_post(kw):
-    import time
     groq_key = os.environ.get("GROQ_API_KEY", GROQ_API_KEY)
     gemini_key = os.environ.get("GEMINI_API_KEY", GEMINI_API_KEY)
     if not groq_key and not gemini_key:

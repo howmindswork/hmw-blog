@@ -2,11 +2,9 @@
 """Weekly SEO optimizer — scans posts, auto-fixes safe issues, writes revenue leak report."""
 
 import os
-import sys
 import json
-import re
 from pathlib import Path
-from datetime import date, datetime
+from datetime import date
 from bs4 import BeautifulSoup
 
 BLOG_DIR = Path(__file__).parent.parent / "blog"
@@ -119,7 +117,7 @@ def check_sitemap(slug, post_html_file):
     if not sitemap_path.exists():
         return
     sitemap = sitemap_path.read_text()
-    post_url = f"https://blog.howmindswork.org/posts/{slug}"
+    post_url = f"https://blog.howmindswork.org/posts/{slug}/"
     if post_url not in sitemap:
         log_flag(slug, "post URL missing from sitemap.xml — run render_index.py")
 
