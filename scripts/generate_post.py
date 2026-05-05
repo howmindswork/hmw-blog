@@ -188,10 +188,13 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
         content = data["choices"][0]["message"]["content"]
         content = re.sub(r'^```(?:json)?\s*', '', content.strip())
         content = re.sub(r'\s*```$', '', content)
-        # Remove invalid control characters that break JSON parsing
         content = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', content)
-        return json.loads(content)
-    raise ValueError("Failed after 5 retries due to rate limiting")
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError as e:
+            print(f"JSON parse error (attempt {attempt+1}/5): {e} — retrying LLM call")
+            continue
+    raise ValueError("Failed after 5 retries")
 
 def paragraphs_html(paras):
     return "\n".join(f"<p>{p}</p>" for p in paras)
