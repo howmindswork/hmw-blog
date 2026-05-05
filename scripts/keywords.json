@@ -355,7 +355,10 @@
       "product_url": "https://howmindswork.org",
       "free_product_name": "Free Audio Ritual",
       "free_product_url": "https://howmindswork.org",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-05",
+      "post_title": "Yoga Nidra Benefits: What Happens to Your Brain and Body?",
+      "meta_description": "Discover yoga nidra benefits. Learn what happens to your brain and body during this deep relaxation practice, and how it helps heal emotional wounds."
     },
     {
       "slug": "nsdr-protocol-explained",
