@@ -48,42 +48,74 @@ REDDIT_SUBS = [
     ("r/breathwork",     "breathwork"),
 ]
 
+FREE_AUDIO_URL = "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+FREE_AUDIO_NAME = "Star Feeding Ritual (free audio)"
+WANTING_URL = "https://lukeisthere.gumroad.com/l/wanting"
+WANTING_NAME = "The Wanting Signal (free)"
+
 PRODUCT_MAP = {
+    # Grief rituals → $27 step-by-step ritual guide (best match for ritual seekers)
     "grief-rituals": {
-        "product_name": "Stone Release Ritual",
-        "product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "product_name": "Step-by-Step Grief Ritual Guide",
+        "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
     },
+    # Somatic → ECP ($37 premium) with Wanting Signal as free lead
     "somatic-healing": {
-        "product_name": "Stone Release Ritual",
-        "product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "product_name": "Emotional Completion Protocol",
+        "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+        "free_product_name": WANTING_NAME,
+        "free_product_url": WANTING_URL,
     },
+    # Emotional completion → ECP is the exact match
     "emotional-completion": {
         "product_name": "Emotional Completion Protocol",
         "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
     },
+    # Breathwork → Come Down ($27 - for exhausted high-functioning people)
     "breathwork": {
-        "product_name": "Stone Release Ritual",
-        "product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "product_name": "The Permission to Stop",
+        "product_url": "https://come-down.pages.dev",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
     },
+    # How to feel again → Invisible Grief Companion + Wanting Signal free
     "how-to-feel-again": {
-        "product_name": "Invisible Grief Companion",
+        "product_name": "The Invisible Grief Companion",
         "product_url": "https://invisible-grief-companion.pages.dev/",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "free_product_name": WANTING_NAME,
+        "free_product_url": WANTING_URL,
     },
+    # Yoga Nidra → Star Feeding Ritual ($17) is literally a yoga nidra/NSDR product
     "yoga-nidra": {
-        "product_name": "Stone Release Ritual",
-        "product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-        "free_product_name": "Stone Release Ritual (free preview)",
-        "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+        "product_name": "The Star Feeding Ritual",
+        "product_url": "https://star-feeding-ritual.pages.dev",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
+    },
+    # NSDR → same as yoga nidra
+    "nsdr": {
+        "product_name": "The Star Feeding Ritual",
+        "product_url": "https://star-feeding-ritual.pages.dev",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
+    },
+    # Grief rituals Celtic/ancestral → Grief Wave Playbook ($17)
+    "ancestral-grief": {
+        "product_name": "The Grief Wave Playbook",
+        "product_url": "https://grief-wave-playbook.pages.dev",
+        "free_product_name": FREE_AUDIO_NAME,
+        "free_product_url": FREE_AUDIO_URL,
+    },
+    # Guilt/permission → Permission Letter page
+    "guilt-grief": {
+        "product_name": "You're Allowed to Laugh Again",
+        "product_url": "https://permission-letter-healing-guilt.pages.dev",
+        "free_product_name": WANTING_NAME,
+        "free_product_url": WANTING_URL,
     },
 }
 
