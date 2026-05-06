@@ -37,8 +37,8 @@ def _build_providers():
         k = os.environ.get(env, "")
         if k:
             providers.append(("groq", GROQ_URL, k, GROQ_MODEL))
-    # Gemini fallbacks
-    for env in ("GEMINI_API_KEY_BLOG", "GEMINI_API_KEY"):
+    # Gemini fallbacks — 5 keys across multiple accounts
+    for env in ("GEMINI_API_KEY_BLOG", "GEMINI_API_KEY", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3", "GEMINI_API_KEY_4", "GEMINI_API_KEY_5"):
         k = os.environ.get(env, "")
         if k:
             providers.append(("gemini", GEMINI_URL, k, GEMINI_MODEL))
