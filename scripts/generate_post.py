@@ -144,7 +144,10 @@ WRITING STYLE — sound human, not AI:
 
 RULES:
 - H2 headings must be questions (not statements)
-- Every 3-4 paragraphs, include a specific cited statistic or research finding with source name
+- After each H2, write a 40-60 word direct answer immediately. Then expand. No preamble before the answer.
+- Every 3-4 paragraphs, include a specific cited statistic or research finding with source name (PubMed, NIH, university study). Cite inline: "(Source: Journal Name, Year)"
+- Include 3-5 hyperlinks to real external research sources inline. Format: <a href="URL" rel="noopener noreferrer" target="_blank">anchor text</a>. Only use real URLs you are confident exist (pubmed.ncbi.nlm.nih.gov, nih.gov, .edu). Skip if unsure of exact URL.
+- Include 2-3 internal links to related posts using placeholder slugs. Format: <a href="/posts/[RELATED_SLUG]/">anchor text</a>
 - Include at least one named, step-by-step practice or protocol with numbered steps
 - Reference The Emotional Completion Ritual methodology where it fits naturally
 - Paragraphs max 100 words. One claim per paragraph.
@@ -178,10 +181,14 @@ def generate_post(kw):
     provider_idx = 0
     api_url, api_key, model = providers[0][1], providers[0][2], providers[0][3]
 
+    utm = f"?utm_source=blog&utm_medium=post&utm_campaign={kw['slug']}"
+    free_url = kw['free_product_url'] + utm
+    paid_url = kw['product_url'] + (utm if '?' not in kw['product_url'] else utm.replace('?', '&'))
+
     user_msg = f"""Write a blog post targeting this keyword: "{kw['keyword']}"
 
-Free CTA product: {kw['free_product_name']} — URL: {kw['free_product_url']}
-Paid CTA product: {kw['product_name']} — URL: {kw['product_url']}
+Free CTA product: {kw['free_product_name']} — URL: {free_url}
+Paid CTA product: {kw['product_name']} — URL: {paid_url}
 
 Set cta_type "inline_free" on section index 1, "inline_paid" on section index 3, "none" on all others.
 
@@ -199,6 +206,9 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
     {{"h2": "string", "paragraphs": ["string"], "cta_type": "none"}}
   ],
   "faq": [
+    {{"question": "string", "answer": "string"}},
+    {{"question": "string", "answer": "string"}},
+    {{"question": "string", "answer": "string"}},
     {{"question": "string", "answer": "string"}},
     {{"question": "string", "answer": "string"}},
     {{"question": "string", "answer": "string"}},
@@ -261,14 +271,14 @@ def cta_html(cta_type, kw):
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready — begin with this</h3>
   <p>A free audio guide to get you started with somatic grief release. No commitment, no pressure.</p>
-  <a href="{kw['free_product_url']}" class="btn-primary">Get the free audio</a>
+  <a href="{kw['free_product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
 </div>"""
     if cta_type == "inline_paid":
         return f"""<div class="cta-block">
   <p class="cta-label">Go Deeper</p>
   <h3>Ready to go further?</h3>
   <p>For anyone who's been carrying this alone — {kw['product_name']} was built for exactly this.</p>
-  <a href="{kw['product_url']}" class="btn-primary">Explore {kw['product_name']}</a>
+  <a href="{kw['product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="paid">Explore {kw['product_name']}</a>
 </div>"""
     return ""
 
@@ -433,8 +443,8 @@ def render_html(post, kw, date_str, date_iso, post_url):
   <p class="cta-label">What's Next</p>
   <h3>Start whenever you're ready</h3>
   <p>For anyone who's been carrying this alone — these tools were built for exactly this.</p>
-  <a href="{kw['free_product_url']}" class="btn-primary">Get the free audio</a>
-  <a href="{kw['product_url']}" class="btn-secondary">{kw['product_name']} →</a>
+  <a href="{kw['free_product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
+  <a href="{kw['product_url']}" class="btn-secondary cta-track" rel="sponsored" data-cta="paid">{kw['product_name']} →</a>
 </div>
 
 <div class="author-card">
@@ -452,6 +462,20 @@ def render_html(post, kw, date_str, date_iso, post_url):
   <span>© 2026 How Minds Work</span>
   <span><a href="/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
+<script>
+window.addEventListener("load",function(){{
+  var p=window.location.pathname,r=document.referrer;
+  fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));
+  document.querySelectorAll(".cta-track").forEach(function(el){{
+    el.addEventListener("click",function(){{
+      fetch("https://hmw-analytics.howmindswork.workers.dev/event",{{
+        method:"POST",headers:{{"Content-Type":"application/json"}},
+        body:JSON.stringify({{name:"cta_click",page:p,post_slug:p.replace(/\\/posts\\//,"").replace(/\\//,""),cta_clicked:1}})
+      }});
+    }});
+  }});
+}});
+</script>
 <script src="/assets/click.js"></script>
 </body>
 </html>"""
