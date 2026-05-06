@@ -66,7 +66,7 @@
     }
   });
 
-  // ── Satisfying click sound ────────────────────────────
+  // ── Premium click sound (Ruixen UI model) ────────────────
   var ctx;
   function getCtx() {
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -77,19 +77,23 @@
       var c = getCtx();
       if (c.state === "suspended") c.resume();
       var t = c.currentTime;
-      // Soft woody tap — low sine drop, very quiet, 30ms total
-      var o = c.createOscillator();
+      // Shaped white noise: 3ms, feels like physical button press, barely audible
+      var buf = c.createBufferSource();
+      var len = Math.floor(c.sampleRate * 0.003); // 3ms at sample rate
+      var noiseBuffer = c.createBuffer(1, len, c.sampleRate);
+      var data = noiseBuffer.getChannelData(0);
+      // Fill with white noise, shape with exponential decay
+      for (var i = 0; i < len; i++) {
+        var decay = Math.pow(1 - i / len, 4); // Smooth exponential decay
+        data[i] = (Math.random() * 2 - 1) * decay; // Random noise * decay
+      }
+      buf.buffer = noiseBuffer;
       var g = c.createGain();
-      o.connect(g);
+      buf.connect(g);
       g.connect(c.destination);
-      o.type = "sine";
-      o.frequency.setValueAtTime(320, t);
-      o.frequency.exponentialRampToValueAtTime(90, t + 0.028);
-      g.gain.setValueAtTime(0, t);
-      g.gain.linearRampToValueAtTime(0.022, t + 0.002);
-      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.03);
-      o.start(t);
-      o.stop(t + 0.032);
+      g.gain.setValueAtTime(0.08, t); // 8% volume, premium and subtle
+      g.gain.exponentialRampToValueAtTime(0.001, t + 0.003);
+      buf.start(t);
     } catch (e) {}
   }
   document.addEventListener(
