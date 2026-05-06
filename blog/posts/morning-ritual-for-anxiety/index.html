@@ -187,7 +187,7 @@
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready — begin with this</h3>
   <p>A free audio guide to get you started with somatic grief release. No commitment, no pressure.</p>
-  <a href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary">Get the free audio</a>
+  <a rel="sponsored" href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary cta-track">Get the free audio</a>
 </div>
 
 <h2>What is the 10-minute morning somatic ritual?</h2>
@@ -214,7 +214,7 @@
   <p class="cta-label">Go Deeper</p>
   <h3>Ready to go further?</h3>
   <p>For anyone who's been carrying this alone — Emotional Completion Protocol was built for exactly this.</p>
-  <a href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary">Explore Emotional Completion Protocol</a>
+  <a rel="sponsored" href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary cta-track">Explore Emotional Completion Protocol</a>
 </div>
 
 <h2>How does regular practice change your mornings?</h2>
@@ -233,8 +233,8 @@
   <p class="cta-label">What's Next</p>
   <h3>Start whenever you're ready</h3>
   <p>For anyone who's been carrying this alone — these tools were built for exactly this.</p>
-  <a href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary">Get the free audio</a>
-  <a href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-secondary">Emotional Completion Protocol →</a>
+  <a rel="sponsored" href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-primary cta-track">Get the free audio</a>
+  <a rel="sponsored" href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide" class="btn-secondary cta-track">Emotional Completion Protocol →</a>
 </div>
 
 <div class="author-card">
@@ -254,6 +254,20 @@
   <span>© 2026 How Minds Work</span>
   <span><a href="/">Blog</a> · <a href="https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
+<script>
+window.addEventListener("load",function(){
+  var p=window.location.pathname,r=document.referrer;
+  fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));
+  document.querySelectorAll(".cta-track").forEach(function(el){
+    el.addEventListener("click",function(){
+      fetch("https://hmw-analytics.howmindswork.workers.dev/event",{
+        method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({name:"cta_click",page:p,post_slug:p.replace(/\/posts\//,"").replace(/\//,""),cta_clicked:1})
+      });
+    });
+  });
+});
+</script>
 <script src="/assets/click.js"></script>
 </body>
 </html>

@@ -265,20 +265,27 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
 def paragraphs_html(paras):
     return "\n".join(f"<p>{p}</p>" for p in paras)
 
+def _utm(base_url, slug):
+    sep = "&" if "?" in base_url else "?"
+    return f"{base_url}{sep}utm_source=blog&utm_medium=post&utm_campaign={slug}"
+
 def cta_html(cta_type, kw):
+    slug = kw.get("slug", "")
     if cta_type == "inline_free":
+        url = _utm(kw['free_product_url'], slug)
         return f"""<div class="cta-block">
   <p class="cta-label">Start Here</p>
   <h3>Whenever you're ready — begin with this</h3>
   <p>A free audio guide to get you started with somatic grief release. No commitment, no pressure.</p>
-  <a href="{kw['free_product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
+  <a href="{url}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
 </div>"""
     if cta_type == "inline_paid":
+        url = _utm(kw['product_url'], slug)
         return f"""<div class="cta-block">
   <p class="cta-label">Go Deeper</p>
   <h3>Ready to go further?</h3>
   <p>For anyone who's been carrying this alone — {kw['product_name']} was built for exactly this.</p>
-  <a href="{kw['product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="paid">Explore {kw['product_name']}</a>
+  <a href="{url}" class="btn-primary cta-track" rel="sponsored" data-cta="paid">Explore {kw['product_name']}</a>
 </div>"""
     return ""
 
@@ -353,6 +360,9 @@ def breadcrumb_schema(url, title):
     }
 
 def render_html(post, kw, date_str, date_iso, post_url):
+    slug = kw.get("slug", "")
+    free_url_utm = _utm(kw['free_product_url'], slug)
+    paid_url_utm = _utm(kw['product_url'], slug)
     takeaways_li = "\n".join(f"<li>{t}</li>" for t in post["key_takeaways"])
     body_content = sections_html(post["sections"], kw)
     faq_content = faq_html(post["faq"])
@@ -443,8 +453,8 @@ def render_html(post, kw, date_str, date_iso, post_url):
   <p class="cta-label">What's Next</p>
   <h3>Start whenever you're ready</h3>
   <p>For anyone who's been carrying this alone — these tools were built for exactly this.</p>
-  <a href="{kw['free_product_url']}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
-  <a href="{kw['product_url']}" class="btn-secondary cta-track" rel="sponsored" data-cta="paid">{kw['product_name']} →</a>
+  <a href="{free_url_utm}" class="btn-primary cta-track" rel="sponsored" data-cta="free">Get the free audio</a>
+  <a href="{paid_url_utm}" class="btn-secondary cta-track" rel="sponsored" data-cta="paid">{kw['product_name']} →</a>
 </div>
 
 <div class="author-card">

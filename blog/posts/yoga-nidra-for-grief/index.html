@@ -402,7 +402,7 @@
               For anyone who's been carrying this alone, Emotional Completion
               Protocol was built for exactly this.
             </p>
-            <a href="https://star-feeding-ritual.pages.dev" class="btn-primary"
+            <a rel="sponsored" href="https://star-feeding-ritual.pages.dev" class="btn-primary cta-track"
               >Explore Emotional Completion Protocol</a
             >
           </div>
@@ -491,7 +491,7 @@
               class="btn-primary"
               >Get the free audio</a
             >
-            <a href="https://star-feeding-ritual.pages.dev" class="btn-secondary"
+            <a rel="sponsored" href="https://star-feeding-ritual.pages.dev" class="btn-secondary cta-track"
               >Emotional Completion Protocol →</a
             >
           </div>
@@ -586,5 +586,19 @@
         );
       })();
     </script>
-  </body>
+  <script>
+window.addEventListener("load",function(){
+  var p=window.location.pathname,r=document.referrer;
+  fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));
+  document.querySelectorAll(".cta-track").forEach(function(el){
+    el.addEventListener("click",function(){
+      fetch("https://hmw-analytics.howmindswork.workers.dev/event",{
+        method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({name:"cta_click",page:p,post_slug:p.replace("/posts/","").replace("/",""),cta_clicked:1})
+      });
+    });
+  });
+});
+</script>
+</body>
 </html>
