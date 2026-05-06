@@ -415,7 +415,10 @@
       "product_url": "https://howmindswork.org",
       "free_product_name": "Free Audio Ritual",
       "free_product_url": "https://howmindswork.org",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-06",
+      "post_title": "Polyvagal Theory and Grief: Why Your Nervous System Gets Stuck",
+      "meta_description": "Understand how polyvagal theory explains why grief feels stuck. Learn about your nervous system's response to loss and how to find completion."
     },
     {
       "slug": "vagus-nerve-exercises",
