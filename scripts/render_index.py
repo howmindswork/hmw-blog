@@ -3,8 +3,32 @@
 import json
 import re
 from pathlib import Path
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).parent.parent
+
+PILLAR_TO_FILTER = {
+    "somatic-healing": "somatic",
+    "emotional-completion": "completion",
+    "how-to-feel-again": "numbness",
+    "grief-rituals": "grief-ritual",
+    "breathwork": "breathwork",
+    "yoga-nidra": "yoga-nidra",
+    "nsdr": "somatic",
+}
+
+def word_count_from_post(slug):
+    post_file = ROOT / "blog/posts" / slug / "index.html"
+    if not post_file.exists():
+        return 0
+    try:
+        soup = BeautifulSoup(post_file.read_text(), "html.parser")
+        body = soup.find(class_="post-body") or soup.find("main") or soup.body
+        if not body:
+            return 0
+        return len(body.get_text().split())
+    except Exception:
+        return 0
 
 def load_published():
     kw = json.loads((ROOT / "scripts/keywords.json").read_text())
@@ -12,8 +36,13 @@ def load_published():
 
 def post_card_html(post):
     date_str = post.get("published_date", "")
-    return f"""    <article class="post-card">
-      <p class="post-date">{date_str}</p>
+    pillar = post.get("pillar", "")
+    cat = PILLAR_TO_FILTER.get(pillar, pillar.replace("-", " ") if pillar else "")
+    words = word_count_from_post(post["slug"])
+    mins = max(1, round(words / 200)) if words > 0 else "?"
+    read_time = f"{mins} min read"
+    return f"""    <article class="post-card" data-cat="{cat}">
+      <p class="post-date">{date_str} <span class="read-time-static">{read_time}</span></p>
       <h2><a href="/posts/{post['slug']}/">{post['post_title']}</a></h2>
       <p class="post-excerpt">{post.get('meta_description', '')}</p>
     </article>"""

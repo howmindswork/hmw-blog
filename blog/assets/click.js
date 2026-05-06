@@ -19,12 +19,13 @@
     updateProgress();
   }
 
-  // ── Reading time on post cards ────────────────────────
+  // ── Reading time on post cards (use static value from data-cat card if present) ──
   document.querySelectorAll(".post-card").forEach(function (card) {
+    if (card.querySelector(".read-time-static")) return; // already rendered server-side
     var excerpt = card.querySelector(".post-excerpt");
     if (!excerpt) return;
     var words = excerpt.textContent.trim().split(/\s+/).length;
-    var mins = Math.max(1, Math.round((words * 8) / 200)); // estimate full post ~8x excerpt
+    var mins = Math.max(3, Math.round((words * 35) / 200));
     var date = card.querySelector(".post-date");
     if (date) {
       var badge = document.createElement("span");
@@ -66,7 +67,7 @@
     }
   });
 
-  // ── Premium click sound (Ruixen UI model) ────────────────
+  // ── Click sound ──────────────────────────────────────
   var ctx;
   function getCtx() {
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -77,23 +78,18 @@
       var c = getCtx();
       if (c.state === "suspended") c.resume();
       var t = c.currentTime;
-      // Shaped white noise: 3ms, feels like physical button press, barely audible
-      var buf = c.createBufferSource();
-      var len = Math.floor(c.sampleRate * 0.003); // 3ms at sample rate
-      var noiseBuffer = c.createBuffer(1, len, c.sampleRate);
-      var data = noiseBuffer.getChannelData(0);
-      // Fill with white noise, shape with exponential decay
-      for (var i = 0; i < len; i++) {
-        var decay = Math.pow(1 - i / len, 4); // Smooth exponential decay
-        data[i] = (Math.random() * 2 - 1) * decay; // Random noise * decay
-      }
-      buf.buffer = noiseBuffer;
+      // Soft sine tone at 600Hz, 60ms - audible but not annoying
+      var osc = c.createOscillator();
       var g = c.createGain();
-      buf.connect(g);
+      osc.connect(g);
       g.connect(c.destination);
-      g.gain.setValueAtTime(0.08, t); // 8% volume, premium and subtle
-      g.gain.exponentialRampToValueAtTime(0.001, t + 0.003);
-      buf.start(t);
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(600, t);
+      osc.frequency.exponentialRampToValueAtTime(300, t + 0.06);
+      g.gain.setValueAtTime(0.18, t);
+      g.gain.exponentialRampToValueAtTime(0.001, t + 0.06);
+      osc.start(t);
+      osc.stop(t + 0.06);
     } catch (e) {}
   }
   document.addEventListener(

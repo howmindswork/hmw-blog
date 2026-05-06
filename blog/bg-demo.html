@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Background Demo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Inter, sans-serif;
+        overflow: hidden;
+      }
+
+      #demo,
+      .bg-container {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+
+      .controls {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        background: rgba(12, 11, 8, 0.95);
+        border: 1px solid #c9871c;
+        border-radius: 4px;
+        padding: 20px;
+        backdrop-filter: blur(8px);
+      }
+
+      .controls h2 {
+        color: #c9871c;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 12px;
+      }
+
+      .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      button {
+        background: #c9871c;
+        color: #080706;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: all 0.2s;
+        text-align: left;
+      }
+
+      button:hover {
+        background: #e8a032;
+        box-shadow: 0 0 20px rgba(201, 135, 28, 0.3);
+      }
+      button.active {
+        background: #f0b347;
+        box-shadow: 0 0 30px rgba(201, 135, 28, 0.5);
+      }
+
+      .info {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        color: #ede5d8;
+        font-size: 0.85rem;
+        background: rgba(12, 11, 8, 0.9);
+        padding: 12px 16px;
+        border-radius: 2px;
+        border: 1px solid #2e2a20;
+        max-width: 300px;
+      }
+
+      /* ─────────────────── STARFIELD ───────────────────── */
+      #bg-starfield {
+        background: #0a0908;
+        position: relative;
+      }
+      .star {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background: #ede5d8;
+        border-radius: 50%;
+        animation: twinkle var(--duration, 3s) ease-in-out infinite;
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* ─────────────────── PARTICLES ───────────────────── */
+      #bg-particles {
+        background: linear-gradient(135deg, #0a0908 0%, #1a0f1e 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      .particle {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: #c9871c;
+        border-radius: 50%;
+        opacity: 0.6;
+        animation: float var(--duration, 8s) ease-in-out infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(100vh) translateX(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        90% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(100px);
+          opacity: 0;
+        }
+      }
+
+      /* ─────────────────── GRADIENT PULSE ───────────────────── */
+      #bg-gradient {
+        background: linear-gradient(-45deg, #0a0908, #1a0f1e, #2a1038, #0a0908);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+      }
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* ─────────────────── NEBULA ───────────────────── */
+      #bg-nebula {
+        background:
+          radial-gradient(
+            ellipse at 20% 30%,
+            rgba(201, 135, 28, 0.15) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse at 80% 70%,
+            rgba(157, 78, 221, 0.15) 0%,
+            transparent 50%
+          ),
+          #0a0908;
+        animation: nebulaPulse 12s ease-in-out infinite;
+      }
+      @keyframes nebulaPulse {
+        0%,
+        100% {
+          filter: brightness(1);
+        }
+        50% {
+          filter: brightness(1.1);
+        }
+      }
+
+      /* ─────────────────── WAVE ───────────────────── */
+      #bg-wave {
+        background: #0a0908;
+        position: relative;
+        overflow: hidden;
+      }
+      .wave {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background: repeating-linear-gradient(
+          90deg,
+          transparent 0,
+          transparent 10px,
+          rgba(201, 135, 28, 0.05) 10px,
+          rgba(201, 135, 28, 0.05) 20px
+        );
+        animation: wave 8s linear infinite;
+      }
+      @keyframes wave {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(50%);
+        }
+      }
+
+      /* ─────────────────── DOT GRID ───────────────────── */
+      #bg-dots {
+        background-image: radial-gradient(circle, #c9871c 1px, transparent 1px);
+        background-size: 30px 30px;
+        background-color: #0a0908;
+        animation: dotPulse 4s ease-in-out infinite;
+      }
+      @keyframes dotPulse {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 0.6;
+        }
+      }
+
+      /* ─────────────────── COSMIC RAYS ───────────────────── */
+      #bg-rays {
+        background: #0a0908;
+        position: relative;
+      }
+      .ray {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          rgba(201, 135, 28, 0.3),
+          transparent
+        );
+        animation: rayShine var(--duration, 3s) ease-in-out infinite;
+      }
+      @keyframes rayShine {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* ─────────────────── PULSING GLOW ───────────────────── */
+      #bg-glow {
+        background:
+          radial-gradient(
+            circle at 50% 50%,
+            rgba(201, 135, 28, 0.2) 0%,
+            transparent 60%
+          ),
+          #0a0908;
+        animation: glowPulse 6s ease-in-out infinite;
+      }
+      @keyframes glowPulse {
+        0%,
+        100% {
+          filter: brightness(1);
+        }
+        50% {
+          filter: brightness(1.15);
+        }
+      }
+
+      /* ─────────────────── STATIC NO ANIMATION ───────────────────── */
+      #bg-static {
+        background: #0a0908;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <h2>Background Themes</h2>
+      <div class="btn-group">
+        <button onclick="setBackground('starfield')" class="active">
+          ✦ Starfield (Current)
+        </button>
+        <button onclick="setBackground('particles')">
+          ◦ Floating Particles
+        </button>
+        <button onclick="setBackground('gradient')">∿ Gradient Pulse</button>
+        <button onclick="setBackground('nebula')">☆ Nebula Glow</button>
+        <button onclick="setBackground('wave')">≈ Wave Motion</button>
+        <button onclick="setBackground('dots')">⊙ Dot Grid Pulse</button>
+        <button onclick="setBackground('rays')">✤ Cosmic Rays</button>
+        <button onclick="setBackground('glow')">◉ Pulsing Glow</button>
+        <button onclick="setBackground('static')">
+          ─ Static (No Animation)
+        </button>
+      </div>
+    </div>
+
+    <div id="demo" class="bg-container"></div>
+
+    <div class="info">
+      <strong>Selected:</strong> <span id="selected">Starfield</span><br />
+      Click a button to preview. Tell me which one you like.
+    </div>
+
+    <script>
+      const demo = document.getElementById("demo");
+
+      const themes = {
+        starfield: {
+          name: "Starfield",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-starfield";
+            for (let i = 0; i < 150; i++) {
+              const star = document.createElement("div");
+              star.className = "star";
+              star.style.left = Math.random() * 100 + "%";
+              star.style.top = Math.random() * 100 + "%";
+              star.style.setProperty("--duration", 2 + Math.random() * 4 + "s");
+              demo.appendChild(star);
+            }
+          },
+        },
+        particles: {
+          name: "Floating Particles",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-particles";
+            for (let i = 0; i < 50; i++) {
+              const particle = document.createElement("div");
+              particle.className = "particle";
+              particle.style.left = Math.random() * 100 + "%";
+              particle.style.setProperty(
+                "--duration",
+                6 + Math.random() * 6 + "s",
+              );
+              particle.style.animationDelay = Math.random() * 3 + "s";
+              demo.appendChild(particle);
+            }
+          },
+        },
+        gradient: {
+          name: "Gradient Pulse",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-gradient";
+          },
+        },
+        nebula: {
+          name: "Nebula Glow",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-nebula";
+          },
+        },
+        wave: {
+          name: "Wave Motion",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-wave";
+            const wave = document.createElement("div");
+            wave.className = "wave";
+            demo.appendChild(wave);
+          },
+        },
+        dots: {
+          name: "Dot Grid Pulse",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-dots";
+          },
+        },
+        rays: {
+          name: "Cosmic Rays",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-rays";
+            for (let i = 0; i < 12; i++) {
+              const ray = document.createElement("div");
+              ray.className = "ray";
+              ray.style.left = i * 8.33 + "%";
+              ray.style.setProperty("--duration", 2 + Math.random() * 3 + "s");
+              ray.style.animationDelay = Math.random() * 2 + "s";
+              demo.appendChild(ray);
+            }
+          },
+        },
+        glow: {
+          name: "Pulsing Glow",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-glow";
+          },
+        },
+        static: {
+          name: "Static (No Animation)",
+          init: () => {
+            demo.innerHTML = "";
+            demo.id = "bg-static";
+          },
+        },
+      };
+
+      function setBackground(key) {
+        themes[key].init();
+        document.getElementById("selected").textContent = themes[key].name;
+        document
+          .querySelectorAll(".btn-group button")
+          .forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+      }
+
+      themes.starfield.init();
+    </script>
+  </body>
+</html>

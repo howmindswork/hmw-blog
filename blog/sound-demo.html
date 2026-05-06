@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Sound Effects Demo - HMW Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%);
+        color: #ede5d8;
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+        background: linear-gradient(135deg, #bb86fc 0%, #c9871c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        color: #9a8e7e;
+        margin-bottom: 40px;
+      }
+
+      .sound-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+
+      .sound-card {
+        background: rgba(20, 20, 40, 0.6);
+        border: 1px solid #2e2a20;
+        border-top: 2px solid #c9871c;
+        border-radius: 8px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .sound-card::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(
+          circle,
+          rgba(201, 135, 28, 0.05) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .sound-card:hover {
+        border-color: #bb86fc;
+        box-shadow: 0 0 20px rgba(187, 134, 252, 0.2);
+      }
+
+      .sound-name {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #ede5d8;
+      }
+
+      .sound-type {
+        font-size: 0.85rem;
+        color: #5c5347;
+        margin-bottom: 16px;
+      }
+
+      .sound-description {
+        font-size: 0.95rem;
+        color: #9a8e7e;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+
+      .controls {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .btn-test {
+        background: #7c3aed;
+        color: white;
+        flex: 1;
+      }
+
+      .btn-test:hover {
+        background: #9d4edd;
+        box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+      }
+
+      .btn-test:active {
+        transform: scale(0.98);
+      }
+
+      .btn-approve {
+        background: #10b981;
+        color: white;
+        flex: 1;
+      }
+
+      .btn-approve:hover {
+        background: #059669;
+        box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+      }
+
+      .btn-reject {
+        background: #ef4444;
+        color: white;
+        flex: 1;
+      }
+
+      .btn-reject:hover {
+        background: #dc2626;
+        box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+      }
+
+      .approved-list {
+        margin-top: 60px;
+        padding: 24px;
+        background: rgba(16, 185, 129, 0.1);
+        border: 1px solid #059669;
+        border-radius: 8px;
+      }
+
+      .approved-list h2 {
+        margin-bottom: 16px;
+        color: #10b981;
+      }
+
+      .approved-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .approved-badge {
+        background: #059669;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .approved-badge button {
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0 8px;
+        font-size: 0.8rem;
+        margin-left: 8px;
+      }
+
+      .approved-badge button:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .sound-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎵 Click Sound Effects Demo</h1>
+      <p class="subtitle">
+        Test different button click sounds. Approve your favorites to use across
+        the blog.
+      </p>
+
+      <div class="sound-grid" id="soundGrid"></div>
+
+      <div class="approved-list" id="approvedSection" style="display: none">
+        <h2>✓ Approved Sounds</h2>
+        <div class="approved-items" id="approvedItems"></div>
+      </div>
+    </div>
+
+    <script>
+      const audioContext = new (
+        window.AudioContext || window.webkitAudioContext
+      )();
+      const approved = new Set();
+
+      const sounds = [
+        {
+          id: "chime-full",
+          name: "Chime (Full)",
+          type: "howmindswork.org",
+          description: "Beautiful 4-note chime. Premium, warm, sophisticated.",
+          play: () => playChimeFull(),
+        },
+        {
+          id: "chime-subtle",
+          name: "Chime (Subtle)",
+          type: "howmindswork.org variant",
+          description:
+            "Chime with lower volume. More refined, less attention-grabbing.",
+          play: () => playChimeSubtle(),
+        },
+        {
+          id: "pop-classic",
+          name: "Pop (Classic)",
+          type: "Current blog",
+          description: "Short white noise pop with decay. Minimal, clean.",
+          play: () => playPopClassic(),
+        },
+        {
+          id: "pop-crisp",
+          name: "Pop (Crisp)",
+          type: "Variation",
+          description: "Sharper white noise pop. More percussive.",
+          play: () => playPopCrisp(),
+        },
+        {
+          id: "tone-sine",
+          name: "Tone (Sine Wave)",
+          type: "Pure synthesis",
+          description: "Pure sine wave at A4 (440Hz). Clean and simple.",
+          play: () => playToneSine(),
+        },
+        {
+          id: "tone-sweep",
+          name: "Tone (Sweep)",
+          type: "Pure synthesis",
+          description: "Sine wave that sweeps up slightly. Modern, playful.",
+          play: () => playToneSweep(),
+        },
+        {
+          id: "click-tape",
+          name: "Click (Vintage Tape)",
+          type: "Skeuomorphic",
+          description: "Vintage tape machine click. Nostalgic, tactile.",
+          play: () => playClickTape(),
+        },
+        {
+          id: "bell-small",
+          name: "Bell (Small)",
+          type: "Pitched percussion",
+          description: "Small bell tone. Delicate, musical.",
+          play: () => playBellSmall(),
+        },
+        {
+          id: "whoosh-up",
+          name: "Whoosh (Up)",
+          type: "Frequency sweep",
+          description: "Upward frequency sweep. Dynamic, attention-getting.",
+          play: () => playWhooshUp(),
+        },
+        {
+          id: "whoosh-down",
+          name: "Whoosh (Down)",
+          type: "Frequency sweep",
+          description: "Downward frequency sweep. Smooth, elegant.",
+          play: () => playWhooshDown(),
+        },
+        {
+          id: "pulse-double",
+          name: "Pulse (Double)",
+          type: "Rhythmic",
+          description: "Two quick pulses. Playful, engaging.",
+          play: () => playPulseDouble(),
+        },
+        {
+          id: "hum-deep",
+          name: "Hum (Deep)",
+          type: "Pitched",
+          description: "Low frequency hum. Grounding, mystical.",
+          play: () => playHumDeep(),
+        },
+      ];
+
+      function resumeAudioContext() {
+        if (audioContext.state === "suspended") {
+          audioContext.resume();
+        }
+      }
+
+      // howmindswork.org chime (full volume)
+      function playChimeFull() {
+        resumeAudioContext();
+        const notes = [523.25, 659.25, 783.99, 1046.5];
+        const t = audioContext.currentTime;
+        notes.forEach((freq, i) => {
+          const startTime = t + i * 0.18;
+          const osc = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          osc.frequency.value = freq;
+          osc.connect(gain);
+          gain.connect(audioContext.destination);
+          gain.gain.setValueAtTime(0.15, startTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.9);
+          osc.start(startTime);
+          osc.stop(startTime + 0.9);
+        });
+      }
+
+      // Chime subtle (lower volume)
+      function playChimeSubtle() {
+        resumeAudioContext();
+        const notes = [523.25, 659.25, 783.99, 1046.5];
+        const t = audioContext.currentTime;
+        notes.forEach((freq, i) => {
+          const startTime = t + i * 0.12;
+          const osc = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          osc.frequency.value = freq;
+          osc.connect(gain);
+          gain.connect(audioContext.destination);
+          gain.gain.setValueAtTime(0.08, startTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.6);
+          osc.start(startTime);
+          osc.stop(startTime + 0.6);
+        });
+      }
+
+      // Current blog white noise pop
+      function playPopClassic() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const buf = audioContext.createBufferSource();
+        const len = Math.floor(audioContext.sampleRate * 0.003);
+        const noiseBuffer = audioContext.createBuffer(
+          1,
+          len,
+          audioContext.sampleRate,
+        );
+        const data = noiseBuffer.getChannelData(0);
+        for (let i = 0; i < len; i++) {
+          const decay = Math.pow(1 - i / len, 4);
+          data[i] = (Math.random() * 2 - 1) * decay;
+        }
+        buf.buffer = noiseBuffer;
+        const g = audioContext.createGain();
+        buf.connect(g);
+        g.connect(audioContext.destination);
+        g.gain.setValueAtTime(0.08, t);
+        g.gain.exponentialRampToValueAtTime(0.001, t + 0.003);
+        buf.start(t);
+      }
+
+      // Crisp white noise pop
+      function playPopCrisp() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const buf = audioContext.createBufferSource();
+        const len = Math.floor(audioContext.sampleRate * 0.004);
+        const noiseBuffer = audioContext.createBuffer(
+          1,
+          len,
+          audioContext.sampleRate,
+        );
+        const data = noiseBuffer.getChannelData(0);
+        for (let i = 0; i < len; i++) {
+          const decay = Math.pow(1 - i / len, 5);
+          data[i] = (Math.random() * 2 - 1) * decay;
+        }
+        buf.buffer = noiseBuffer;
+        const g = audioContext.createGain();
+        buf.connect(g);
+        g.connect(audioContext.destination);
+        g.gain.setValueAtTime(0.12, t);
+        g.gain.exponentialRampToValueAtTime(0.001, t + 0.004);
+        buf.start(t);
+      }
+
+      // Pure sine wave
+      function playToneSine() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.value = 440;
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.1, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.15);
+        osc.start(t);
+        osc.stop(t + 0.15);
+      }
+
+      // Sine wave sweep
+      function playToneSweep() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.setValueAtTime(440, t);
+        osc.frequency.exponentialRampToValueAtTime(550, t + 0.2);
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.12, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.2);
+        osc.start(t);
+        osc.stop(t + 0.2);
+      }
+
+      // Vintage tape click
+      function playClickTape() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const buf = audioContext.createBufferSource();
+        const len = Math.floor(audioContext.sampleRate * 0.008);
+        const noiseBuffer = audioContext.createBuffer(
+          1,
+          len,
+          audioContext.sampleRate,
+        );
+        const data = noiseBuffer.getChannelData(0);
+        for (let i = 0; i < len; i++) {
+          const decay = Math.pow(1 - i / len, 3);
+          data[i] = (Math.random() * 2 - 1) * decay * 0.5;
+        }
+        buf.buffer = noiseBuffer;
+        const g = audioContext.createGain();
+        buf.connect(g);
+        g.connect(audioContext.destination);
+        g.gain.setValueAtTime(0.06, t);
+        g.gain.exponentialRampToValueAtTime(0.001, t + 0.008);
+        buf.start(t);
+      }
+
+      // Small bell
+      function playBellSmall() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.value = 1046.5;
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.1, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.5);
+        osc.start(t);
+        osc.stop(t + 0.5);
+      }
+
+      // Whoosh up
+      function playWhooshUp() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.setValueAtTime(200, t);
+        osc.frequency.exponentialRampToValueAtTime(800, t + 0.25);
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.1, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+        osc.start(t);
+        osc.stop(t + 0.25);
+      }
+
+      // Whoosh down
+      function playWhooshDown() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.setValueAtTime(800, t);
+        osc.frequency.exponentialRampToValueAtTime(200, t + 0.25);
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.1, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25);
+        osc.start(t);
+        osc.stop(t + 0.25);
+      }
+
+      // Double pulse
+      function playPulseDouble() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        [0, 0.08].forEach((offset) => {
+          const osc = audioContext.createOscillator();
+          const gain = audioContext.createGain();
+          osc.frequency.value = 440;
+          osc.connect(gain);
+          gain.connect(audioContext.destination);
+          gain.gain.setValueAtTime(0.08, t + offset);
+          gain.gain.exponentialRampToValueAtTime(0.001, t + offset + 0.08);
+          osc.start(t + offset);
+          osc.stop(t + offset + 0.08);
+        });
+      }
+
+      // Deep hum
+      function playHumDeep() {
+        resumeAudioContext();
+        const t = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.frequency.value = 110;
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        gain.gain.setValueAtTime(0.1, t);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3);
+        osc.start(t);
+        osc.stop(t + 0.3);
+      }
+
+      function renderSounds() {
+        const grid = document.getElementById("soundGrid");
+        grid.innerHTML = sounds
+          .map(
+            (sound) => `
+        <div class="sound-card">
+          <div class="sound-name">${sound.name}</div>
+          <div class="sound-type">${sound.type}</div>
+          <div class="sound-description">${sound.description}</div>
+          <div class="controls">
+            <button class="btn-test" data-sound="${sound.id}">▶ Test</button>
+            <button class="btn-approve" data-approve="${sound.id}">✓ Approve</button>
+            <button class="btn-reject" data-reject="${sound.id}">✗ Reject</button>
+          </div>
+        </div>
+      `,
+          )
+          .join("");
+
+        // Attach event listeners
+        document.querySelectorAll(".btn-test").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const soundId = e.target.dataset.sound;
+            const sound = sounds.find((s) => s.id === soundId);
+            if (sound) sound.play();
+          });
+        });
+
+        document.querySelectorAll(".btn-approve").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const soundId = e.target.dataset.approve;
+            const sound = sounds.find((s) => s.id === soundId);
+            if (sound && !approved.has(soundId)) {
+              approved.add(soundId);
+              updateApprovedList();
+            }
+          });
+        });
+
+        document.querySelectorAll(".btn-reject").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const soundId = e.target.dataset.reject;
+            if (approved.has(soundId)) {
+              approved.delete(soundId);
+              updateApprovedList();
+            }
+          });
+        });
+      }
+
+      function updateApprovedList() {
+        const section = document.getElementById("approvedSection");
+        const items = document.getElementById("approvedItems");
+
+        if (approved.size === 0) {
+          section.style.display = "none";
+          return;
+        }
+
+        section.style.display = "block";
+        items.innerHTML = Array.from(approved)
+          .map((soundId) => {
+            const sound = sounds.find((s) => s.id === soundId);
+            return `
+          <div class="approved-badge">
+            ${sound.name}
+            <button data-remove="${soundId}">✕</button>
+          </div>
+        `;
+          })
+          .join("");
+
+        document.querySelectorAll("[data-remove]").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            approved.delete(e.target.dataset.remove);
+            updateApprovedList();
+          });
+        });
+      }
+
+      renderSounds();
+    </script>
+  </body>
+</html>

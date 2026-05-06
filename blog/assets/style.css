@@ -1594,7 +1594,8 @@ footer a:hover {
 }
 
 /* ── Reading time badge ──────────────────────────────── */
-.read-time {
+.read-time,
+.read-time-static {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
