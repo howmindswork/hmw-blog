@@ -215,7 +215,7 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
         ]
     }
 
-    for attempt in range(5):
+    for attempt in range(len(providers) + 3):
         resp = requests.post(
             api_url,
             headers={
@@ -225,7 +225,7 @@ Respond with ONLY a valid JSON object matching this exact structure (no markdown
             json=payload,
             timeout=180
         )
-        if resp.status_code in (429, 503, 502, 500):
+        if resp.status_code >= 400:
             next_idx = provider_idx + 1
             if next_idx < len(providers):
                 provider_idx = next_idx
