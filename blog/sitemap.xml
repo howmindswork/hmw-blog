@@ -258,4 +258,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/polyvagal-theory-grief-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/vagus-nerve-exercises/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/vagus-nerve-exercises-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
