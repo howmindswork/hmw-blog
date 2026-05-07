@@ -430,7 +430,10 @@
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-07",
+      "post_title": "Vagus Nerve Exercises",
+      "meta_description": "Regulate emotions with vagus nerve exercises. Heal with The Emotional Completion Ritual methodology"
     },
     {
       "slug": "nervous-system-reset",
