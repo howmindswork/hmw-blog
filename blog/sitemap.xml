@@ -285,4 +285,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/grief-after-breakup-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/grief-of-what-never-happened/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/grief-of-what-never-happened-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
