@@ -339,4 +339,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/guided-meditation-for-grief-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/emotional-release-techniques/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/emotional-release-techniques-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
