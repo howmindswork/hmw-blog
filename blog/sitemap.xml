@@ -357,4 +357,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/why-grief-doesnt-go-away-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/trauma-stored-in-body/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/trauma-stored-in-body-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
