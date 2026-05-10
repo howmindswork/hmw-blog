@@ -366,4 +366,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/trauma-stored-in-body-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/4-7-8-breathing-technique/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/4-7-8-breathing-technique-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
