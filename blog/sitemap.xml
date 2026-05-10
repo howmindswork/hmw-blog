@@ -375,4 +375,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/4-7-8-breathing-technique-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/diaphragmatic-breathing-benefits/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/diaphragmatic-breathing-benefits-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
