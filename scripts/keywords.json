@@ -640,7 +640,10 @@
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-      "published": false
+      "published": true,
+      "published_date": "2026-05-11",
+      "post_title": "IFS Therapy For Grief",
+      "meta_description": "Heal inner parts after loss with IFS therapy for grief, completing emotional pain with The Emotional Completion Ritual"
     },
     {
       "slug": "grief-and-physical-symptoms",
