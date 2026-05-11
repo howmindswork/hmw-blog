@@ -666,11 +666,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-11",
+      "post_title": "Healing Rituals For Grief",
+      "meta_description": "Discover healing rituals for grief and find emotional completion with Karla McLaren's work and The Emotional Completion Ritual"
     },
     {
       "slug": "cord-cutting-rituals-for-grief-a-gentle-candle-practice-for-letting-g-funeralcom",
