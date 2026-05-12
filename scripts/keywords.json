@@ -696,11 +696,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-12",
+      "post_title": "Soul Healing Rituals",
+      "meta_description": "Heal grief and loss with ancestral medicine and soul healing rituals. Find closure and peace with these proven methods"
     },
     {
       "slug": "grief-rituals-article-therapist-aid",
