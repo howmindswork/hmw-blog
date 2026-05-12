@@ -726,11 +726,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-12",
+      "post_title": "Rituals The Right Way",
+      "meta_description": "Discover a 7-step ritual guide for grief and find emotional healing with The Emotional Completion Ritual methodology"
     },
     {
       "slug": "grief-rituals-meaningful-ways-to-find-steadiness-in-loss",
