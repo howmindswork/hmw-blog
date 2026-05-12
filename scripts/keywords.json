@@ -711,11 +711,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-12",
+      "post_title": "Grief Rituals",
+      "meta_description": "Discover grief rituals to help you heal, 80% of people experience grief (Source: NIH, 2020)"
     },
     {
       "slug": "rituals-the-right-way-a-7-step-ritual-enactment-guide-for-grief",
