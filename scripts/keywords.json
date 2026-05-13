@@ -756,11 +756,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-13",
+      "post_title": "Ancestor Grief & Gratitude Rituals for Healing",
+      "meta_description": "Unlock ancient wisdom with ancestor grief and gratitude rituals. Find emotional completion, heal intergenerational wounds, and honor your lineage."
     },
     {
       "slug": "a-7-day-burial-ritual-until-death-doulas-megan-morano",
