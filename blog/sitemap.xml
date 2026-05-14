@@ -492,4 +492,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/the-best-somatic-exercises-for-grief-find-healing-through-movement-brett-larkin-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/how-to-grieve-when-you-cant-cry/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-grieve-when-you-cant-cry-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
