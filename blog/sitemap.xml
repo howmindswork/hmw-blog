@@ -519,4 +519,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/grief-and-the-nervous-system-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/complicated-grief-vs-normal-grief/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/complicated-grief-vs-normal-grief-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
