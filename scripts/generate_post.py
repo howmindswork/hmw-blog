@@ -21,11 +21,16 @@ OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct"
 
 def _build_providers():
     providers = []
-    # Cerebras first — fastest inference available, free tier
+    # Gemini first — best instruction-following for structured output
+    for env in ("GEMINI_API_KEY_BLOG", "GEMINI_API_KEY", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3", "GEMINI_API_KEY_4", "GEMINI_API_KEY_5"):
+        k = os.environ.get(env, "")
+        if k:
+            providers.append(("gemini", GEMINI_URL, k, GEMINI_MODEL))
+    # Cerebras second — fastest inference available, free tier
     k = os.environ.get("CEREBRAS_API_KEY", "")
     if k:
         providers.append(("cerebras", CEREBRAS_URL, k, CEREBRAS_MODEL))
-    # All Groq keys — rotate through all before giving up
+    # All Groq keys — rotate through all before giving up (org-banned in GitHub Actions, kept as fallback)
     groq_env_names = [
         "GROQ_API_KEY",
         "GROQ_API_KEY_2","GROQ_API_KEY_3","GROQ_API_KEY_4",
@@ -37,11 +42,6 @@ def _build_providers():
         k = os.environ.get(env, "")
         if k:
             providers.append(("groq", GROQ_URL, k, GROQ_MODEL))
-    # Gemini fallbacks — 5 keys across multiple accounts
-    for env in ("GEMINI_API_KEY_BLOG", "GEMINI_API_KEY", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3", "GEMINI_API_KEY_4", "GEMINI_API_KEY_5"):
-        k = os.environ.get(env, "")
-        if k:
-            providers.append(("gemini", GEMINI_URL, k, GEMINI_MODEL))
     # OpenRouter last resort
     k = os.environ.get("OPENROUTER_API_KEY", "")
     if k:
@@ -132,6 +132,8 @@ VOICE: Direct, peer-level, initiating. "Here's exactly what to do." Not clinical
 ABSOLUTE RULES — NO EXCEPTIONS:
 - NEVER use em dashes (—). This is an absolute rule. Rewrite the sentence instead. Use a period, comma, or colon. Never reach for an em dash.
 - NEVER use these words: delve, journey, moreover, furthermore, additionally, it's important to note, in conclusion, comprehensive, robust, nuanced, realm, tapestry, navigate, foster, leverage, underscore, holistic
+- NEVER write raw URLs as text in paragraphs. If you link to something, use <a href="URL">text</a>. CTA product URLs are injected automatically — never include them in paragraph text.
+- Every FAQ answer must be at least 3 sentences. One-line answers are not acceptable.
 - Write short sentences. Max 20 words per sentence. If a sentence runs long, split it.
 - No filler phrases. No throat-clearing introductions. Start with the point.
 

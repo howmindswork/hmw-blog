@@ -1,8 +1,6 @@
 name: Generate Blog Post
 
 on:
-  schedule:
-    - cron: '0 9 * * *'
   workflow_dispatch:
 
 permissions:
@@ -32,16 +30,26 @@ jobs:
           BING_WEBMASTER_KEY: ${{ secrets.BING_WEBMASTER_KEY }}
         run: python scripts/generate_post.py
 
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
         run: |
           git config user.name "HMW Bot"
           git config user.email "auto@howmindswork.org"
           git add .
-          git diff --quiet && git diff --staged --quiet && echo "Nothing to commit" && exit 0
           git commit -m "feat(blog): auto-publish post $(date +%Y-%m-%d)"
           git push
 
       - name: Deploy to Cloudflare Pages
+        if: steps.check.outputs.changed == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
