@@ -162,6 +162,15 @@ RULES:
 - First CTA (inline_free) goes in section at index 1 (after second section)
 - Second CTA (inline_paid) goes in section at index 3 (after fourth section)
 - All other sections: cta_type "none"
+
+ALGORITHMIC OPTIMIZATION — apply these X/Bluesky ranking signals to every post:
+1. EMOTIONAL FRICTION (Scroll-Stopper): Intro/first paragraph must hit a nervous-system trigger within first 20 words. Example: "Your body stores grief in a specific place." Not "Let's talk about grief."
+2. DWELL OPTIMIZATION: Use paragraph breaks liberally. Max 100 words per paragraph. Line breaks = visual breathing room = higher dwell time = algorithmic boost.
+3. CONVERSATION STARTERS: End sections with implicit or explicit questions that invite reflection. "What's your experience with X?" or "How does this show up for you?" invites replies (2-3x engagement boost).
+4. SPECIFICITY OVER ABSTRACTION: "Three days after the funeral" > "in difficult times". Concrete details trigger personal recognition = higher share rate.
+5. RESEARCH CITATIONS: 3-5 inline citations (Source: PubMed, NIH, university name, Year) boost dwell time on external links = algorithmic credibility signal.
+6. INTERNAL LINKING STRATEGY: 2-3 links to related posts on your domain keep users on-site = author profile amplification. Link adjacent grief/ritual topics.
+7. ACTIONABLE PROTOCOLS: Include 1-2 named step-by-step practices (numbered, 3-7 steps). Actionable content has 40% higher share rate than abstract advice.
 """
 
 def load_keywords():
