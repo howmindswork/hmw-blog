@@ -846,11 +846,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-15",
+      "post_title": "Grief and the Nervous System: Why Your Body Gets Stuck",
+      "meta_description": "How grief impacts your nervous system. Learn why your body gets stuck in fight, flight, or freeze and how to find emotional completion."
     },
     {
       "slug": "complicated-grief-vs-normal-grief",
