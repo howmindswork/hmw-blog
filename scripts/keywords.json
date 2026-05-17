@@ -891,11 +891,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-17",
+      "post_title": "Grief Rituals From Different Cultures: What The World Teaches Us",
+      "meta_description": "Explore global grief rituals. Discover how different cultures honor loss, process pain, and find completion. Learn practices for your own healing."
     },
     {
       "slug": "how-grief-rewires-the-brain",
