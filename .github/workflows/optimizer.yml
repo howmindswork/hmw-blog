@@ -5,9 +5,14 @@ on:
     - cron: '0 16 * * 0'  # Sunday noon ET (16:00 UTC)
   workflow_dispatch:
 
+concurrency:
+  group: seo-optimizer
+  cancel-in-progress: true
+
 jobs:
   optimize:
     runs-on: ubuntu-latest
+    continue-on-error: true
     permissions:
       contents: write
 

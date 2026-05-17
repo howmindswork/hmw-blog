@@ -2,15 +2,18 @@ name: Blog Publisher
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 8am ET (UTC-4 summer)
-    - cron: '0 18 * * *'   # 2pm ET
-    - cron: '0 0 * * *'    # 8pm ET
+    - cron: '0 14 * * *'   # 10am ET — once daily
   workflow_dispatch:
+
+concurrency:
+  group: blog-publisher
+  cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    continue-on-error: true
 
     steps:
       - uses: actions/checkout@v4

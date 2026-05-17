@@ -2,8 +2,12 @@ name: Generate Blog Post
 
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '0 13 * * *'   # 9am ET — pre-generates post before blog-publisher.yml deploys at 10am ET
   workflow_dispatch:
+
+concurrency:
+  group: generate-post
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -11,6 +15,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4

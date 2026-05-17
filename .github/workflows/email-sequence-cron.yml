@@ -5,9 +5,14 @@ on:
     - cron: '0 14 * * *'  # 9am ET (14:00 UTC)
   workflow_dispatch:
 
+concurrency:
+  group: email-sequence-cron
+  cancel-in-progress: true
+
 jobs:
   run-sequence:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Trigger email sequence worker
         run: |

@@ -5,9 +5,14 @@ on:
     - cron: '0 10 * * *'   # 6am ET (UTC-4 summer)
   workflow_dispatch:
 
+concurrency:
+  group: keyword-harvester
+  cancel-in-progress: true
+
 jobs:
   harvest:
     runs-on: ubuntu-latest
+    continue-on-error: true
     timeout-minutes: 10
 
     steps:
