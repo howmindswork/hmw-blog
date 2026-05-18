@@ -546,4 +546,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/grief-rituals-from-different-cultures-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/how-grief-rewires-the-brain/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-grief-rewires-the-brain-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>

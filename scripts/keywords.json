@@ -906,11 +906,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-18",
+      "post_title": "How Grief Rewires the Brain: The Neuroscience of Loss",
+      "meta_description": "Grief changes your brain. Understand the neuroscience of loss, how your mind adapts, and find strategies for emotional completion and healing."
     },
     {
       "slug": "somatic-exercises-for-grief-release",
