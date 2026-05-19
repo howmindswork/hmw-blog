@@ -555,4 +555,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/how-grief-rewires-the-brain-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/somatic-exercises-for-grief-release/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-exercises-for-grief-release-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>

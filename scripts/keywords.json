@@ -921,11 +921,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-19",
+      "post_title": "Somatic Exercises for Grief: Release Loss From Your Body?",
+      "meta_description": "Your body holds grief. Discover somatic exercises to release loss and find emotional completion. Start healing trapped emotions today."
     },
     {
       "slug": "why-does-grief-come-in-waves",
