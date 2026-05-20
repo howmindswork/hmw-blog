@@ -564,4 +564,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/somatic-exercises-for-grief-release-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/why-does-grief-come-in-waves/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/why-does-grief-come-in-waves-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
