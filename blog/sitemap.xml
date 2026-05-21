@@ -573,4 +573,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/why-does-grief-come-in-waves-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/grief-and-sleep-problems/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/grief-and-sleep-problems-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>

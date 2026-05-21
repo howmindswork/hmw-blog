@@ -951,11 +951,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-21",
+      "post_title": "Why Does Grief Cause Insomnia? What Really Helps.",
+      "meta_description": "Grief shatters sleep. Understand why loss causes insomnia and what specific practices, like The Emotional Completion Ritual, can bring rest back. Find relief."
     },
     {
       "slug": "how-to-support-someone-who-is-grieving",
