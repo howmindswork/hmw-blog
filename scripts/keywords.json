@@ -966,11 +966,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-22",
+      "post_title": "How to Support Someone Who is Grieving: What Actually Helps",
+      "meta_description": "Learn exactly how to support someone grieving. Move beyond clich\u00e9s to offer real comfort and presence when their world feels shattered."
     },
     {
       "slug": "grief-after-losing-a-parent",

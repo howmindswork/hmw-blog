@@ -582,4 +582,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/grief-and-sleep-problems-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/how-to-support-someone-who-is-grieving/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-support-someone-who-is-grieving-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
