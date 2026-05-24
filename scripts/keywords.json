@@ -996,11 +996,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-24",
+      "post_title": "Ancestral Trauma and Grief: How Inherited Pain Shows Up",
+      "meta_description": "Uncover how ancestral trauma and grief manifest in your body. Understand inherited pain, emotional numbness, and find paths to completion and healing."
     },
     {
       "slug": "how-long-does-grief-last",

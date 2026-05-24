@@ -600,4 +600,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/grief-after-losing-a-parent-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/ancestral-trauma-and-grief-healing/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/ancestral-trauma-and-grief-healing-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
