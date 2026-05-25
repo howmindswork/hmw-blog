@@ -609,4 +609,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/ancestral-trauma-and-grief-healing-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/how-long-does-grief-last/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-long-does-grief-last-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>

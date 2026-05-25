@@ -1011,11 +1011,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-25",
+      "post_title": "How Long Does Grief Last? The Unspoken Timeline",
+      "meta_description": "Grief doesn't follow a calendar. Learn the true emotional timeline of loss, beyond typical stages. Find practical tools for emotional completion."
     },
     {
       "slug": "how-to-conduct-your-own-grief-harvest-ritual-the-mortal-path-alliance",
