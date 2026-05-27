@@ -1041,11 +1041,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-27",
+      "post_title": "The Power of Somatic Practices: Healing Grief Through Movement",
+      "meta_description": "Discover how somatic practices release stored grief and emotional numbness. Learn movement rituals to heal loss and reclaim desire. Find your way back to feeling."
     },
     {
       "slug": "somatic-practices-to-release-grief-and-trauma-katie-bellamy-llc",
