@@ -1056,11 +1056,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-28",
+      "post_title": "Somatic Practices: Releasing Grief & Trauma From Your Body",
+      "meta_description": "Your body stores grief and trauma. Learn somatic practices to release these deep emotional imprints and move towards genuine emotional completion."
     },
     {
       "slug": "somatic-exercises-to-process-grief-15-minutes",
