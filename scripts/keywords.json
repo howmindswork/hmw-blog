@@ -1071,11 +1071,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-29",
+      "post_title": "Somatic Exercises for Grief: Release in 15 Minutes",
+      "meta_description": "Discover quick somatic exercises to process grief. Find relief in 15 minutes and move towards emotional completion. Release what your body holds."
     },
     {
       "slug": "somatic-exercises-to-help-navigate-grief-betterme",
