@@ -1086,11 +1086,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-30",
+      "post_title": "How Somatic Exercises Release Stored Grief From Your Body",
+      "meta_description": "Somatic exercises offer a direct path to release stored grief. Learn how to feel and complete your loss, moving towards emotional freedom and peace."
     },
     {
       "slug": "ep-73-somatic-exercises-for-grief-and-loss-somatic-coaching-academy",
