@@ -1101,11 +1101,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-31",
+      "post_title": "Somatic Exercises For Grief & Loss: Feel What's Stuck",
+      "meta_description": "Discover somatic exercises for grief and loss. Learn how your body holds pain and find simple practices to release it. Heal emotional numbness."
     },
     {
       "slug": "somatic-exercises-to-release-trauma-grief-and-loss-free-course",
