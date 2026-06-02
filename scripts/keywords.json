@@ -1131,11 +1131,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-02",
+      "post_title": "How Does Grief Change Your Brain? Brain Science Advances",
+      "meta_description": "Unraveling the neurobiology of grief reveals specific brain changes. Learn how loss impacts your mind and body, and find paths to emotional completion."
     },
     {
       "slug": "unraveling-the-neurobiology-of-grief-insights-into-brain-and-behaviornarrative-r",
