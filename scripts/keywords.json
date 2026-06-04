@@ -1161,11 +1161,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-04",
+      "post_title": "The Neuroscience of Grief: How Your Brain Processes Loss",
+      "meta_description": "Your brain changes when you grieve. Understand the neuroscience of grief, how your brain processes loss, and what to do with intense pain to find completion."
     },
     {
       "slug": "unresolved-grief-why-it-lingers-and-how-to-cope",

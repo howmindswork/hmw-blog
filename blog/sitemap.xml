@@ -699,4 +699,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/unraveling-the-neurobiology-of-grief-insights-into-brain-and-behaviornarrative-r-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/the-neuroscience-of-grief-how-the-brain-processes-loss-over-time/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/the-neuroscience-of-grief-how-the-brain-processes-loss-over-time-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
