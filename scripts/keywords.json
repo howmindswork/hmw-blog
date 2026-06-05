@@ -1176,11 +1176,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-05",
+      "post_title": "Unresolved Grief: Why It Lingers and How to Cope",
+      "meta_description": "Unresolved grief can trap your nervous system. Learn why grief lingers in the body and discover practical steps to release emotional pain and find completion."
     },
     {
       "slug": "what-are-the-signs-of-unresolved-grief",

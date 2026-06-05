@@ -708,4 +708,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/the-neuroscience-of-grief-how-the-brain-processes-loss-over-time-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/unresolved-grief-why-it-lingers-and-how-to-cope/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/unresolved-grief-why-it-lingers-and-how-to-cope-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
