@@ -717,4 +717,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/unresolved-grief-why-it-lingers-and-how-to-cope-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/what-are-the-signs-of-unresolved-grief/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/what-are-the-signs-of-unresolved-grief-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
