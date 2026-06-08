@@ -1221,11 +1221,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-08",
+      "post_title": "Complicated Grief: What It Is, Symptoms & Healing",
+      "meta_description": "Unresolved grief feels like an open wound. Learn about complicated grief, its symptoms, and effective steps for emotional completion and healing."
     },
     {
       "slug": "the-impact-of-unresolved-grief-after-the-loss-of-a-loved-one-betterhelp",
