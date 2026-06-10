@@ -1251,11 +1251,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-10",
+      "post_title": "What Is Complicated Grief? Symptoms, Causes, & Healing",
+      "meta_description": "Complicated grief feels like an endless ache. Learn the symptoms and causes, and find pathways to emotional completion and healing from persistent sorrow."
     },
     {
       "slug": "how-to-deal-with-grief-harvard-health",
