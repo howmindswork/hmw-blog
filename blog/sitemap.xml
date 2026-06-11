@@ -762,4 +762,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/complicated-grief-symptoms-and-causes-mayo-clinic-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/how-to-deal-with-grief-harvard-health/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/how-to-deal-with-grief-harvard-health-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
