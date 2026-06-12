@@ -1281,11 +1281,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-12",
+      "post_title": "6 Signs of Unresolved Grief You Need To Know",
+      "meta_description": "Identify the 6 signs of unresolved grief. Unprocessed loss impacts your body and mind. Learn pathways to emotional completion and find relief."
     },
     {
       "slug": "10-signs-of-unresolved-grief-and-how-to-start-healing",
