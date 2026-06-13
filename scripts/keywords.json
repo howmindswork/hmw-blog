@@ -1296,11 +1296,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-13",
+      "post_title": "What Are The 10 Signs of Unresolved Grief?",
+      "meta_description": "Unresolved grief hides in plain sight. Learn the 10 key signs your body and mind are holding onto old loss. Start your healing with actionable steps."
     },
     {
       "slug": "when-grief-makes-it-hard-to-breathe-simple-techniques-for-grief-anxiety",
