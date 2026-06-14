@@ -1311,11 +1311,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-14",
+      "post_title": "When Grief Makes It Hard to Breathe: Simple Techniques",
+      "meta_description": "Feeling grief anxiety and shortness of breath? Learn simple techniques and somatic rituals to calm your nervous system and find release."
     },
     {
       "slug": "how-grieving-meditation-calms-your-mind-through-breath-awareness",
