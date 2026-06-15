@@ -1326,11 +1326,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-15",
+      "post_title": "How Grieving Meditation Calms Your Mind Through Breath",
+      "meta_description": "Discover how grieving meditation and breath awareness can calm your overwhelmed nervous system and bring peace during sorrow. Find healing here."
     },
     {
       "slug": "breathwork-for-grief-breathing-space",
