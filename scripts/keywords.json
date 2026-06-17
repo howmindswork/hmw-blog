@@ -1356,11 +1356,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-17",
+      "post_title": "Does Grief Affect Your Breathing? A Somatic Approach",
+      "meta_description": "Grief tightens your chest, making breathing hard. Discover how your body stores loss and learn somatic practices for emotional completion. Start healing now."
     },
     {
       "slug": "managing-grief-5-ways-plus-breathwork-to-get-you-over-the-hard-times-the-art-of",
