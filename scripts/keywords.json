@@ -1386,11 +1386,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-19",
+      "post_title": "How Breath Work Can Help with Grief",
+      "meta_description": "Discover how specific breath practices can calm your nervous system, release stored grief, and bring emotional completion. Learn simple, effective techniques."
     },
     {
       "slug": "healing-through-ritual-the-power-of-mourning-traditions-empowered-through-grief",
