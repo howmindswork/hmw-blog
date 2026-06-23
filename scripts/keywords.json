@@ -1446,11 +1446,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-23",
+      "post_title": "Can Breathwork Heal Grief? Techniques to Transform Loss",
+      "meta_description": "Discover how healing through breathwork can transform grief. Learn techniques to release stored pain, reclaim your body, and find emotional completion."
     },
     {
       "slug": "how-to-heal-from-emotional-numbness-and-start-feeling-again",
