@@ -1461,11 +1461,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-24",
+      "post_title": "How to Heal from Emotional Numbness and Start Feeling Again",
+      "meta_description": "Feeling emotionally numb? Discover practical steps to reconnect with your feelings, process old pain, and reignite desire in your life."
     },
     {
       "slug": "emotional-numbness-how-to-start-feeling-again",
