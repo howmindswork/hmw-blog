@@ -1491,11 +1491,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-26",
+      "post_title": "8 Ways to Start Reconnecting With Your Emotions",
+      "meta_description": "Feeling numb? You can reclaim your emotional landscape. Discover 8 direct, actionable ways to start reconnecting with your emotions and feel alive again."
     },
     {
       "slug": "9-causes-of-emotional-numbness-and-what-to-do",
