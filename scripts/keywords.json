@@ -1506,11 +1506,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-27",
+      "post_title": "9 Causes of Emotional Numbness and What To Do",
+      "meta_description": "Feeling numb? Discover 9 causes of emotional numbness. Learn practical steps to reconnect with your emotions, heal, and start feeling again with Luke's framework."
     },
     {
       "slug": "how-to-reconnect-with-yourself-after-a-period-of-emotional-numbness-strength-cou",
