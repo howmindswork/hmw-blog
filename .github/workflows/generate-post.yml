@@ -15,7 +15,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    # continue-on-error intentionally removed. failures must surface.
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -38,10 +38,32 @@ jobs:
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY_2: ${{ secrets.GROQ_API_KEY_2 }}
+          GROQ_API_KEY_3: ${{ secrets.GROQ_API_KEY_3 }}
+          GROQ_API_KEY_4: ${{ secrets.GROQ_API_KEY_4 }}
+          GROQ_API_KEY_5: ${{ secrets.GROQ_API_KEY_5 }}
+          GROQ_API_KEY_6: ${{ secrets.GROQ_API_KEY_6 }}
+          GROQ_API_KEY_7: ${{ secrets.GROQ_API_KEY_7 }}
+          GROQ_API_KEY_8: ${{ secrets.GROQ_API_KEY_8 }}
+          GROQ_API_KEY_NEW_1: ${{ secrets.GROQ_API_KEY_NEW_1 }}
+          GROQ_API_KEY_NEW_2: ${{ secrets.GROQ_API_KEY_NEW_2 }}
+          GROQ_API_KEY_NEW_3: ${{ secrets.GROQ_API_KEY_NEW_3 }}
+          GROQ_API_KEY_NEW_4: ${{ secrets.GROQ_API_KEY_NEW_4 }}
+          GROQ_API_KEY_NEW_5: ${{ secrets.GROQ_API_KEY_NEW_5 }}
+          GROQ_API_KEY_NEW_6: ${{ secrets.GROQ_API_KEY_NEW_6 }}
+          GROQ_API_KEY_NEW_7: ${{ secrets.GROQ_API_KEY_NEW_7 }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           BING_WEBMASTER_KEY: ${{ secrets.BING_WEBMASTER_KEY }}
         run: python scripts/generate_post.py
+
+      - name: Verify post was generated
+        run: |
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "ERROR: No new post was generated. All LLM providers may be exhausted or keys expired." >&2
+            exit 1
+          fi
 
       - name: Check for changes
         id: check

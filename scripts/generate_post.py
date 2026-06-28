@@ -151,6 +151,7 @@ RULES:
 - Include 3-5 hyperlinks to real external research sources inline. Format: <a href="URL" rel="noopener noreferrer" target="_blank">anchor text</a>. Only use real URLs you are confident exist (pubmed.ncbi.nlm.nih.gov, nih.gov, .edu). Skip if unsure of exact URL.
 - Include 2-3 internal links to related posts using placeholder slugs. Format: <a href="/posts/[RELATED_SLUG]/">anchor text</a>
 - Include at least one named, step-by-step practice or protocol with numbered steps
+- Include one direct quotation from a named researcher, therapist, or recognized authority on grief or neuroscience. Format as a blockquote: <blockquote>"Quote text." <cite>Name, Title/Affiliation</cite></blockquote>. Only use real quotes you are confident exist. Skip if unsure.
 - Reference The Emotional Completion Ritual methodology where it fits naturally
 - Paragraphs max 100 words. One claim per paragraph.
 - Total body length: 1,500-2,000 words across all sections combined
@@ -331,6 +332,11 @@ def faq_schema(faq):
     }
 
 def article_schema(post, kw, url, date_iso):
+    # Build comma-separated keywords string from all sections h2 headings + keyword
+    keywords_list = [kw.get("keyword", ""), "grief", "emotional healing", "somatic ritual"]
+    for s in post.get("sections", []):
+        if s.get("h2"):
+            keywords_list.append(s["h2"])
     return {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -339,6 +345,7 @@ def article_schema(post, kw, url, date_iso):
         "url": url,
         "datePublished": date_iso,
         "dateModified": date_iso,
+        "keywords": ", ".join(keywords_list[:10]),
         "author": {
             "@id": AUTHOR_ID,
             "@type": "Person",
@@ -357,6 +364,16 @@ def article_schema(post, kw, url, date_iso):
         },
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
         "image": f"{BLOG_URL}/assets/og-default.jpg",
+        # Speakable: tells AI voice engines which paragraph to read aloud (GEO signal)
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".post-body p:first-of-type", ".takeaways"]
+        },
+        # wordCount helps AI systems gauge depth
+        "wordCount": len(" ".join(
+            [post.get("intro", "")] +
+            [p for s in post.get("sections", []) for p in s.get("paragraphs", [])]
+        ).split()),
     }
 
 def breadcrumb_schema(url, title):
@@ -372,6 +389,7 @@ def breadcrumb_schema(url, title):
 
 def render_html(post, kw, date_str, date_iso, post_url):
     slug = kw.get("slug", "")
+    read_mins = _reading_time(post)
     free_url_utm = _utm(kw['free_product_url'], slug)
     paid_url_utm = _utm(kw['product_url'], slug)
     takeaways_li = "\n".join(f"<li>{t}</li>" for t in post["key_takeaways"])
@@ -412,6 +430,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
 <meta property="og:image" content="{og_image_url}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{og_image_url}">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="{post_url}">
 <link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
@@ -428,6 +447,7 @@ def render_html(post, kw, date_str, date_iso, post_url):
 </script>
 </head>
 <body>
+<div id="reading-progress"></div>
 <nav><div class="container">
   <a href="https://howmindswork.org" class="nav-brand">How Minds Work</a>
   <a href="/" class="nav-link">← All posts</a>
@@ -438,6 +458,8 @@ def render_html(post, kw, date_str, date_iso, post_url):
     <span>{date_str}</span>
     <span>·</span>
     <a href="/about/">By Luke</a>
+    <span>·</span>
+    <span>{read_mins} min read</span>
   </div>
   <h1>{post['title']}</h1>
 </div></header>
@@ -483,24 +505,36 @@ def render_html(post, kw, date_str, date_iso, post_url):
   <span>© 2026 How Minds Work</span>
   <span><a href="/">Blog</a> · <a href="https://howmindswork.org">Products</a> · <a href="/about/">About</a></span>
 </div></footer>
-<script>
-window.addEventListener("load",function(){{
-  var p=window.location.pathname,r=document.referrer;
-  fetch("https://hmw-analytics.howmindswork.workers.dev/track?page="+encodeURIComponent(p)+"&ref="+encodeURIComponent(r));
-  document.querySelectorAll(".cta-track").forEach(function(el){{
-    el.addEventListener("click",function(){{
-      fetch("https://hmw-analytics.howmindswork.workers.dev/event",{{
-        method:"POST",headers:{{"Content-Type":"application/json"}},
-        body:JSON.stringify({{name:"cta_click",page:p,post_slug:p.replace(/\\/posts\\//,"").replace(/\\//,""),cta_clicked:1}})
-      }});
-    }});
-  }});
-}});
-</script>
+<script src="/assets/hmw-track.js"></script>
 <script src="/assets/click.js"></script>
+<script>
+/* Reading progress bar */
+(function(){{
+  var bar=document.getElementById("reading-progress");
+  if(!bar)return;
+  function update(){{
+    var s=document.documentElement,b=document.body;
+    var st=s.scrollTop||b.scrollTop;
+    var h=(s.scrollHeight||b.scrollHeight)-s.clientHeight;
+    bar.style.width=h>0?(st/h*100)+"%":"0%";
+  }}
+  window.addEventListener("scroll",update,{{passive:true}});
+  update();
+}})();
+</script>
 </body>
 </html>"""
     return inject_pillar_link(html)
+
+def _reading_time(post):
+    """Estimate reading time in minutes at 200 wpm."""
+    text = post.get("intro", "")
+    for s in post.get("sections", []):
+        text += " " + " ".join(s.get("paragraphs", []))
+    for f in post.get("faq", []):
+        text += " " + f.get("answer", "")
+    words = len(text.split())
+    return max(1, round(words / 200))
 
 def word_overlap(a, b):
     a_words = set(a.lower().split())
