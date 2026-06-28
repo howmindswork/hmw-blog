@@ -1521,11 +1521,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-28",
+      "post_title": "How to Reconnect With Yourself After Emotional Numbness",
+      "meta_description": "Feeling numb after a tough period? Learn how to reconnect with yourself, reclaim desire, and move through emotional numbness with practical steps and rituals."
     },
     {
       "slug": "overcoming-emotional-numbness-7-ways-to-feel-alive-again",
