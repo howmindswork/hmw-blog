@@ -911,9 +911,9 @@
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
-      "published_date": "2026-06-28",
-      "post_title": "How Grief Rewires Your Brain: The Neuroscience of Loss",
-      "meta_description": "Discover how grief physically changes your brain. Learn the science behind loss and how emotional completion helps restore your mind."
+      "published_date": "2026-05-18",
+      "post_title": "How Grief Rewires the Brain: The Neuroscience of Loss",
+      "meta_description": "Grief changes your brain. Understand the neuroscience of loss, how your mind adapts, and find strategies for emotional completion and healing."
     },
     {
       "slug": "somatic-exercises-for-grief-release",
@@ -921,11 +921,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-19",
+      "post_title": "Somatic Exercises for Grief: Release Loss From Your Body?",
+      "meta_description": "Your body holds grief. Discover somatic exercises to release loss and find emotional completion. Start healing trapped emotions today."
     },
     {
       "slug": "why-does-grief-come-in-waves",
@@ -933,11 +936,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-20",
+      "post_title": "Why Does Grief Come in Waves? The Science of Emotional Surges",
+      "meta_description": "Grief isn't linear. Discover the neuroscience behind why grief comes in waves and how your body processes loss. Find peace and emotional completion."
     },
     {
       "slug": "grief-and-sleep-problems",
@@ -945,11 +951,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-21",
+      "post_title": "Why Does Grief Cause Insomnia? What Really Helps.",
+      "meta_description": "Grief shatters sleep. Understand why loss causes insomnia and what specific practices, like The Emotional Completion Ritual, can bring rest back. Find relief."
     },
     {
       "slug": "how-to-support-someone-who-is-grieving",
@@ -957,11 +966,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-22",
+      "post_title": "How to Support Someone Who is Grieving: What Actually Helps",
+      "meta_description": "Learn exactly how to support someone grieving. Move beyond clich\u00e9s to offer real comfort and presence when their world feels shattered."
     },
     {
       "slug": "grief-after-losing-a-parent",
@@ -969,11 +981,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-23",
+      "post_title": "Grief After Losing a Parent: How Do You Survive It?",
+      "meta_description": "Losing a parent is a profound shock. Learn how to process grief, soothe your nervous system, and find completion after losing your mom or dad."
     },
     {
       "slug": "ancestral-trauma-and-grief-healing",
@@ -981,11 +996,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-24",
+      "post_title": "Ancestral Trauma and Grief: How Inherited Pain Shows Up",
+      "meta_description": "Uncover how ancestral trauma and grief manifest in your body. Understand inherited pain, emotional numbness, and find paths to completion and healing."
     },
     {
       "slug": "how-long-does-grief-last",
@@ -993,11 +1011,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 2,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-25",
+      "post_title": "How Long Does Grief Last? The Unspoken Timeline",
+      "meta_description": "Grief doesn't follow a calendar. Learn the true emotional timeline of loss, beyond typical stages. Find practical tools for emotional completion."
     },
     {
       "slug": "how-to-conduct-your-own-grief-harvest-ritual-the-mortal-path-alliance",
@@ -1005,11 +1026,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-05-26",
+      "post_title": "How to Conduct Your Own Grief Harvest Ritual?",
+      "meta_description": "Learn how to conduct a Grief Harvest Ritual. This Mortal Path Alliance practice helps you honor loss and find emotional completion. Reclaim your inner strength."
     },
     {
       "slug": "the-power-of-somatic-practices-healing-grief-through-movement",
@@ -1017,11 +1041,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-27",
+      "post_title": "The Power of Somatic Practices: Healing Grief Through Movement",
+      "meta_description": "Discover how somatic practices release stored grief and emotional numbness. Learn movement rituals to heal loss and reclaim desire. Find your way back to feeling."
     },
     {
       "slug": "somatic-practices-to-release-grief-and-trauma-katie-bellamy-llc",
@@ -1029,11 +1056,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-28",
+      "post_title": "Somatic Practices: Releasing Grief & Trauma From Your Body",
+      "meta_description": "Your body stores grief and trauma. Learn somatic practices to release these deep emotional imprints and move towards genuine emotional completion."
     },
     {
       "slug": "somatic-exercises-to-process-grief-15-minutes",
@@ -1041,11 +1071,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-29",
+      "post_title": "Somatic Exercises for Grief: Release in 15 Minutes",
+      "meta_description": "Discover quick somatic exercises to process grief. Find relief in 15 minutes and move towards emotional completion. Release what your body holds."
     },
     {
       "slug": "somatic-exercises-to-help-navigate-grief-betterme",
@@ -1053,11 +1086,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-30",
+      "post_title": "How Somatic Exercises Release Stored Grief From Your Body",
+      "meta_description": "Somatic exercises offer a direct path to release stored grief. Learn how to feel and complete your loss, moving towards emotional freedom and peace."
     },
     {
       "slug": "ep-73-somatic-exercises-for-grief-and-loss-somatic-coaching-academy",
@@ -1065,11 +1101,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-05-31",
+      "post_title": "Somatic Exercises For Grief & Loss: Feel What's Stuck",
+      "meta_description": "Discover somatic exercises for grief and loss. Learn how your body holds pain and find simple practices to release it. Heal emotional numbness."
     },
     {
       "slug": "somatic-exercises-to-release-trauma-grief-and-loss-free-course",
@@ -1077,11 +1116,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-01",
+      "post_title": "Somatic Exercises to Release Trauma, Grief, and Loss",
+      "meta_description": "Learn somatic exercises to release stored trauma, grief, and loss from your body. Find emotional completion and start feeling again."
     },
     {
       "slug": "unraveling-the-neurobiology-of-grief-brain-science-advances",
@@ -1089,11 +1131,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-02",
+      "post_title": "How Does Grief Change Your Brain? Brain Science Advances",
+      "meta_description": "Unraveling the neurobiology of grief reveals specific brain changes. Learn how loss impacts your mind and body, and find paths to emotional completion."
     },
     {
       "slug": "unraveling-the-neurobiology-of-grief-insights-into-brain-and-behaviornarrative-r",
@@ -1101,11 +1146,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-03",
+      "post_title": "Unraveling the Neurobiology of Grief: What Happens in Your Brain?",
+      "meta_description": "Grief impacts your brain and body in profound ways. Understand the neurobiology of loss to begin healing your emotional pain and find completion."
     },
     {
       "slug": "the-neuroscience-of-grief-how-the-brain-processes-loss-over-time",
@@ -1113,11 +1161,14 @@
       "pillar": "nervous-system",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-04",
+      "post_title": "The Neuroscience of Grief: How Your Brain Processes Loss",
+      "meta_description": "Your brain changes when you grieve. Understand the neuroscience of grief, how your brain processes loss, and what to do with intense pain to find completion."
     },
     {
       "slug": "unresolved-grief-why-it-lingers-and-how-to-cope",
@@ -1125,11 +1176,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-05",
+      "post_title": "Unresolved Grief: Why It Lingers and How to Cope",
+      "meta_description": "Unresolved grief can trap your nervous system. Learn why grief lingers in the body and discover practical steps to release emotional pain and find completion."
     },
     {
       "slug": "what-are-the-signs-of-unresolved-grief",
@@ -1137,11 +1191,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-06",
+      "post_title": "What Are The Signs of Unresolved Grief?",
+      "meta_description": "Unresolved grief can impact your body and mind. Learn the clear signs and how to start finding emotional completion after loss."
     },
     {
       "slug": "the-art-of-healing-psychology-today",
@@ -1149,11 +1206,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-07",
+      "post_title": "The Art of Healing: Your Emotional Completion Blueprint",
+      "meta_description": "Healing is an art, not a science. Discover how to complete emotional cycles, process grief, and reclaim desire through somatic rituals."
     },
     {
       "slug": "complicated-grief-what-it-is-symptoms-treatment",
@@ -1161,11 +1221,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-08",
+      "post_title": "Complicated Grief: What It Is, Symptoms & Healing",
+      "meta_description": "Unresolved grief feels like an open wound. Learn about complicated grief, its symptoms, and effective steps for emotional completion and healing."
     },
     {
       "slug": "the-impact-of-unresolved-grief-after-the-loss-of-a-loved-one-betterhelp",
@@ -1173,11 +1236,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-09",
+      "post_title": "The Impact of Unresolved Grief After Loss: What Happens?",
+      "meta_description": "Unresolved grief hurts deeply. Discover the silent impacts of losing a loved one and how to find peace. Learn to complete your grief."
     },
     {
       "slug": "complicated-grief-symptoms-and-causes-mayo-clinic",
@@ -1185,11 +1251,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-10",
+      "post_title": "What Is Complicated Grief? Symptoms, Causes, & Healing",
+      "meta_description": "Complicated grief feels like an endless ache. Learn the symptoms and causes, and find pathways to emotional completion and healing from persistent sorrow."
     },
     {
       "slug": "how-to-deal-with-grief-harvard-health",
@@ -1197,11 +1266,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-11",
+      "post_title": "How to Deal With Grief: Practical Steps for Healing",
+      "meta_description": "Learn how to deal with grief with actionable strategies and somatic rituals. Find emotional completion and reclaim your life after loss."
     },
     {
       "slug": "6-signs-of-unresolved-grief-psychology-today",
@@ -1209,11 +1281,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-12",
+      "post_title": "6 Signs of Unresolved Grief You Need To Know",
+      "meta_description": "Identify the 6 signs of unresolved grief. Unprocessed loss impacts your body and mind. Learn pathways to emotional completion and find relief."
     },
     {
       "slug": "10-signs-of-unresolved-grief-and-how-to-start-healing",
@@ -1221,11 +1296,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-13",
+      "post_title": "What Are The 10 Signs of Unresolved Grief?",
+      "meta_description": "Unresolved grief hides in plain sight. Learn the 10 key signs your body and mind are holding onto old loss. Start your healing with actionable steps."
     },
     {
       "slug": "when-grief-makes-it-hard-to-breathe-simple-techniques-for-grief-anxiety",
@@ -1233,11 +1311,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-14",
+      "post_title": "When Grief Makes It Hard to Breathe: Simple Techniques",
+      "meta_description": "Feeling grief anxiety and shortness of breath? Learn simple techniques and somatic rituals to calm your nervous system and find release."
     },
     {
       "slug": "how-grieving-meditation-calms-your-mind-through-breath-awareness",
@@ -1245,11 +1326,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-15",
+      "post_title": "How Grieving Meditation Calms Your Mind Through Breath",
+      "meta_description": "Discover how grieving meditation and breath awareness can calm your overwhelmed nervous system and bring peace during sorrow. Find healing here."
     },
     {
       "slug": "breathwork-for-grief-breathing-space",
@@ -1257,11 +1341,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-16",
+      "post_title": "Breathwork for Grief: Finding Breathing Space in Loss",
+      "meta_description": "Discover how breathwork for grief offers a pathway to emotional release and calm. Find breathing space and process deep sorrow with somatic practices."
     },
     {
       "slug": "lets-talk-grief-and-breathing-the-lotus-center",
@@ -1269,11 +1356,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-17",
+      "post_title": "Does Grief Affect Your Breathing? A Somatic Approach",
+      "meta_description": "Grief tightens your chest, making breathing hard. Discover how your body stores loss and learn somatic practices for emotional completion. Start healing now."
     },
     {
       "slug": "managing-grief-5-ways-plus-breathwork-to-get-you-over-the-hard-times-the-art-of",
@@ -1281,11 +1371,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-18",
+      "post_title": "Managing Grief: 5 Ways Plus Breathwork for Hard Times",
+      "meta_description": "Grief can feel endless. Discover 5 practical ways to manage hard times, plus specific breathwork to process deep loss and move towards completion."
     },
     {
       "slug": "how-breath-work-can-help-with-grief",
@@ -1293,11 +1386,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-19",
+      "post_title": "How Breath Work Can Help with Grief",
+      "meta_description": "Discover how specific breath practices can calm your nervous system, release stored grief, and bring emotional completion. Learn simple, effective techniques."
     },
     {
       "slug": "healing-through-ritual-the-power-of-mourning-traditions-empowered-through-grief",
@@ -1305,11 +1401,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-20",
+      "post_title": "Healing Through Ritual: Empowered Mourning Traditions",
+      "meta_description": "Discover how ancient mourning rituals offer powerful pathways for healing and emotional completion. Reclaim your strength through grief."
     },
     {
       "slug": "breathing-exercise-for-grief-stress",
@@ -1317,11 +1416,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-21",
+      "post_title": "How Can Breathing Exercises Help Grief & Stress?",
+      "meta_description": "Your body holds grief. Discover simple breathing exercises to release stress and begin emotional completion after loss. Find peace in stillness."
     },
     {
       "slug": "breathwork-techniques-for-grief-stay-calm-and-grounded-during-tough-times-this-i",
@@ -1329,11 +1431,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-22",
+      "post_title": "Breathwork for Grief: Stay Calm & Grounded During Tough Times",
+      "meta_description": "Grief overwhelms. Use simple breathwork techniques to stay calm and grounded. Release emotional pain and start your healing with these practices."
     },
     {
       "slug": "healing-through-breathwork-transform-grief-with-techniques",
@@ -1341,11 +1446,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-06-23",
+      "post_title": "Can Breathwork Heal Grief? Techniques to Transform Loss",
+      "meta_description": "Discover how healing through breathwork can transform grief. Learn techniques to release stored pain, reclaim your body, and find emotional completion."
     },
     {
       "slug": "how-to-heal-from-emotional-numbness-and-start-feeling-again",
@@ -1353,11 +1461,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-24",
+      "post_title": "How to Heal from Emotional Numbness and Start Feeling Again",
+      "meta_description": "Feeling emotionally numb? Discover practical steps to reconnect with your feelings, process old pain, and reignite desire in your life."
     },
     {
       "slug": "emotional-numbness-how-to-start-feeling-again",
@@ -1365,11 +1476,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-25",
+      "post_title": "Emotional Numbness: How to Start Feeling Again",
+      "meta_description": "Are you experiencing emotional numbness? Discover why it happens and practical steps to reconnect with your feelings, heal, and reclaim desire."
     },
     {
       "slug": "8-ways-to-start-reconnecting-with-your-emotions",
@@ -1377,11 +1491,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-26",
+      "post_title": "8 Ways to Start Reconnecting With Your Emotions",
+      "meta_description": "Feeling numb? You can reclaim your emotional landscape. Discover 8 direct, actionable ways to start reconnecting with your emotions and feel alive again."
     },
     {
       "slug": "9-causes-of-emotional-numbness-and-what-to-do",
@@ -1389,11 +1506,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-27",
+      "post_title": "9 Causes of Emotional Numbness and What To Do",
+      "meta_description": "Feeling numb? Discover 9 causes of emotional numbness. Learn practical steps to reconnect with your emotions, heal, and start feeling again with Luke's framework."
     },
     {
       "slug": "how-to-reconnect-with-yourself-after-a-period-of-emotional-numbness-strength-cou",
@@ -1401,11 +1521,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-28",
+      "post_title": "How to Reconnect With Yourself After Emotional Numbness",
+      "meta_description": "Feeling numb after a tough period? Learn how to reconnect with yourself, reclaim desire, and move through emotional numbness with practical steps and rituals."
     },
     {
       "slug": "overcoming-emotional-numbness-7-ways-to-feel-alive-again",
@@ -1782,6 +1905,474 @@
     {
       "slug": "kundalini-breathwork",
       "keyword": "kundalini breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "michael-stone-breathwork",
+      "keyword": "michael stone breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "somatic-breathwork-near-me",
+      "keyword": "somatic breathwork near me",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "huberman-breathwork",
+      "keyword": "huberman breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "what-is-9d-breathwork",
+      "keyword": "what is 9d breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "david-elliott-breathwork",
+      "keyword": "david elliott breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "hope-cartel-9d-breathwork",
+      "keyword": "hope cartel 9d breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-therapy",
+      "keyword": "breathwork therapy",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "transformational-breathwork",
+      "keyword": "transformational breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "psychedelic-breathwork",
+      "keyword": "psychedelic breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "holotropic-breathing",
+      "keyword": "holotropic breathing",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "rebirthing-breathwork",
+      "keyword": "rebirthing breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-exercises",
+      "keyword": "breathwork exercises",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "shamanic-breathwork",
+      "keyword": "shamanic breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "open-breathwork",
+      "keyword": "open breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "best-breathwork-app",
+      "keyword": "best breathwork app",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "witality-breathwork",
+      "keyword": "witality breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-meaning",
+      "keyword": "breathwork meaning",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "owaken-breathwork",
+      "keyword": "owaken breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-los-angeles",
+      "keyword": "breathwork los angeles",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "bali-breathwork",
+      "keyword": "bali breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-certification",
+      "keyword": "breathwork certification",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "jon-paul-crimi-breathwork",
+      "keyword": "jon paul crimi breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-class-near-me",
+      "keyword": "breathwork class near me",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "garmin-breathwork",
+      "keyword": "garmin breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-retreat",
+      "keyword": "breathwork retreat",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "holotropic-breathwork-training",
+      "keyword": "holotropic breathwork training",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "neurodynamic-breathwork",
+      "keyword": "neurodynamic breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-denver",
+      "keyword": "breathwork denver",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "benefits-of-breathwork",
+      "keyword": "benefits of breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-necklace",
+      "keyword": "breathwork necklace",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "somatic-release-breathwork",
+      "keyword": "somatic release breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "9d-breathwork-near-me",
+      "keyword": "9d breathwork near me",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "stan-grof-holotropic-breathwork",
+      "keyword": "stan grof holotropic breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "hope-cartel-9d-breathwork-location",
+      "keyword": "hope cartel 9d breathwork location",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "cartel-9d-breathwork",
+      "keyword": "cartel 9d breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "what-is-hope-cartel-9d-breathwork",
+      "keyword": "what is hope cartel 9d breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "biodynamic-breathwork",
+      "keyword": "biodynamic breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "guided-breathwork",
+      "keyword": "guided breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "breathwork-techniques",
+      "keyword": "breathwork techniques",
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
