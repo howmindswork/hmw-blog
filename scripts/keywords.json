@@ -1551,11 +1551,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-06-30",
+      "post_title": "Overcoming Emotional Numbness: 7+ Ways to Feel Again",
+      "meta_description": "Feeling numb? Discover 7+ practical ways to reconnect with your emotions and reclaim desire. Learn to overcome emotional numbness and live fully."
     },
     {
       "slug": "how-to-deal-with-numb-feelings-during-grief",
