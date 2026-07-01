@@ -1566,11 +1566,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-07-01",
+      "post_title": "How to Deal With Numb Feelings During Grief?",
+      "meta_description": "Feeling numb in grief is common, but it's not a dead end. Learn how to reconnect with your emotions and move towards emotional completion."
     },
     {
       "slug": "emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward",
