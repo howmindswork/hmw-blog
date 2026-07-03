@@ -1596,11 +1596,14 @@
       "pillar": "how-to-feel-again",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Invisible Grief Companion",
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-07-03",
+      "post_title": "10 Practical Steps to End Emotional Numbness Today",
+      "meta_description": "Feeling disconnected from your emotions? Learn 10 practical steps to recognize, address, and heal emotional numbness, and start feeling desire again."
     },
     {
       "slug": "a-yoga-nidra-practice-for-releasing-grief",
