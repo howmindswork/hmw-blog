@@ -1626,11 +1626,14 @@
       "pillar": "yoga-nidra",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Star Feeding Ritual",
       "product_url": "https://star-feeding-ritual.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-05",
+      "post_title": "A Yoga Nidra Practice for Releasing Grief: Pranamaya Yoga",
+      "meta_description": "Discover a specific yoga nidra practice designed for releasing grief. Find deep rest and emotional completion using Pranamaya Yoga techniques."
     },
     {
       "slug": "yoga-nidra-for-grief-aimee-robinson-davey",
