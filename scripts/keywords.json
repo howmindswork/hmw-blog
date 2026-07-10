@@ -1701,11 +1701,14 @@
       "pillar": "yoga-nidra",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Star Feeding Ritual",
       "product_url": "https://star-feeding-ritual.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-10",
+      "post_title": "45-Minute Yoga Nidra For Grieving: Finding Rest",
+      "meta_description": "Discover how a 45-minute Yoga Nidra practice offers profound rest and emotional healing for those who are grieving. Release tension and find peace."
     },
     {
       "slug": "yoga-nidra-and-grief-scott-moore-yoga",
