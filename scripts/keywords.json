@@ -1716,11 +1716,14 @@
       "pillar": "yoga-nidra",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Star Feeding Ritual",
       "product_url": "https://star-feeding-ritual.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-11",
+      "post_title": "How Yoga Nidra Releases Grief Stored in Your Body",
+      "meta_description": "Discover how Yoga Nidra helps calm your nervous system and release grief. This deep relaxation practice aids emotional completion."
     },
     {
       "slug": "how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine",
