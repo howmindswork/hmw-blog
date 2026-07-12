@@ -1731,11 +1731,14 @@
       "pillar": "yoga-nidra",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Star Feeding Ritual",
       "product_url": "https://star-feeding-ritual.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-12",
+      "post_title": "How Yoga Nidra Heals Grief: A Somatic Approach",
+      "meta_description": "Discover how Yoga Nidra offers a pathway to heal grief, releasing stored emotion in your body. Find peace and emotional completion."
     },
     {
       "slug": "breathwork-facilitator-training",
