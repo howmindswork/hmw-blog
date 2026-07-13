@@ -1050,4 +1050,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-facilitator-training/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-facilitator-training-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
