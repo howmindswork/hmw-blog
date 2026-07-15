@@ -1776,11 +1776,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-15",
+      "post_title": "What is Holotropic Breathwork and How Can it Help You?",
+      "meta_description": "Holotropic breathwork uses deep breathing to access altered states and process emotional pain. Learn how this powerful practice can unlock healing for grief and trauma."
     },
     {
       "slug": "holotropic-breathwork-nyc",
