@@ -1077,4 +1077,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/what-is-holotropic-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/holotropic-breathwork-nyc/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/holotropic-breathwork-nyc-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
