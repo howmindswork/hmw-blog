@@ -1911,11 +1911,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-07-24",
+      "post_title": "What is Somatic Breathwork and How Does it Heal?",
+      "meta_description": "Somatic breathwork can release trapped grief and trauma from your body. Learn how conscious breathing brings emotional completion and real healing."
     },
     {
       "slug": "breathwork-classes",
