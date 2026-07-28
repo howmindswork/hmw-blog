@@ -1185,4 +1185,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/conscious-connected-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/pause-breathwork/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/pause-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
