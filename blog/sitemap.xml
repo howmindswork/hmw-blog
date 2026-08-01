@@ -1221,4 +1221,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/michael-stone-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/somatic-breathwork-near-me/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-breathwork-near-me-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
