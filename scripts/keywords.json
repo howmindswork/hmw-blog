@@ -3416,6 +3416,54 @@
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "checking-your-browser-recaptcha",
+      "keyword": "checking your browser - recaptcha",
+      "pillar": "grief-rituals",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "we-were-never-meant-to-grieve-alone-by-laura-cincera",
+      "keyword": "we were never meant to grieve alone - by laura cincera",
+      "pillar": "grief-rituals",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "the-mindfulness-grief-system",
+      "keyword": "the mindfulness & grief system",
+      "pillar": "breathwork",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Permission to Stop",
+      "product_url": "https://come-down.pages.dev",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "how-to-feel-again-after-emotional-numbness-neuro-wellness-spa",
+      "keyword": "how to feel again after emotional numbness | neuro wellness spa",
+      "pillar": "how-to-feel-again",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Invisible Grief Companion",
+      "product_url": "https://invisible-grief-companion.pages.dev/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
     }
   ]
 }
