@@ -1230,4 +1230,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/somatic-breathwork-near-me-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/huberman-breathwork/</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/huberman-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
