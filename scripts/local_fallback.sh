@@ -18,7 +18,7 @@ LOG="$REPO/logs/fallback.log"
 SITE="https://blog.howmindswork.org"
 STAMP="$(date '+%Y-%m-%d %H:%M:%S CDT')"
 
-log() { echo "[$STAMP] $1" | tee -a "$LOG"; }
+log() { echo "[$STAMP] $1"; }
 
 mkdir -p "$REPO/logs"
 cd "$REPO"
