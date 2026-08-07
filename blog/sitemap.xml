@@ -1275,4 +1275,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-therapy-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/transformational-breathwork/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/transformational-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
