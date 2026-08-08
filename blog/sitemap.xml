@@ -1284,4 +1284,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/transformational-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/psychedelic-breathwork/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/psychedelic-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
