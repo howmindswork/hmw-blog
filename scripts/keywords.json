@@ -2151,11 +2151,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-08-09",
+      "post_title": "What is Holotropic Breathing and Can it Help with Grief?",
+      "meta_description": "Explore holotropic breathing for emotional release and grief processing. Understand its benefits, risks, and how it connects to deep emotional completion."
     },
     {
       "slug": "rebirthing-breathwork",
