@@ -2166,11 +2166,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-08-10",
+      "post_title": "Rebirthing Breathwork: Can It Heal Old Wounds?",
+      "meta_description": "Rebirthing breathwork taps into stored emotional pain. Learn how this powerful practice can help you release old grief and find emotional completion."
     },
     {
       "slug": "breathwork-exercises",

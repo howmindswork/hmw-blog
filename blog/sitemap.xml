@@ -1302,4 +1302,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/holotropic-breathing-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/rebirthing-breathwork/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/rebirthing-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
