@@ -2181,11 +2181,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-08-11",
+      "post_title": "Breathwork Exercises: Releasing Stored Grief & Emotion",
+      "meta_description": "Discover powerful breathwork exercises to release stored grief and emotional pain. Learn how intentional breathing can calm your nervous system and support emotional completion."
     },
     {
       "slug": "shamanic-breathwork",
