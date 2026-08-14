@@ -1338,4 +1338,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/open-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/best-breathwork-app/</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/best-breathwork-app-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
