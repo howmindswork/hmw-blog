@@ -1356,4 +1356,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/witality-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-meaning/</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-meaning-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
