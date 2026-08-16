@@ -3821,6 +3821,30 @@
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "breathwork-certification-online",
+      "keyword": "breathwork certification online",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "how-to-do-breathwork",
+      "keyword": "how to do breathwork",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
     }
   ]
 }
