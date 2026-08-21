@@ -2301,11 +2301,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-08-21",
+      "post_title": "Bali Breathwork: Is It Right For Your Healing?",
+      "meta_description": "Explore Bali breathwork for emotional healing. Understand its origins, benefits, and if it's the right path for completing your grief."
     },
     {
       "slug": "breathwork-certification",

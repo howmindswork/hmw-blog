@@ -1383,4 +1383,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-los-angeles-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/bali-breathwork/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/bali-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
