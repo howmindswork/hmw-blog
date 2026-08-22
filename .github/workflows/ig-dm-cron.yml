@@ -1,0 +1,30 @@
+name: IG Comment-to-DM Poll
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ig-dm-cron
+  cancel-in-progress: true
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Trigger IG DM worker
+        run: |
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://hmw-ig-dm.howmindswork.workers.dev/run" \
+            -H "Authorization: Bearer ${{ secrets.IG_DM_RUN_SECRET }}" \
+            -H "Content-Type: application/json")
+          BODY=$(echo "$RESPONSE" | head -1)
+          CODE=$(echo "$RESPONSE" | tail -1)
+          echo "Status: $CODE"
+          echo "Response: $BODY"
+          if [ "$CODE" != "200" ]; then
+            echo "Error: worker returned $CODE"
+            exit 1
+          fi
