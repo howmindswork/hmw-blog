@@ -1,10 +1,16 @@
 name: IG Comment-to-DM Poll
 
 on:
-  # Schedule removed 2026-08-21: the worker has its own native Cloudflare
-  # cron trigger now (*/5 * * * *), which is reliable — GitHub's schedule
-  # event can silently delay up to 30 min and isn't a real trigger anymore.
-  # Kept as a manual-only fallback.
+  # 2026-08-21: worker also has a native Cloudflare cron trigger now
+  # (*/5 * * * *). Kept BOTH intentionally — Cloudflare's own community has
+  # documented cases of Cron Triggers silently dying with no recovery even
+  # after redeploy, while GitHub's schedule only drifts/delays, it doesn't
+  # vanish. Each failure mode is the other's backup. Overlapping runs are
+  # safe: runOnce()'s D1 claims are atomic (INSERT...ON CONFLICT...WHERE),
+  # so a double-trigger just means one run wins the claim and the other
+  # no-ops, never a double-send.
+  schedule:
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 concurrency:
