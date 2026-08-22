@@ -1,8 +1,10 @@
 name: IG Comment-to-DM Poll
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  # Schedule removed 2026-08-21: the worker has its own native Cloudflare
+  # cron trigger now (*/5 * * * *), which is reliable — GitHub's schedule
+  # event can silently delay up to 30 min and isn't a real trigger anymore.
+  # Kept as a manual-only fallback.
   workflow_dispatch:
 
 concurrency:
