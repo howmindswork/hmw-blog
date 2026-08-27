@@ -1437,4 +1437,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-retreat-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/holotropic-breathwork-training/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/holotropic-breathwork-training-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
