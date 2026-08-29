@@ -2421,11 +2421,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": true,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-08-29",
+      "post_title": "Lapis Lazuli Meaning and Healing Properties for Deep Release",
+      "meta_description": "Lapis Lazuli offers profound emotional release and truth. Discover its ancient meaning and how its healing properties support emotional completion and inner wisdom."
     },
     {
       "slug": "third-eye-chakra-opening-stones",
