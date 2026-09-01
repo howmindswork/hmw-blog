@@ -11,7 +11,7 @@ import requests
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "openai/gpt-oss-20b"  # llama-3.3-70b-versatile retired by Groq, confirmed 404 2026-08-30
 CEREBRAS_URL = "https://api.cerebras.ai/v1/chat/completions"
 CEREBRAS_MODEL = "llama-3.3-70b"
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
