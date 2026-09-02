@@ -71,14 +71,6 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Deploy to Cloudflare Pages
-        if: steps.check.outputs.changed == 'true'
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy blog --project-name=hmw-blog --commit-dirty=true
-
       - name: Commit updated files
         if: steps.check.outputs.changed == 'true'
         run: |
@@ -87,3 +79,11 @@ jobs:
           git add scripts/keywords.json blog/sitemap.xml blog/posts/ blog/index.html
           git diff --staged --quiet || git commit -m "chore: publish new post + update sitemap [skip ci]"
           git pull --rebase origin main && git push
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.check.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy blog --project-name=hmw-blog --commit-dirty=true
