@@ -2436,11 +2436,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-09-02",
+      "post_title": "Best Stones for Opening the Third Eye Chakra",
+      "meta_description": "Unlock your intuition. Discover the best stones like Lapis Lazuli and Amethyst for third eye chakra opening and emotional clarity."
     },
     {
       "slug": "protection-crystals-for-anxiety",
