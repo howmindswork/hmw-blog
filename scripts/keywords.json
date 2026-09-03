@@ -2466,11 +2466,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-09-03",
+      "post_title": "How to Use a Mala Necklace for Deeper Meditation",
+      "meta_description": "Learn how to use a mala necklace for meditation to deepen your focus and heal. Discover ancient techniques for emotional completion and inner peace."
     },
     {
       "slug": "third-eye-chakra-blockage-symptoms",
