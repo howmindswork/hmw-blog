@@ -2451,11 +2451,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-09-03",
+      "post_title": "Protection Crystals for Anxiety and Grounding",
+      "meta_description": "Feeling overwhelmed? Discover how protection crystals for anxiety and grounding can help you find calm and stability, supporting your emotional completion."
     },
     {
       "slug": "how-to-use-mala-necklace-meditation",
