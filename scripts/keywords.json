@@ -2481,11 +2481,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-09-04",
+      "post_title": "What Are Third Eye Chakra Blockage Symptoms and How to Fix Them?",
+      "meta_description": "Feeling foggy or disconnected? Discover common third eye chakra blockage symptoms and actionable ways to restore clarity, intuition, and emotional peace."
     },
     {
       "slug": "best-crystals-for-intuition-clarity",
