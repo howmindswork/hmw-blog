@@ -2496,11 +2496,14 @@
       "pillar": "lapis-lazuli-third-eye",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Lapis Lazuli Third Eye Mala",
       "product_url": "https://howmindswork.org/lapis",
       "free_product_name": "The Lapis Lazuli Story (free read)",
-      "free_product_url": "https://howmindswork.org/lapis/article"
+      "free_product_url": "https://howmindswork.org/lapis/article",
+      "published_date": "2026-09-04",
+      "post_title": "What Are the Best Crystals for Intuition and Mental Clarity?",
+      "meta_description": "Discover crystals like Lapis Lazuli to sharpen intuition and clear your mind. Find focus, insight, and emotional peace for a calmer life."
     },
     {
       "slug": "breathwork-denver",
