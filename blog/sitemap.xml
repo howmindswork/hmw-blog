@@ -1509,4 +1509,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/best-crystals-for-intuition-clarity-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-denver/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-denver-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
