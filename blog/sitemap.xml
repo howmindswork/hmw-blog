@@ -1527,4 +1527,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/benefits-of-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-necklace/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-necklace-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
