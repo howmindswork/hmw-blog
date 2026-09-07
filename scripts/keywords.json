@@ -2556,11 +2556,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-07",
+      "post_title": "Somatic Release Breathwork: How Your Body Completes Grief",
+      "meta_description": "Discover somatic release breathwork to heal stored grief. Learn how specific breathing patterns release emotional blockages and bring completion. Find peace."
     },
     {
       "slug": "9d-breathwork-near-me",
