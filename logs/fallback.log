@@ -1,0 +1,1806 @@
+[2026-06-28 19:00:01 CDT] Skipping - a post was already published in the last 20h.
+[2026-06-28 19:00:01 CDT] Skipping - a post was already published in the last 20h.
+[2026-06-29 19:00:05 CDT] No recent post found. Running local generation...
+[2026-06-29 19:00:05 CDT] No recent post found. Running local generation...
+Injected internal links into overcoming-emotional-numbness-7-ways-to-feel-alive-again
+Rendered 103 posts to blog/index.html
+Generating post for: overcoming emotional numbness: 7+ ways to feel alive again
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Written: blog/posts/overcoming-emotional-numbness-7-ways-to-feel-alive-again/index.html
+OG image: overcoming-emotional-numbness-7-ways-to-feel-alive-again-og.webp
+Sitemap updated: 103 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/overcoming-emotional-numbness-7-ways-to-feel-alive-again/
+[2026-06-29 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-06-29 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main b8a4229] feat(blog): local fallback post 2026-06-29
+ 5 files changed, 324 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/overcoming-emotional-numbness-7-ways-to-feel-alive-again-og.webp
+ create mode 100644 blog/posts/overcoming-emotional-numbness-7-ways-to-feel-alive-again/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-06-30 19:00:03 CDT] No recent post found. Running local generation...
+[2026-06-30 19:00:03 CDT] No recent post found. Running local generation...
+Injected internal links into overcoming-emotional-numbness-7-ways-to-feel-again
+Rendered 104 posts to blog/index.html
+Generating post for: overcoming emotional numbness: 7+ ways to feel again
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Title too similar to recent post 'Overcoming Emotional Numbness' (overlap > 0.7) — regenerating (attempt 1/2)
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/overcoming-emotional-numbness-7-ways-to-feel-again/index.html
+OG image: overcoming-emotional-numbness-7-ways-to-feel-again-og.webp
+Sitemap updated: 104 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/overcoming-emotional-numbness-7-ways-to-feel-again/
+[2026-06-30 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-06-30 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 3c45cd5] feat(blog): local fallback post 2026-06-30
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/overcoming-emotional-numbness-7-ways-to-feel-again-og.webp
+ create mode 100644 blog/posts/overcoming-emotional-numbness-7-ways-to-feel-again/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-01 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-01 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into how-to-deal-with-numb-feelings-during-grief
+Rendered 105 posts to blog/index.html
+Generating post for: how to deal with numb feelings during grief
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Written: blog/posts/how-to-deal-with-numb-feelings-during-grief/index.html
+OG image: how-to-deal-with-numb-feelings-during-grief-og.webp
+Sitemap updated: 105 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/how-to-deal-with-numb-feelings-during-grief/
+[2026-07-01 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-01 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 490ea16] feat(blog): local fallback post 2026-07-01
+ 5 files changed, 325 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/how-to-deal-with-numb-feelings-during-grief-og.webp
+ create mode 100644 blog/posts/how-to-deal-with-numb-feelings-during-grief/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-02 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-02 19:00:04 CDT] No recent post found. Running local generation...
+Injected internal links into emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward
+Rendered 106 posts to blog/index.html
+Generating post for: emotional numbness: why you can't feel and how to reconnect | drift inward
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Written: blog/posts/emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward/index.html
+OG image: emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward-og.webp
+Sitemap updated: 106 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward/
+[2026-07-02 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-02 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main df29402] feat(blog): local fallback post 2026-07-02
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward-og.webp
+ create mode 100644 blog/posts/emotional-numbness-why-you-cant-feel-and-how-to-reconnect-drift-inward/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-03 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-03 19:00:02 CDT] No recent post found. Running local generation...
+Injected internal links into 10-practical-steps-to-end-emotional-numbness-today
+Rendered 107 posts to blog/index.html
+Generating post for: 10 practical steps to end emotional numbness today
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/10-practical-steps-to-end-emotional-numbness-today/index.html
+OG image: 10-practical-steps-to-end-emotional-numbness-today-og.webp
+Sitemap updated: 107 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/10-practical-steps-to-end-emotional-numbness-today/
+[2026-07-03 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-03 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 4bb6780] feat(blog): local fallback post 2026-07-03
+ 5 files changed, 315 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/10-practical-steps-to-end-emotional-numbness-today-og.webp
+ create mode 100644 blog/posts/10-practical-steps-to-end-emotional-numbness-today/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-04 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-04 19:00:02 CDT] No recent post found. Running local generation...
+Injected internal links into a-yoga-nidra-practice-for-releasing-grief
+Rendered 108 posts to blog/index.html
+Generating post for: a yoga nidra practice for releasing grief
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/a-yoga-nidra-practice-for-releasing-grief/index.html
+OG image: a-yoga-nidra-practice-for-releasing-grief-og.webp
+Sitemap updated: 108 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/a-yoga-nidra-practice-for-releasing-grief/
+[2026-07-04 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-04 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 3c4d272] feat(blog): local fallback post 2026-07-04
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/a-yoga-nidra-practice-for-releasing-grief-og.webp
+ create mode 100644 blog/posts/a-yoga-nidra-practice-for-releasing-grief/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-05 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-05 19:00:04 CDT] No recent post found. Running local generation...
+Injected internal links into a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga
+Rendered 109 posts to blog/index.html
+Generating post for: a yoga nidra practice for releasing grief | pranamaya yoga
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Title too similar to recent post 'Yoga Nidra For Grief' (overlap > 0.7) — regenerating (attempt 1/2)
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga/index.html
+OG image: a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga-og.webp
+Sitemap updated: 109 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga/
+[2026-07-05 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-05 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 08dad73] feat(blog): local fallback post 2026-07-05
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga-og.webp
+ create mode 100644 blog/posts/a-yoga-nidra-practice-for-releasing-grief-pranamaya-yoga/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-06 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-06 19:00:02 CDT] No recent post found. Running local generation...
+Injected internal links into yoga-nidra-for-grief-aimee-robinson-davey
+Rendered 110 posts to blog/index.html
+Generating post for: yoga nidra for grief | aimee robinson-davey
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Title too similar to recent post 'Yoga Nidra For Grief' (overlap > 0.7) — regenerating (attempt 1/2)
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Title too similar to recent post 'Yoga Nidra For Grief' (overlap > 0.7) — regenerating (attempt 2/2)
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Written: blog/posts/yoga-nidra-for-grief-aimee-robinson-davey/index.html
+OG image: yoga-nidra-for-grief-aimee-robinson-davey-og.webp
+Sitemap updated: 110 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/yoga-nidra-for-grief-aimee-robinson-davey/
+[2026-07-06 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-06 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 49a2194] feat(blog): local fallback post 2026-07-06
+ 5 files changed, 328 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/yoga-nidra-for-grief-aimee-robinson-davey-og.webp
+ create mode 100644 blog/posts/yoga-nidra-for-grief-aimee-robinson-davey/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-07 19:00:05 CDT] No recent post found. Running local generation...
+[2026-07-07 19:00:05 CDT] No recent post found. Running local generation...
+Injected internal links into yoga-nidra-for-grief-amanda-gruell
+Rendered 111 posts to blog/index.html
+Generating post for: yoga nidra for grief | amanda gruell
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Title too similar to recent post 'Yoga Nidra For Grief' (overlap > 0.7) — regenerating (attempt 1/2)
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Title too similar to recent post 'Yoga Nidra For Grief' (overlap > 0.7) — regenerating (attempt 2/2)
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Written: blog/posts/yoga-nidra-for-grief-amanda-gruell/index.html
+OG image: yoga-nidra-for-grief-amanda-gruell-og.webp
+Sitemap updated: 111 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/yoga-nidra-for-grief-amanda-gruell/
+[2026-07-07 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-07 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main d608d1c] feat(blog): local fallback post 2026-07-07
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/yoga-nidra-for-grief-amanda-gruell-og.webp
+ create mode 100644 blog/posts/yoga-nidra-for-grief-amanda-gruell/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-08 19:00:03 CDT] No recent post found. Running local generation...
+[2026-07-08 19:00:03 CDT] No recent post found. Running local generation...
+Injected internal links into yoga-nidra-for-grief-scott-moore
+Rendered 112 posts to blog/index.html
+Generating post for: yoga nidra for grief | scott moore
+Written: blog/posts/yoga-nidra-for-grief-scott-moore/index.html
+OG image: yoga-nidra-for-grief-scott-moore-og.webp
+Sitemap updated: 112 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/yoga-nidra-for-grief-scott-moore/
+[2026-07-08 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-08 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main b0b1d9c] feat(blog): local fallback post 2026-07-08
+ 5 files changed, 335 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/yoga-nidra-for-grief-scott-moore-og.webp
+ create mode 100644 blog/posts/yoga-nidra-for-grief-scott-moore/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-09 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-09 19:00:02 CDT] No recent post found. Running local generation...
+Injected internal links into yoga-nidra-for-grief-cassandra-varga-cassi-tormey
+Rendered 113 posts to blog/index.html
+Generating post for: yoga nidra for grief | cassandra varga (cassi tormey)
+Written: blog/posts/yoga-nidra-for-grief-cassandra-varga-cassi-tormey/index.html
+OG image: yoga-nidra-for-grief-cassandra-varga-cassi-tormey-og.webp
+Sitemap updated: 113 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/yoga-nidra-for-grief-cassandra-varga-cassi-tormey/
+[2026-07-09 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-09 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main eea1fdc] feat(blog): local fallback post 2026-07-09
+ 5 files changed, 355 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/yoga-nidra-for-grief-cassandra-varga-cassi-tormey-og.webp
+ create mode 100644 blog/posts/yoga-nidra-for-grief-cassandra-varga-cassi-tormey/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-10 19:00:03 CDT] No recent post found. Running local generation...
+[2026-07-10 19:00:03 CDT] No recent post found. Running local generation...
+Injected internal links into 45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates
+Rendered 114 posts to blog/index.html
+Generating post for: 45-minute yoga nidra for those who are grieving | jocelyn bates
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+JSON parse error (attempt 3/5): Extra data: line 101 column 1 (char 11916) — retrying LLM call
+Written: blog/posts/45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates/index.html
+OG image: 45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates-og.webp
+Sitemap updated: 114 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates/
+[2026-07-10 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-10 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main e1b295b] feat(blog): local fallback post 2026-07-10
+ 5 files changed, 344 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates-og.webp
+ create mode 100644 blog/posts/45-minute-yoga-nidra-for-those-who-are-grieving-jocelyn-bates/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-11 19:00:03 CDT] No recent post found. Running local generation...
+[2026-07-11 19:00:03 CDT] No recent post found. Running local generation...
+Injected internal links into yoga-nidra-and-grief-scott-moore-yoga
+Rendered 115 posts to blog/index.html
+Generating post for: yoga nidra and grief  |  scott moore yoga
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 429 — rotating to gemini [6/23]
+Written: blog/posts/yoga-nidra-and-grief-scott-moore-yoga/index.html
+OG image: yoga-nidra-and-grief-scott-moore-yoga-og.webp
+Sitemap updated: 115 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/yoga-nidra-and-grief-scott-moore-yoga/
+[2026-07-11 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-11 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main e7af288] feat(blog): local fallback post 2026-07-11
+ 5 files changed, 351 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/yoga-nidra-and-grief-scott-moore-yoga-og.webp
+ create mode 100644 blog/posts/yoga-nidra-and-grief-scott-moore-yoga/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-12 19:00:05 CDT] No recent post found. Running local generation...
+[2026-07-12 19:00:05 CDT] No recent post found. Running local generation...
+Injected internal links into how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine
+Rendered 116 posts to blog/index.html
+Generating post for: how yoga nidra can help you heal from grief | om yoga magazine
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 503 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Written: blog/posts/how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine/index.html
+OG image: how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine-og.webp
+Sitemap updated: 116 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine/
+[2026-07-12 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-12 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 68a7270] feat(blog): local fallback post 2026-07-12
+ 5 files changed, 345 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine-og.webp
+ create mode 100644 blog/posts/how-yoga-nidra-can-help-you-heal-from-grief-om-yoga-magazine/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-13 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-13 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into breathwork-facilitator-training
+Rendered 117 posts to blog/index.html
+Generating post for: breathwork facilitator training
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 503 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/breathwork-facilitator-training/index.html
+OG image: breathwork-facilitator-training-og.webp
+Sitemap updated: 117 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-facilitator-training/
+[2026-07-13 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-13 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 7b31c6a] feat(blog): local fallback post 2026-07-13
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-facilitator-training-og.webp
+ create mode 100644 blog/posts/breathwork-facilitator-training/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-14 19:00:05 CDT] No recent post found. Running local generation...
+[2026-07-14 19:00:05 CDT] No recent post found. Running local generation...
+Injected internal links into holotropic-breathwork-near-me
+Rendered 118 posts to blog/index.html
+Generating post for: holotropic breathwork near me
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/holotropic-breathwork-near-me/index.html
+OG image: holotropic-breathwork-near-me-og.webp
+Sitemap updated: 118 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/holotropic-breathwork-near-me/
+[2026-07-14 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-14 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 157c8a8] feat(blog): local fallback post 2026-07-14
+ 5 files changed, 317 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/holotropic-breathwork-near-me-og.webp
+ create mode 100644 blog/posts/holotropic-breathwork-near-me/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-15 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-15 19:00:04 CDT] No recent post found. Running local generation...
+Injected internal links into what-is-holotropic-breathwork
+Rendered 119 posts to blog/index.html
+Generating post for: what is holotropic breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/what-is-holotropic-breathwork/index.html
+OG image: what-is-holotropic-breathwork-og.webp
+Sitemap updated: 119 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/what-is-holotropic-breathwork/
+[2026-07-15 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-15 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 5dafb84] feat(blog): local fallback post 2026-07-15
+ 5 files changed, 323 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/what-is-holotropic-breathwork-og.webp
+ create mode 100644 blog/posts/what-is-holotropic-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-16 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-16 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into holotropic-breathwork-nyc
+Rendered 120 posts to blog/index.html
+Generating post for: holotropic breathwork nyc
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+Written: blog/posts/holotropic-breathwork-nyc/index.html
+OG image: holotropic-breathwork-nyc-og.webp
+Sitemap updated: 120 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/holotropic-breathwork-nyc/
+[2026-07-16 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-16 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 81c5f42] feat(blog): local fallback post 2026-07-16
+ 5 files changed, 318 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/holotropic-breathwork-nyc-og.webp
+ create mode 100644 blog/posts/holotropic-breathwork-nyc/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-17 19:00:05 CDT] No recent post found. Running local generation...
+[2026-07-17 19:00:05 CDT] No recent post found. Running local generation...
+Injected internal links into sandy-breathwork
+Rendered 121 posts to blog/index.html
+Generating post for: sandy breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 429 — rotating to gemini [6/23]
+Written: blog/posts/sandy-breathwork/index.html
+OG image: sandy-breathwork-og.webp
+Sitemap updated: 121 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/sandy-breathwork/
+[2026-07-17 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-17 19:00:05 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 8c3bfbb] feat(blog): local fallback post 2026-07-17
+ 5 files changed, 342 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/sandy-breathwork-og.webp
+ create mode 100644 blog/posts/sandy-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-18 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-18 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into soma-breathwork
+Rendered 122 posts to blog/index.html
+Generating post for: soma breathwork
+JSON parse error (attempt 1/5): Extra data: line 126 column 1 (char 14467) — retrying LLM call
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+JSON parse error (attempt 4/5): Unterminated string starting at: line 94 column 17 (char 11773) — retrying LLM call
+JSON parse error (attempt 5/5): Unterminated string starting at: line 105 column 19 (char 12355) — retrying LLM call
+Provider gemini error 429 — rotating to gemini [4/23]
+Written: blog/posts/soma-breathwork/index.html
+OG image: soma-breathwork-og.webp
+Sitemap updated: 122 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/soma-breathwork/
+[2026-07-18 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-18 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 17b6beb] feat(blog): local fallback post 2026-07-18
+ 5 files changed, 337 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/soma-breathwork-og.webp
+ create mode 100644 blog/posts/soma-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-19 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-19 19:00:04 CDT] No recent post found. Running local generation...
+Injected internal links into breathwork-classes-near-me
+Rendered 123 posts to blog/index.html
+Generating post for: breathwork classes near me
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+JSON parse error (attempt 5/5): Extra data: line 105 column 1 (char 12275) — retrying LLM call
+Provider gemini error 503 — rotating to gemini [6/23]
+Written: blog/posts/breathwork-classes-near-me/index.html
+OG image: breathwork-classes-near-me-og.webp
+Sitemap updated: 123 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-classes-near-me/
+[2026-07-19 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-19 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 3673f6e] feat(blog): local fallback post 2026-07-19
+ 5 files changed, 349 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-classes-near-me-og.webp
+ create mode 100644 blog/posts/breathwork-classes-near-me/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-20 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-20 19:00:01 CDT] No recent post found. Running local generation...
+Generating post for: what is breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-07-20 19:00:01 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-20 19:00:01 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-21 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-21 19:00:04 CDT] No recent post found. Running local generation...
+Generating post for: what is breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 429 — rotating to gemini [6/23]
+Provider gemini error 429 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-07-21 19:00:04 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-21 19:00:04 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-22 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-22 19:00:02 CDT] No recent post found. Running local generation...
+Generating post for: what is breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 429 — rotating to gemini [6/23]
+Provider gemini error 429 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-07-22 19:00:02 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-22 19:00:02 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-23 19:00:03 CDT] No recent post found. Running local generation...
+[2026-07-23 19:00:03 CDT] No recent post found. Running local generation...
+Generating post for: what is breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-07-23 19:00:03 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-23 19:00:03 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-24 19:00:03 CDT] No recent post found. Running local generation...
+[2026-07-24 19:00:03 CDT] No recent post found. Running local generation...
+Injected internal links into what-is-breathwork
+Rendered 124 posts to blog/index.html
+Generating post for: what is breathwork
+Provider gemini error 503 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Written: blog/posts/what-is-breathwork/index.html
+OG image: what-is-breathwork-og.webp
+Sitemap updated: 124 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/what-is-breathwork/
+[2026-07-24 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-24 19:00:03 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main f732bf7] feat(blog): local fallback post 2026-07-24
+ 5 files changed, 343 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/what-is-breathwork-og.webp
+ create mode 100644 blog/posts/what-is-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-25 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-25 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into holotropic-breathwork
+Rendered 125 posts to blog/index.html
+Generating post for: holotropic breathwork
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Written: blog/posts/holotropic-breathwork/index.html
+OG image: holotropic-breathwork-og.webp
+Sitemap updated: 125 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/holotropic-breathwork/
+[2026-07-25 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-25 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 2ab09ce] feat(blog): local fallback post 2026-07-25
+ 5 files changed, 348 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/holotropic-breathwork-og.webp
+ create mode 100644 blog/posts/holotropic-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-26 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-26 19:00:02 CDT] No recent post found. Running local generation...
+Injected internal links into breathwork-near-me
+Rendered 126 posts to blog/index.html
+Generating post for: breathwork near me
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 503 — rotating to gemini [5/23]
+Written: blog/posts/breathwork-near-me/index.html
+OG image: breathwork-near-me-og.webp
+Sitemap updated: 126 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-near-me/
+[2026-07-26 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-26 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 6bb6280] feat(blog): local fallback post 2026-07-26
+ 5 files changed, 339 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-near-me-og.webp
+ create mode 100644 blog/posts/breathwork-near-me/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-27 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-27 19:00:02 CDT] No recent post found. Running local generation...
+Generating post for: breathwork meditation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 503 — rotating to gemini [6/23]
+Provider gemini error 503 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 429 — rotating to groq [9/23]
+Provider groq error 429 — rotating to groq [10/23]
+Provider groq error 429 — rotating to groq [11/23]
+Provider groq error 429 — rotating to groq [12/23]
+Provider groq error 429 — rotating to groq [13/23]
+Provider groq error 429 — rotating to groq [14/23]
+Provider groq error 429 — rotating to groq [15/23]
+Provider groq error 429 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-07-27 19:00:02 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-27 19:00:02 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-07-28 19:00:01 CDT] No recent post found. Running local generation...
+[2026-07-28 19:00:01 CDT] No recent post found. Running local generation...
+Injected internal links into breathwork-meditation
+Rendered 127 posts to blog/index.html
+Generating post for: breathwork meditation
+Provider gemini failed [1/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [2/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [3/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [4/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [5/23]: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Using existing real article image: breathwork-meditation-hero.png
+Using existing real article image: breathwork-meditation-body-1.png
+Using existing real article image: breathwork-meditation-body-2.png
+Written: blog/posts/breathwork-meditation/index.html
+OG image: breathwork-meditation-og.webp
+Sitemap updated: 127 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-meditation/
+[2026-07-28 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-28 19:00:01 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 478da25] feat(blog): local fallback post 2026-07-28
+ 8 files changed, 354 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-meditation-body-1.png
+ create mode 100644 blog/assets/posts/breathwork-meditation-body-2.png
+ create mode 100644 blog/assets/posts/breathwork-meditation-hero.png
+ create mode 100644 blog/assets/posts/breathwork-meditation-og.webp
+ create mode 100644 blog/posts/breathwork-meditation/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-29 19:00:04 CDT] No recent post found. Running local generation...
+[2026-07-29 19:00:04 CDT] No recent post found. Running local generation...
+/home/luke/hmw-blog/blog/assets/posts/somatic-breathwork-hero.png
+/home/luke/hmw-blog/blog/assets/posts/somatic-breathwork-body-1.png
+/home/luke/hmw-blog/blog/assets/posts/somatic-breathwork-body-2.png
+Injected internal links into somatic-breathwork
+Rendered 128 posts to blog/index.html
+Generating post for: somatic breathwork
+Provider gemini failed [1/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [2/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [3/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Generating real article image: somatic-breathwork-hero.png (this may take several minutes)
+Generating real article image: somatic-breathwork-body-1.png (this may take several minutes)
+Generating real article image: somatic-breathwork-body-2.png (this may take several minutes)
+Written: blog/posts/somatic-breathwork/index.html
+OG image: somatic-breathwork-og.webp
+Sitemap updated: 128 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/somatic-breathwork/
+[2026-07-29 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-29 19:00:04 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main e046b82] feat(blog): local fallback post 2026-07-29
+ 8 files changed, 347 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/somatic-breathwork-body-1.png
+ create mode 100644 blog/assets/posts/somatic-breathwork-body-2.png
+ create mode 100644 blog/assets/posts/somatic-breathwork-hero.png
+ create mode 100644 blog/assets/posts/somatic-breathwork-og.webp
+ create mode 100644 blog/posts/somatic-breathwork/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-30 19:00:02 CDT] No recent post found. Running local generation...
+[2026-07-30 19:00:02 CDT] No recent post found. Running local generation...
+/home/luke/hmw-blog/blog/assets/posts/breathwork-classes-hero.png
+/home/luke/hmw-blog/blog/assets/posts/breathwork-classes-body-1.png
+/home/luke/hmw-blog/blog/assets/posts/breathwork-classes-body-2.png
+Injected internal links into breathwork-classes
+Rendered 129 posts to blog/index.html
+Generating post for: breathwork classes
+Provider gemini failed [1/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [2/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [3/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [4/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [5/23]: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [6/23]: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider cerebras failed [7/23]: 404 Client Error: Not Found for url: https://api.cerebras.ai/v1/chat/completions
+Provider groq failed [8/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [9/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [10/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [11/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [12/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [13/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [14/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [15/23]: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [16/23]: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [17/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [18/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [19/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [20/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [21/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider groq failed [22/23]: 400 Client Error: Bad Request for url: https://api.groq.com/openai/v1/chat/completions
+Provider openrouter failed [23/23]: 402 Client Error: Payment Required for url: https://openrouter.ai/api/v1/chat/completions
+All 23 free providers failed. Using Codex last-resort tier.
+Generating real article image: breathwork-classes-hero.png (this may take several minutes)
+Generating real article image: breathwork-classes-body-1.png (this may take several minutes)
+Generating real article image: breathwork-classes-body-2.png (this may take several minutes)
+Written: blog/posts/breathwork-classes/index.html
+OG image: breathwork-classes-og.webp
+Sitemap updated: 129 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-classes/
+[2026-07-30 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-30 19:00:02 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main 125f1ed] feat(blog): local fallback post 2026-07-30
+ 8 files changed, 368 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-classes-body-1.png
+ create mode 100644 blog/assets/posts/breathwork-classes-body-2.png
+ create mode 100644 blog/assets/posts/breathwork-classes-hero.png
+ create mode 100644 blog/assets/posts/breathwork-classes-og.webp
+ create mode 100644 blog/posts/breathwork-classes/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-07-31 19:00:06 CDT] No recent post found. Running local generation...
+[2026-07-31 19:00:06 CDT] No recent post found. Running local generation...
+/home/luke/hmw-blog/blog/assets/posts/breathwork-training-hero.png
+/home/luke/hmw-blog/blog/assets/posts/breathwork-training-body-1.png
+/home/luke/hmw-blog/blog/assets/posts/breathwork-training-body-2.png
+Injected internal links into breathwork-training
+Rendered 130 posts to blog/index.html
+Generating post for: breathwork training
+Provider gemini failed [1/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [2/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [3/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [4/23]: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [5/23]: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider gemini failed [6/23]: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+Provider cerebras failed [7/23]: 404 Client Error: Not Found for url: https://api.cerebras.ai/v1/chat/completions
+Generating real article image: breathwork-training-hero.png (this may take several minutes)
+Generating real article image: breathwork-training-body-1.png (this may take several minutes)
+Generating real article image: breathwork-training-body-2.png (this may take several minutes)
+Written: blog/posts/breathwork-training/index.html
+OG image: breathwork-training-og.webp
+Sitemap updated: 130 posts
+IndexNow ping: 200 — https://blog.howmindswork.org/posts/breathwork-training/
+[2026-07-31 19:00:06 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[2026-07-31 19:00:06 CDT] Post generated. Files changed: blog/index.html blog/sitemap.xml scripts/keywords.json 
+[main dd22601] feat(blog): local fallback post 2026-07-31
+ 8 files changed, 329 insertions(+), 2 deletions(-)
+ create mode 100644 blog/assets/posts/breathwork-training-body-1.png
+ create mode 100644 blog/assets/posts/breathwork-training-body-2.png
+ create mode 100644 blog/assets/posts/breathwork-training-hero.png
+ create mode 100644 blog/assets/posts/breathwork-training-og.webp
+ create mode 100644 blog/posts/breathwork-training/index.html
+To https://github.com/howmindswork/hmw-blog.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/howmindswork/hmw-blog.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-08-01 13:53:36 CDT] ERROR: pull --rebase hit a conflict. Repo left untouched, fix by hand.
+[2026-08-01 13:53:50 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-01 13:53:50 CDT] posts in repo: 137   posts live: 137
+[2026-08-01 13:53:50 CDT] Live site is current. Nothing to deploy.
+[2026-08-01 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-01 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-01 19:00:04 CDT] posts in repo: 137   posts live: 137
+[2026-08-01 19:00:04 CDT] posts in repo: 137   posts live: 137
+[2026-08-01 19:00:04 CDT] Live site is current. Nothing to deploy.
+[2026-08-01 19:00:04 CDT] Live site is current. Nothing to deploy.
+[2026-08-02 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-02 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-02 19:00:02 CDT] posts in repo: 138   posts live: 137
+[2026-08-02 19:00:02 CDT] posts in repo: 138   posts live: 137
+[2026-08-02 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+[2026-08-02 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.118.0
+────────────────────
+Uploading... (273/277)
+Uploading... (274/277)
+Uploading... (275/277)
+Uploading... (277/277)
+✨ Success! Uploaded 4 files (273 already uploaded) (1.26 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://b07c07d4.hmw-blog.pages.dev
+[2026-08-02 19:00:02 CDT] Deploy done. Posts live now: 138 (was 137).
+[2026-08-02 19:00:02 CDT] Deploy done. Posts live now: 138 (was 137).
+[2026-08-03 19:00:06 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-03 19:00:06 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-03 19:00:06 CDT] posts in repo: 139   posts live: 138
+[2026-08-03 19:00:06 CDT] posts in repo: 139   posts live: 138
+[2026-08-03 19:00:06 CDT] Live site is behind by 1 posts - deploying from here.
+[2026-08-03 19:00:06 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.118.0
+────────────────────
+Uploading... (275/279)
+Uploading... (276/279)
+Uploading... (277/279)
+Uploading... (279/279)
+✨ Success! Uploaded 4 files (275 already uploaded) (1.26 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://1bf23370.hmw-blog.pages.dev
+[2026-08-03 19:00:06 CDT] Deploy done. Posts live now: 139 (was 138).
+[2026-08-03 19:00:06 CDT] Deploy done. Posts live now: 139 (was 138).
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[2026-08-04 19:00:03 CDT] ERROR: pull --rebase hit a conflict. Repo left untouched, fix by hand.
+[2026-08-05 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-05 19:00:01 CDT] posts in repo: 141   posts live: 139
+[2026-08-05 19:00:01 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.119.0
+────────────────────
+Uploading... (277/283)
+Uploading... (279/283)
+Uploading... (281/283)
+Uploading... (283/283)
+✨ Success! Uploaded 6 files (277 already uploaded) (1.57 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://c7c84593.hmw-blog.pages.dev
+[2026-08-05 19:00:01 CDT] Deploy done. Posts live now: 139 (was 139).
+[2026-08-05 19:00:01 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-06 19:00:05 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-06 19:00:05 CDT] posts in repo: 142   posts live: 141
+[2026-08-06 19:00:05 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.119.0
+────────────────────
+Uploading... (281/285)
+Uploading... (282/285)
+Uploading... (283/285)
+Uploading... (285/285)
+✨ Success! Uploaded 4 files (281 already uploaded) (1.37 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://1024425b.hmw-blog.pages.dev
+[2026-08-06 19:00:05 CDT] Deploy done. Posts live now: 142 (was 141).
+[2026-08-07 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-07 19:00:03 CDT] posts in repo: 143   posts live: 142
+[2026-08-07 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.120.0
+────────────────────
+Uploading... (283/287)
+Uploading... (284/287)
+Uploading... (286/287)
+Uploading... (287/287)
+✨ Success! Uploaded 4 files (283 already uploaded) (1.34 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://e7540ed0.hmw-blog.pages.dev
+[2026-08-07 19:00:03 CDT] Deploy done. Posts live now: 142 (was 142).
+[2026-08-07 19:00:03 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-08 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-08 19:00:01 CDT] posts in repo: 144   posts live: 143
+[2026-08-08 19:00:01 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.120.0
+────────────────────
+Uploading... (285/289)
+Uploading... (287/289)
+Uploading... (288/289)
+Uploading... (289/289)
+✨ Success! Uploaded 4 files (285 already uploaded) (1.24 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://698dcebe.hmw-blog.pages.dev
+[2026-08-08 19:00:01 CDT] Deploy done. Posts live now: 143 (was 143).
+[2026-08-08 19:00:01 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-09 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-09 19:00:03 CDT] posts in repo: 145   posts live: 144
+[2026-08-09 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.120.0
+────────────────────
+Uploading... (287/291)
+Uploading... (288/291)
+Uploading... (289/291)
+Uploading... (291/291)
+✨ Success! Uploaded 4 files (287 already uploaded) (1.40 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://99ee04c9.hmw-blog.pages.dev
+[2026-08-09 19:00:03 CDT] Deploy done. Posts live now: 145 (was 144).
+[2026-08-10 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-10 19:00:03 CDT] posts in repo: 146   posts live: 145
+[2026-08-10 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.120.1
+────────────────────
+Uploading... (289/293)
+Uploading... (290/293)
+Uploading... (292/293)
+Uploading... (293/293)
+✨ Success! Uploaded 4 files (289 already uploaded) (1.51 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://f30fd5cc.hmw-blog.pages.dev
+[2026-08-10 19:00:03 CDT] Deploy done. Posts live now: 145 (was 145).
+[2026-08-10 19:00:03 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-11 19:00:06 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-11 19:00:06 CDT] posts in repo: 147   posts live: 146
+[2026-08-11 19:00:06 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.121.0
+────────────────────
+Uploading... (291/295)
+Uploading... (293/295)
+Uploading... (294/295)
+Uploading... (295/295)
+✨ Success! Uploaded 4 files (291 already uploaded) (1.27 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://523a2b73.hmw-blog.pages.dev
+[2026-08-11 19:00:06 CDT] Deploy done. Posts live now: 147 (was 146).
+[2026-08-12 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-12 19:00:04 CDT] posts in repo: 148   posts live: 147
+[2026-08-12 19:00:04 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.122.0
+────────────────────
+Uploading... (293/297)
+Uploading... (294/297)
+Uploading... (295/297)
+Uploading... (297/297)
+✨ Success! Uploaded 4 files (293 already uploaded) (1.48 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://4bd47dbb.hmw-blog.pages.dev
+[2026-08-12 19:00:04 CDT] Deploy done. Posts live now: 148 (was 147).
+[2026-08-13 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-13 19:00:02 CDT] posts in repo: 149   posts live: 148
+[2026-08-13 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.123.0
+────────────────────
+Uploading... (295/299)
+Uploading... (297/299)
+Uploading... (298/299)
+Uploading... (299/299)
+✨ Success! Uploaded 4 files (295 already uploaded) (1.14 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://505ed578.hmw-blog.pages.dev
+[2026-08-13 19:00:02 CDT] Deploy done. Posts live now: 149 (was 148).
+[2026-08-14 19:00:06 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-14 19:00:06 CDT] posts in repo: 150   posts live: 149
+[2026-08-14 19:00:06 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.123.0
+────────────────────
+Uploading... (297/301)
+Uploading... (298/301)
+Uploading... (299/301)
+Uploading... (301/301)
+✨ Success! Uploaded 4 files (297 already uploaded) (1.39 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://3bbabd9f.hmw-blog.pages.dev
+[2026-08-14 19:00:06 CDT] Deploy done. Posts live now: 150 (was 149).
+[2026-08-15 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-15 19:00:04 CDT] posts in repo: 151   posts live: 150
+[2026-08-15 19:00:04 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.123.0
+────────────────────
+Uploading... (299/303)
+Uploading... (300/303)
+Uploading... (301/303)
+Uploading... (303/303)
+✨ Success! Uploaded 4 files (299 already uploaded) (1.37 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://7ddffcf7.hmw-blog.pages.dev
+[2026-08-15 19:00:04 CDT] Deploy done. Posts live now: 151 (was 150).
+[2026-08-16 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-16 19:00:01 CDT] posts in repo: 152   posts live: 151
+[2026-08-16 19:00:01 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.123.0
+────────────────────
+Uploading... (301/305)
+Uploading... (302/305)
+Uploading... (303/305)
+Uploading... (305/305)
+✨ Success! Uploaded 4 files (301 already uploaded) (1.56 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://cb5c4f7d.hmw-blog.pages.dev
+[2026-08-16 19:00:01 CDT] Deploy done. Posts live now: 151 (was 151).
+[2026-08-16 19:00:01 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-17 19:00:05 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-17 19:00:05 CDT] posts in repo: 153   posts live: 152
+[2026-08-17 19:00:05 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.123.0
+────────────────────
+Uploading... (303/307)
+Uploading... (304/307)
+Uploading... (306/307)
+Uploading... (307/307)
+✨ Success! Uploaded 4 files (303 already uploaded) (1.33 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://15fc2a01.hmw-blog.pages.dev
+[2026-08-17 19:00:05 CDT] Deploy done. Posts live now: 153 (was 152).
+[2026-08-18 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-18 19:00:03 CDT] posts in repo: 154   posts live: 153
+[2026-08-18 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.124.0
+────────────────────
+Uploading... (305/309)
+Uploading... (307/309)
+Uploading... (308/309)
+Uploading... (309/309)
+✨ Success! Uploaded 4 files (305 already uploaded) (1.44 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://9f4c0ae4.hmw-blog.pages.dev
+[2026-08-18 19:00:03 CDT] Deploy done. Posts live now: 154 (was 153).
+[2026-08-19 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-19 19:00:01 CDT] posts in repo: 154   posts live: 154
+[2026-08-19 19:00:01 CDT] Live site is current. Nothing to deploy.
+[2026-08-20 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-20 19:00:04 CDT] posts in repo: 154   posts live: 154
+[2026-08-20 19:00:04 CDT] Live site is current. Nothing to deploy.
+[2026-08-21 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-21 19:00:02 CDT] posts in repo: 155   posts live: 154
+[2026-08-21 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.125.0
+────────────────────
+Uploading... (307/311)
+Uploading... (309/311)
+Uploading... (310/311)
+Uploading... (311/311)
+✨ Success! Uploaded 4 files (307 already uploaded) (2.00 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://c15571ed.hmw-blog.pages.dev
+[2026-08-21 19:00:02 CDT] Deploy done. Posts live now: 154 (was 154).
+[2026-08-21 19:00:02 CDT] WARNING: still behind after deploy - check the Pages project.
+[2026-08-22 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-22 19:00:03 CDT] posts in repo: 156   posts live: 155
+[2026-08-22 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.125.0
+────────────────────
+Uploading... (309/313)
+Uploading... (310/313)
+Uploading... (312/313)
+Uploading... (313/313)
+✨ Success! Uploaded 4 files (309 already uploaded) (2.06 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://d722bb29.hmw-blog.pages.dev
+[2026-08-22 19:00:03 CDT] Deploy done. Posts live now: 156 (was 155).
+[2026-08-23 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-23 19:00:04 CDT] posts in repo: 157   posts live: 156
+[2026-08-23 19:00:04 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.125.0
+────────────────────
+Uploading... (311/315)
+Uploading... (312/315)
+Uploading... (314/315)
+Uploading... (315/315)
+✨ Success! Uploaded 4 files (311 already uploaded) (1.35 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://75346883.hmw-blog.pages.dev
+[2026-08-23 19:00:04 CDT] Deploy done. Posts live now: 157 (was 156).
+[2026-08-24 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-24 19:00:02 CDT] posts in repo: 158   posts live: 157
+[2026-08-24 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.125.0
+────────────────────
+Uploading... (313/317)
+Uploading... (314/317)
+Uploading... (315/317)
+Uploading... (317/317)
+✨ Success! Uploaded 4 files (313 already uploaded) (2.50 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://1e7ae044.hmw-blog.pages.dev
+[2026-08-24 19:00:02 CDT] Deploy done. Posts live now: 158 (was 157).
+[2026-08-25 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-25 19:00:04 CDT] posts in repo: 159   posts live: 158
+[2026-08-25 19:00:04 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.126.0
+────────────────────
+Uploading... (315/319)
+Uploading... (316/319)
+Uploading... (318/319)
+Uploading... (319/319)
+✨ Success! Uploaded 4 files (315 already uploaded) (2.05 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://d3b2df03.hmw-blog.pages.dev
+[2026-08-25 19:00:04 CDT] Deploy done. Posts live now: 159 (was 158).
+[2026-08-26 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-26 19:00:03 CDT] posts in repo: 160   posts live: 159
+[2026-08-26 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.126.0
+────────────────────
+Uploading... (317/321)
+Uploading... (318/321)
+Uploading... (319/321)
+Uploading... (321/321)
+✨ Success! Uploaded 4 files (317 already uploaded) (1.71 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://4fcdc81d.hmw-blog.pages.dev
+[2026-08-26 19:00:03 CDT] Deploy done. Posts live now: 160 (was 159).
+[2026-08-27 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-27 19:00:01 CDT] posts in repo: 161   posts live: 160
+[2026-08-27 19:00:01 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.127.0
+────────────────────
+Uploading... (319/323)
+Uploading... (320/323)
+Uploading... (321/323)
+Uploading... (323/323)
+✨ Success! Uploaded 4 files (319 already uploaded) (1.43 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://45ed095b.hmw-blog.pages.dev
+[2026-08-27 19:00:01 CDT] Deploy done. Posts live now: 161 (was 160).
+[2026-08-28 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-28 19:00:03 CDT] posts in repo: 162   posts live: 161
+[2026-08-28 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.127.1
+────────────────────
+Uploading... (321/325)
+Uploading... (322/325)
+Uploading... (324/325)
+Uploading... (325/325)
+✨ Success! Uploaded 4 files (321 already uploaded) (1.56 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://c7e66f09.hmw-blog.pages.dev
+[2026-08-28 19:00:03 CDT] Deploy done. Posts live now: 162 (was 161).
+[2026-08-29 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-08-29 19:00:02 CDT] posts in repo: 163   posts live: 162
+[2026-08-29 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.127.1
+────────────────────
+Uploading... (323/327)
+Uploading... (324/327)
+Uploading... (326/327)
+Uploading... (327/327)
+✨ Success! Uploaded 4 files (323 already uploaded) (1.22 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://f470cafa.hmw-blog.pages.dev
+[2026-08-29 19:00:02 CDT] Deploy done. Posts live now: 163 (was 162).
+[2026-08-30 19:00:01 CDT] No recent post found. Running local generation...
+Generating post for: best stones for opening the third eye chakra
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+Provider gemini error 429 — rotating to gemini [5/23]
+Provider gemini error 429 — rotating to gemini [6/23]
+Provider gemini error 429 — rotating to cerebras [7/23]
+Provider cerebras error 404 — rotating to groq [8/23]
+Provider groq error 404 — rotating to groq [9/23]
+Provider groq error 404 — rotating to groq [10/23]
+Provider groq error 404 — rotating to groq [11/23]
+Provider groq error 404 — rotating to groq [12/23]
+Provider groq error 404 — rotating to groq [13/23]
+Provider groq error 404 — rotating to groq [14/23]
+Provider groq error 404 — rotating to groq [15/23]
+Provider groq error 404 — rotating to groq [16/23]
+Provider groq error 401 — rotating to groq [17/23]
+Provider groq error 400 — rotating to groq [18/23]
+Provider groq error 400 — rotating to groq [19/23]
+Provider groq error 400 — rotating to groq [20/23]
+Provider groq error 400 — rotating to groq [21/23]
+Provider groq error 400 — rotating to groq [22/23]
+Provider groq error 400 — rotating to openrouter [23/23]
+All 23 providers exhausted — sleeping 30s then restarting rotation
+Provider gemini error 429 — rotating to gemini [2/23]
+Provider gemini error 429 — rotating to gemini [3/23]
+Provider gemini error 429 — rotating to gemini [4/23]
+All providers failed, skipping this run: Failed after 5 retries
+[2026-08-30 19:00:01 CDT] WARNING: script ran but produced no changes. All keywords may be published.
+[2026-08-30 19:00:01 CDT] posts in repo: 163   posts live: 163
+[2026-08-30 19:00:01 CDT] Live site is current. Nothing to deploy.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[2026-08-31 19:00:03 CDT] ERROR: pull --rebase hit a conflict. Repo left untouched, fix by hand.
+[2026-09-01 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-01 19:00:02 CDT] posts in repo: 163   posts live: 163
+[2026-09-01 19:00:02 CDT] Live site is current. Nothing to deploy.
+[2026-09-02 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-02 19:00:01 CDT] posts in repo: 164   posts live: 163
+[2026-09-02 19:00:01 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.128.0
+────────────────────
+Uploading... (325/329)
+Uploading... (326/329)
+Uploading... (328/329)
+Uploading... (329/329)
+✨ Success! Uploaded 4 files (325 already uploaded) (1.53 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://bc2d8a6a.hmw-blog.pages.dev
+[2026-09-02 19:00:01 CDT] Deploy done. Posts live now: 164 (was 163).
+[2026-09-03 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-03 19:00:04 CDT] posts in repo: 166   posts live: 164
+[2026-09-03 19:00:04 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.129.0
+────────────────────
+Uploading... (327/332)
+Uploading... (328/332)
+Uploading... (330/332)
+Uploading... (332/332)
+✨ Success! Uploaded 5 files (327 already uploaded) (1.54 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://4547062e.hmw-blog.pages.dev
+[2026-09-03 19:00:04 CDT] Deploy done. Posts live now: 166 (was 164).
+[2026-09-04 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-04 19:00:02 CDT] posts in repo: 168   posts live: 166
+[2026-09-04 19:00:02 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.129.0
+────────────────────
+Uploading... (330/335)
+Uploading... (332/335)
+Uploading... (333/335)
+Uploading... (335/335)
+✨ Success! Uploaded 5 files (330 already uploaded) (1.62 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://485b3c07.hmw-blog.pages.dev
+[2026-09-04 19:00:02 CDT] Deploy done. Posts live now: 168 (was 166).
+[2026-09-05 19:00:06 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-05 19:00:06 CDT] posts in repo: 169   posts live: 168
+[2026-09-05 19:00:06 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.129.0
+────────────────────
+Uploading... (333/337)
+Uploading... (334/337)
+Uploading... (336/337)
+Uploading... (337/337)
+✨ Success! Uploaded 4 files (333 already uploaded) (1.29 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://84b08b5e.hmw-blog.pages.dev
+[2026-09-05 19:00:06 CDT] Deploy done. Posts live now: 169 (was 168).
+[2026-09-06 19:00:04 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-06 19:00:04 CDT] posts in repo: 171   posts live: 169
+[2026-09-06 19:00:04 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.129.0
+────────────────────
+Uploading... (335/340)
+Uploading... (336/340)
+Uploading... (338/340)
+Uploading... (340/340)
+✨ Success! Uploaded 5 files (335 already uploaded) (1.26 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://2579cdda.hmw-blog.pages.dev
+[2026-09-06 19:00:04 CDT] Deploy done. Posts live now: 171 (was 169).
+[2026-09-07 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-07 19:00:01 CDT] posts in repo: 173   posts live: 171
+[2026-09-07 19:00:01 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.129.1
+────────────────────
+Uploading... (338/343)
+Uploading... (339/343)
+Uploading... (341/343)
+Uploading... (343/343)
+✨ Success! Uploaded 5 files (338 already uploaded) (1.39 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://c5a4675d.hmw-blog.pages.dev
+[2026-09-07 19:00:01 CDT] Deploy done. Posts live now: 173 (was 171).
+[2026-09-08 19:00:03 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-08 19:00:03 CDT] posts in repo: 174   posts live: 173
+[2026-09-08 19:00:03 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+Uploading... (341/345)
+Uploading... (342/345)
+Uploading... (343/345)
+Uploading... (345/345)
+✨ Success! Uploaded 4 files (341 already uploaded) (1.34 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://50875f70.hmw-blog.pages.dev
+[2026-09-08 19:00:03 CDT] Deploy done. Posts live now: 174 (was 173).
+[2026-09-09 19:00:02 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-09 19:00:02 CDT] posts in repo: 175   posts live: 174
+[2026-09-09 19:00:02 CDT] Live site is behind by 1 posts - deploying from here.
+
+ ⛅️ wrangler 4.130.0
+────────────────────
+Uploading... (343/347)
+Uploading... (345/347)
+Uploading... (346/347)
+Uploading... (347/347)
+✨ Success! Uploaded 4 files (343 already uploaded) (1.81 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://06422faf.hmw-blog.pages.dev
+[2026-09-09 19:00:02 CDT] Deploy done. Posts live now: 175 (was 174).
+[2026-09-10 19:00:01 CDT] A post already landed in the last 20h - skipping generation.
+[2026-09-10 19:00:01 CDT] posts in repo: 177   posts live: 175
+[2026-09-10 19:00:01 CDT] Live site is behind by 2 posts - deploying from here.
+
+ ⛅️ wrangler 4.131.0
+────────────────────
+Uploading... (345/350)
+Uploading... (347/350)
+Uploading... (348/350)
+Uploading... (350/350)
+✨ Success! Uploaded 5 files (345 already uploaded) (1.87 sec)
+
+✨ Uploading _headers
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://5ee6af2d.hmw-blog.pages.dev
+[2026-09-10 19:00:01 CDT] Deploy done. Posts live now: 177 (was 175).

@@ -1,0 +1,34 @@
+{
+  "improvements": [
+    {
+      "id": "breadcrumb",
+      "title": "Add BreadcrumbList schema (hub-and-spoke topology signal)",
+      "description": "Every post needs BreadcrumbList JSON-LD for topic cluster discovery",
+      "done": true
+    },
+    {
+      "id": "howto",
+      "title": "Wrap numbered protocols in HowTo schema",
+      "description": "Posts with 3-7 step protocols get HowTo markup for AI extraction",
+      "done": true
+    },
+    {
+      "id": "chunks",
+      "title": "Wrap 40-60 word answers in <span data-ai-chunk>",
+      "description": "Make direct answers cleanly extractable for ChatGPT/Perplexity chunk retrieval",
+      "done": true
+    },
+    {
+      "id": "author_links",
+      "title": "Add LinkedIn/Wikipedia links to author Person schema",
+      "description": "E-E-A-T signal: author credibility via external authority profiles",
+      "done": true
+    },
+    {
+      "id": "robots_retrieval",
+      "title": "Update robots.txt to explicitly allow AI retrieval bots",
+      "description": "PerplexityBot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot allowed",
+      "done": false
+    }
+  ]
+}
