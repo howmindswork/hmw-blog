@@ -1,0 +1,45 @@
+name: Daily Ad Copy
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # 7am ET (12:00 UTC) — copy is ready before the posting window
+  workflow_dispatch:
+    inputs:
+      variation_id:
+        description: 'Pin a specific variation (e.g. V03). Blank = today on rotation.'
+        required: false
+        default: ''
+
+concurrency:
+  group: ad-copy-cron
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Stdlib only by design — no pip install, so a broken requirements.txt
+      # can never stop the day's copy from going out.
+      - name: Generate today's ad copy
+        env:
+          AD_COPY_WEBHOOK_URL: ${{ secrets.AD_COPY_WEBHOOK_URL }}
+        run: |
+          if [ -n "${{ inputs.variation_id }}" ]; then
+            python3 scripts/daily_ad_copy.py --id "${{ inputs.variation_id }}"
+          else
+            python3 scripts/daily_ad_copy.py
+          fi
+
+      - name: Upload copy as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ad-copy-${{ github.run_id }}
+          path: out/ad-copy/
+          retention-days: 30
