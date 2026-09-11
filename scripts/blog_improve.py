@@ -202,24 +202,39 @@ def apply_chunk_blocks():
     return f"AI chunk markers added to {changed}/{len(posts)} posts"
 
 def apply_robots_retrieval():
-    """Update robots.txt to explicitly allow AI retrieval bots."""
-    robots_file = ROOT / "robots.txt"
+    """Update robots.txt to explicitly allow AI retrieval bots.
+
+    Targets blog/robots.txt, the file Cloudflare Pages actually serves for
+    the blog (`wrangler pages deploy blog`) -- the repo-root robots.txt
+    belongs to the main howmindswork.org site and must never be touched here.
+    """
+    robots_file = ROOT / "blog" / "robots.txt"
     content = robots_file.read_text() if robots_file.exists() else ""
 
-    # If already has retrieval bots, skip
-    if "PerplexityBot" in content:
-        return "robots.txt already allows AI retrieval bots"
+    if "PerplexityBot" in content and "Disallow: /" in content.split("GPTBot", 1)[-1]:
+        return "blog/robots.txt already allows AI retrieval bots and blocks training crawlers"
 
     new_content = """User-agent: *
 Allow: /
 
-User-agent: OAI-SearchBot
-Allow: /
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
 
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Allow AI retrieval bots
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: GPTBot
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
@@ -228,16 +243,10 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: GoogleBot
-Allow: /
-
-Disallow: /admin/
-Disallow: /private/
-
 Sitemap: https://blog.howmindswork.org/sitemap.xml
 """
     robots_file.write_text(new_content)
-    return "robots.txt updated to allow PerplexityBot, ChatGPT-User, Claude-SearchBot"
+    return "blog/robots.txt updated to allow retrieval bots and block training crawlers"
 
 def deploy_blog():
     """Deploy via Cloudflare Pages."""

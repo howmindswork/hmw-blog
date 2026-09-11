@@ -289,7 +289,10 @@ def validate_copy(copy: dict, anchor: dict) -> list:
     problems = []
     source_text = f"{anchor.get('citation', '')} {anchor.get('core_fact', '')}".lower()
     source_numbers = set(_NUMERIC_RE.findall(source_text))
-    check_text = f"{copy.get('on_screen_text', '')} {copy.get('caption', '')}"
+    check_text = (
+        f"{copy.get('on_screen_text', '')} {copy.get('caption', '')} "
+        f"{copy.get('title', '')} {copy.get('cta', '')} {copy.get('hashtags', '')}"
+    )
 
     for match in _NUMERIC_RE.findall(check_text):
         if match.lower() not in source_numbers:

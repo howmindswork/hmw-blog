@@ -28,7 +28,7 @@
       "id": "robots_retrieval",
       "title": "Update robots.txt to explicitly allow AI retrieval bots",
       "description": "PerplexityBot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot allowed",
-      "done": false
+      "done": true
     }
   ]
 }

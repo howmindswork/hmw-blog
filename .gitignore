@@ -6,3 +6,7 @@ __pycache__/
 
 # generated daily ad copy
 out/
+
+# runtime logs and dated backups, not source
+logs/*.log
+*.bak_*
