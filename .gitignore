@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .env
 .gstack/
+
+# generated daily ad copy
+out/
