@@ -1590,4 +1590,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/what-is-hope-cartel-9d-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/biodynamic-breathwork/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/biodynamic-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
