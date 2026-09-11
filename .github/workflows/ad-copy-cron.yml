@@ -2,11 +2,11 @@ name: Daily Ad Copy
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # 7am ET (12:00 UTC) — copy is ready before the posting window
+    - cron: '0 12 * * *'  # 12:00 UTC = 7am EST / 8am EDT — copy ready before the posting window
   workflow_dispatch:
     inputs:
       variation_id:
-        description: 'Pin a specific variation (e.g. V03). Blank = today on rotation.'
+        description: 'Pin a fixed-bank variation (e.g. V03) if the generator fails. Only used as a fallback — ignored when the LLM generator succeeds.'
         required: false
         default: ''
 
@@ -14,26 +14,52 @@ concurrency:
   group: ad-copy-cron
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    # continue-on-error intentionally NOT set here — the run step below has
+    # its own internal fallback (generator -> fixed bank). If BOTH fail, the
+    # job must go red so a double-failure is actually visible, not silently green.
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Stdlib only by design — no pip install, so a broken requirements.txt
-      # can never stop the day's copy from going out.
+      # Needed by generate_ad_copy.py (imports requests + generate_post.py's
+      # Pillow-based helpers). Allowed to fail — the run step below falls
+      # back to the stdlib-only bank rotation if this doesn't succeed, so a
+      # broken requirements.txt still can't stop the day's copy from going out.
+      - name: Install Python deps
+        run: pip install -r requirements.txt --quiet
+        continue-on-error: true
+
+      # Primary: generate_ad_copy.py picks a fresh (anchor, angle) from the
+      # research pool and writes new LLM copy. Fallback: if that fails for
+      # any reason (missing deps, no API keys yet, LLM outage), drop back to
+      # the fixed 10-variation bank so a post always goes out.
       - name: Generate today's ad copy
         env:
           AD_COPY_WEBHOOK_URL: ${{ secrets.AD_COPY_WEBHOOK_URL }}
+          GEMINI_API_KEY_BLOG: ${{ secrets.GEMINI_API_KEY_BLOG }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          if [ -n "${{ inputs.variation_id }}" ]; then
+          if python3 scripts/generate_ad_copy.py; then
+            echo "Generated via LLM research-anchor pool"
+          elif [ -n "${{ inputs.variation_id }}" ]; then
+            echo "Generator failed — falling back to fixed bank"
             python3 scripts/daily_ad_copy.py --id "${{ inputs.variation_id }}"
           else
+            echo "Generator failed — falling back to fixed bank"
             python3 scripts/daily_ad_copy.py
           fi
 
@@ -43,3 +69,15 @@ jobs:
           name: ad-copy-${{ github.run_id }}
           path: out/ad-copy/
           retention-days: 30
+
+      - name: Commit usage/performance ledgers
+        run: |
+          git config user.name "HMW Bot"
+          git config user.email "auto@howmindswork.org"
+          git add content/ad-copy/grief-ritual/usage_ledger.json content/ad-copy/grief-ritual/performance_ledger.json
+          if git diff --staged --quiet; then
+            echo "No ledger changes to commit"
+          else
+            git commit -m "chore(ad-copy): update usage/performance ledgers $(date -u +%Y-%m-%d)"
+            git push
+          fi

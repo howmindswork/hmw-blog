@@ -1,0 +1,141 @@
+{
+  "_comment": "Real, citable research anchors for the $97 grief/Stone Release ritual generator (HANDOFF.md TODO 3). Every generated post must trace to one of these. No anchor here may be edited to add a fact not in its citation — if a new anchor is needed, add a new real citation, never stretch an existing one.",
+  "anchors": [
+    {
+      "id": "norton_gino_2014",
+      "citation": "Norton, M. I., & Gino, F. (2014). \"Rituals Alleviate Grieving for Loved Ones, Lovers, and Lotteries.\" Journal of Experimental Psychology: General, 143(1).",
+      "core_fact": "Harvard study: participants who performed a private physical ritual after a loss (loved one, breakup, even a lottery loss) reported significantly less grief than those who only reflected. The effect held even for participants who explicitly said they thought rituals were meaningless — belief was not required for the effect.",
+      "angles": [
+        {"id": "belief_independence", "label": "Belief-independence for skeptics/men", "note": "Kills the #1 objection ('I'm not woo'); expands audience past the spiritual segment."},
+        {"id": "control_restoration", "label": "Mechanism = restored sense of control", "note": "Loss removes control; the physical sequence gives it back. Frame as psychological mechanism, not mysticism."},
+        {"id": "no_product_angle", "label": "Suppressed because unmonetizable", "note": "A 20-minute solo action can't be billed for twelve therapy sessions — why this never became mainstream advice."}
+      ]
+    },
+    {
+      "id": "brinol_2013",
+      "citation": "Briñol, P., Gascó, M., Petty, R. E., & Horcajo, J. (2013). \"Treating Thoughts as Material Objects Can Increase or Decrease Their Impact on Evaluation.\" Psychological Science, 24(1).",
+      "core_fact": "Participants who wrote a thought on paper and then physically discarded it (threw it away/destroyed it) weakened that thought's influence on their later judgments, more than participants who kept the paper.",
+      "angles": [
+        {"id": "physical_discard_mechanism", "label": "Why physically releasing beats journaling", "note": "Writing alone doesn't reduce a thought's grip; physically discarding the object does. Direct evidence for a release ritual over plain journaling."},
+        {"id": "psych_science_credibility", "label": "Peer-reviewed, top-tier journal framing", "note": "Psychological Science is a flagship journal — use for the 'this isn't fringe' credibility beat."}
+      ]
+    },
+    {
+      "id": "freud_continuing_bonds_arc",
+      "citation": "Freud, S. (1917). \"Mourning and Melancholia.\" vs. Freud's 1929 letter to Ludwig Binswanger; and Klass, D., Silverman, P. R., & Nickman, S. L. (Eds.) (1996). Continuing Bonds: New Understandings of Grief. Taylor & Francis.",
+      "core_fact": "Freud's 1917 paper framed healthy mourning as 'decathexis' — fully detaching emotional energy from the deceased. In a 1929 personal letter to Binswanger (after his own daughter's death), Freud privately contradicted this, writing that the loss remains and a substitute never fully fills it. Continuing Bonds (1996) formally overturned the 'detachment' model in the field, showing maintaining a bond with the deceased is normal and healthy, not pathological.",
+      "angles": [
+        {"id": "suppressed_reversal", "label": "The founder privately contradicted his own famous theory", "note": "Named-enemy/suppression arc: the field taught detachment for 80 years off a theory its own author recanted in private."},
+        {"id": "continuing_bonds_permission", "label": "You're not supposed to let go completely", "note": "Modern grief science (Continuing Bonds) says an ongoing bond is healthy — reframes the ritual as maintaining connection, not severing it."}
+      ]
+    },
+    {
+      "id": "wortman_silver_1989",
+      "citation": "Wortman, C. B., & Silver, R. C. (1989). \"The Myths of Coping with Loss.\" Journal of Consulting and Clinical Psychology, 57(3).",
+      "core_fact": "Reviewed decades of evidence and found the popular 'stages of grief' model was never empirically validated for bereavement; assuming everyone must pass through the same stages can pathologize normal, varied grieving.",
+      "angles": [
+        {"id": "stages_myth", "label": "The 5 stages were never proven", "note": "Named-enemy: the most quoted grief framework in pop culture has no controlled-study backing for actual bereavement."},
+        {"id": "no_wrong_way", "label": "Permission for non-linear grief", "note": "Removes the shame of 'grieving wrong' — sets up the ritual as something that works regardless of where someone is in the process."}
+      ]
+    },
+    {
+      "id": "oconnor_grieving_brain_2022",
+      "citation": "O'Connor, M-F. (2022). The Grieving Brain: The Surprising Science of How We Learn from Love and Loss. HarperOne.",
+      "core_fact": "University of Arizona neuroscientist's synthesis: grief is the brain's prediction-error problem — it has to relearn a world-model that no longer includes the person, which is why grief resurfaces at unpredictable moments (the brain still 'expects' them).",
+      "angles": [
+        {"id": "prediction_error", "label": "Grief is a learning problem, not a feeling problem", "note": "Reframes grief neuroscientifically — the ritual as accelerating the brain's relearning, not just 'processing emotion.'"},
+        {"id": "why_it_resurfaces", "label": "Why grief ambushes you months later", "note": "Explains sudden resurgence as a prediction-error spike, sets up the ritual as a way to update the model deliberately instead of waiting."}
+      ]
+    },
+    {
+      "id": "wittstein_2005_takotsubo",
+      "citation": "Wittstein, I. S., et al. (2005). \"Neurohumoral Features of Myocardial Stunning Due to Sudden Emotional Stress.\" New England Journal of Medicine, 352(6). (Johns Hopkins — the real takotsubo cardiomyopathy paper.)",
+      "core_fact": "Johns Hopkins cardiologists documented 'broken heart syndrome' (takotsubo cardiomyopathy) — acute emotional stress (often grief) triggers a surge of stress hormones that can temporarily stun the heart muscle, mimicking a heart attack, confirmed via catheterization.",
+      "angles": [
+        {"id": "grief_is_physical", "label": "Grief can physically stun the heart, confirmed by Johns Hopkins", "note": "The one REAL Johns Hopkins citation to use — explicitly replaces the fabricated '2019 Johns Hopkins PTSD trial' claim flagged as banned in HANDOFF.md. Never invent numbers beyond what's in this NEJM paper."},
+        {"id": "unprocessed_grief_cost", "label": "The body keeps the bill for unreleased grief", "note": "Physical-symptom angle: grief isn't 'just emotional,' it has a measurable cardiac mechanism — motivates acting on it rather than sitting with it indefinitely."}
+      ]
+    },
+    {
+      "id": "dsm5tr_2022_prolonged_grief",
+      "citation": "American Psychiatric Association. (2022). Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR) — Prolonged Grief Disorder criteria.",
+      "core_fact": "In 2022, the DSM formally added Prolonged Grief Disorder as a diagnosable condition (intense grief persisting beyond 12 months for adults with functional impairment) — the first time grief itself, not just depression triggered by grief, was recognized as a distinct clinical category.",
+      "angles": [
+        {"id": "grief_now_diagnosable", "label": "Grief became an official diagnosis in 2022", "note": "Specificity/credibility beat: recent, verifiable, names the exact manual and year — signals this is current science, not decades-old pop psychology."},
+        {"id": "stuck_vs_normal", "label": "How to tell if grief is 'stuck'", "note": "Use the 12-month/functional-impairment framing to explain why some grief needs an active intervention (the ritual) rather than time alone."}
+      ]
+    },
+    {
+      "id": "volkan_1972_linking_objects",
+      "citation": "Volkan, V. D. (1972). \"The Linking Objects of Pathological Mourners.\" Archives of General Psychiatry, 27(2).",
+      "core_fact": "Psychiatrist Vamik Volkan identified 'linking objects' — items unconsciously kept/treated as a magical connection to the deceased that can prevent mourning from completing, becoming a psychological anchor to unresolved loss.",
+      "angles": [
+        {"id": "object_as_anchor", "label": "The object you're holding onto may be the block", "note": "Direct clinical basis for a release ritual involving a physical object (a stone) — releasing the linking object mirrors the clinical intervention."},
+        {"id": "keep_dont_toss_reframe", "label": "Not throwing the person away, throwing the block away", "note": "Reframes the physical release object as separate from the memory itself — you're releasing what's silently controlling you, not the relationship."}
+      ]
+    },
+    {
+      "id": "pennebaker_beall_1986",
+      "citation": "Pennebaker, J. W., & Beall, S. K. (1986). \"Confronting a Traumatic Event.\" Journal of Abnormal Psychology, 95(3).",
+      "core_fact": "Foundational expressive-writing study: participants who wrote about traumatic/upsetting experiences for a few days had measurably better health outcomes afterward than those who wrote about trivial topics.",
+      "angles": [
+        {"id": "naming_it_heals", "label": "Naming the loss out loud/on paper is not optional, it's clinical", "note": "Foundational citation for the 'speak/write the memory' step of the protocol before the physical release."},
+        {"id": "writing_isnt_enough_alone", "label": "Writing about it helps, but it's not the finish line", "note": "Foundational journaling research sets up why the protocol adds a physical release step after the writing/naming step, not instead of it."}
+      ]
+    },
+    {
+      "id": "emdr_who_arc",
+      "citation": "EMDR (Eye Movement Desensitization and Reprocessing) — originated Shapiro, F. (1989), Journal of Traumatic Stress; formally endorsed by the World Health Organization (2013) as an effective PTSD treatment.",
+      "core_fact": "EMDR was dismissed as pseudoscience for years after its 1989 introduction, then went on to be formally endorsed by the WHO in 2013 as an effective trauma treatment — a documented pseudoscience-to-mainstream-endorsement arc.",
+      "angles": [
+        {"id": "ridiculed_then_endorsed", "label": "Ridiculed for years, then WHO-endorsed", "note": "Named-enemy/suppression arc: unconventional-looking interventions getting dismissed by institutions before being validated — same pattern being claimed for ritual-based release."},
+        {"id": "beyond_talk_therapy", "label": "Some grief doesn't move through talking alone", "note": "EMDR's core insight was that certain trauma/loss needs more than conversation — supports why a physical, non-verbal step in the protocol matters."}
+      ]
+    },
+    {
+      "id": "lieberman_2007_affect_labeling",
+      "citation": "Lieberman, M. D., et al. (2007). \"Putting Feelings Into Words: Affect Labeling Disrupts Amygdala Activity in Response to Affective Stimuli.\" Psychological Science, 18(5). (UCLA)",
+      "core_fact": "UCLA fMRI study: putting a feeling into words (affect labeling) measurably reduced amygdala activity — the brain's threat/distress response — even though it felt counterintuitive to participants.",
+      "angles": [
+        {"id": "say_it_out_loud_neuroscience", "label": "Direct neuroscience for 'say the memory out loud'", "note": "fMRI evidence for the verbal-naming step of the protocol; brain-scan specificity reads as high-credibility."},
+        {"id": "counterintuitive_finding", "label": "It feels worse to name it, but the scan says otherwise", "note": "Speaks to the objection 'won't naming it just make me feel it more' with the actual brain-imaging result."}
+      ]
+    },
+    {
+      "id": "doka_1989_disenfranchised_grief",
+      "citation": "Doka, K. J. (1989). Disenfranchised Grief: Recognizing Hidden Sorrow. Lexington Books.",
+      "core_fact": "Coined 'disenfranchised grief' — loss that isn't socially recognized or sanctioned (a breakup, an estranged relationship, a miscarriage, a pet), leaving the griever without normal social support or rituals to mark it.",
+      "angles": [
+        {"id": "grief_without_permission", "label": "For losses nobody sends flowers for", "note": "Expands the addressable audience beyond death-grief to breakups, estrangement, and other losses society doesn't formally recognize."},
+        {"id": "hidden_grief", "label": "The loss you had to act fine about", "note": "For a grief nobody else gave a ritual to — the protocol becomes the ritual you have to give yourself."}
+      ]
+    },
+    {
+      "id": "stroebe_schut_1999_dual_process",
+      "citation": "Stroebe, M., & Schut, H. (1999). \"The Dual Process Model of Coping with Bereavement: Rationale and Description.\" Death Studies, 23(3).",
+      "core_fact": "Proposed that healthy grieving oscillates between loss-oriented coping (confronting the pain) and restoration-oriented coping (rebuilding life), rather than being a single linear progression through the loss.",
+      "angles": [
+        {"id": "oscillation_not_linear", "label": "You're supposed to go back and forth, not move in a straight line", "note": "Gives permission for grief that doesn't feel like steady progress; frames the ritual as a deliberate loss-oriented moment within a healthy oscillation."},
+        {"id": "timing_objection", "label": "Answers 'is it too soon or too late to do this'", "note": "The model says there's no wrong time for a deliberate loss-oriented moment — directly answers the most common hesitation objection."}
+      ]
+    },
+    {
+      "id": "bonanno_2004_resilience",
+      "citation": "Bonanno, G. A. (2004). \"Loss, Trauma, and Human Resilience.\" American Psychologist, 59(1).",
+      "core_fact": "Large-scale bereavement research found resilience (relatively stable healthy functioning after loss) is the most common trajectory after loss, not the exception — challenging the assumption that everyone needs prolonged treatment to recover.",
+      "angles": [
+        {"id": "resilience_is_normal", "label": "Most people are more resilient than they're told", "note": "Counter-intuitive credibility beat: the field's own data says resilience is the norm — sets up the ritual as an accelerant toward the resilient trajectory, not a rescue from an inevitable spiral."},
+        {"id": "not_broken_just_incomplete", "label": "You're not broken, you just haven't closed the loop", "note": "Reframes years of assumed necessary treatment as unnecessary for most people — positions the ritual as the missing deliberate act, not a rescue from pathology."}
+      ]
+    },
+    {
+      "id": "worden_four_tasks",
+      "citation": "Worden, J. W. (1982, updated editions through 2018). Grief Counseling and Grief Therapy: A Handbook for the Mental Health Practitioner. Springer.",
+      "core_fact": "Proposed grief as four active tasks (not passive stages): accept the reality of the loss, process the pain, adjust to a world without the deceased, and find an enduring connection while moving forward — grieving as something done, not waited out.",
+      "angles": [
+        {"id": "tasks_not_stages", "label": "Grief is something you DO, not something that happens to you", "note": "Reframes grief as active work with defined tasks, which a structured physical ritual directly maps onto — positions the protocol as literally completing Worden's tasks."},
+        {"id": "task_four_named", "label": "Task four is the one nobody tells you about", "note": "Worden's fourth task is finding an enduring connection while moving forward — names exactly what the ritual is designed to accomplish instead of vague 'closure.'"}
+      ]
+    }
+  ]
+}
