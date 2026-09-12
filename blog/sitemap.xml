@@ -1608,4 +1608,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/guided-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-techniques/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-techniques-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
