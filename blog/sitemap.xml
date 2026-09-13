@@ -1626,4 +1626,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/othership-breathwork-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/morning-breathwork/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/morning-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>

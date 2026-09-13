@@ -2706,11 +2706,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-13",
+      "post_title": "Can Morning Breathwork Reset Your Day?",
+      "meta_description": "Learn how morning breathwork calms the nervous system, lowers cortisol, and sparks emotional clarity. Try simple steps for daily release."
     },
     {
       "slug": "breathwork-ausbildung",
