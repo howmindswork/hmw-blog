@@ -2691,11 +2691,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-13",
+      "post_title": "Does Othership Breathwork Help with Emotional Release?",
+      "meta_description": "Explore how Othership breathwork affects emotional release and what it can't do alone. Understand its role in grief and emotional completion."
     },
     {
       "slug": "morning-breathwork",
