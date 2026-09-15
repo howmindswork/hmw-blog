@@ -1644,4 +1644,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-ausbildung-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-course/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-course-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
