@@ -1653,4 +1653,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-course-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-strain/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-strain-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
