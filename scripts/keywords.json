@@ -2796,11 +2796,14 @@
       "pillar": "breathwork grief",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-18",
+      "post_title": "Is Breathwork Teacher Training Right For Your Healing Path?",
+      "meta_description": "Considering breathwork teacher training? Discover how to guide others through emotional release and somatic healing, completing what feels stuck within."
     },
     {
       "slug": "what-is-somatic-breathwork",

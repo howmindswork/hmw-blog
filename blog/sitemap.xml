@@ -1680,4 +1680,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-dangers-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/breathwork-teacher-training/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-teacher-training-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
