@@ -1689,4 +1689,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/breathwork-teacher-training-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/what-is-somatic-breathwork/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/what-is-somatic-breathwork-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
