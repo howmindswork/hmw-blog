@@ -2826,11 +2826,14 @@
       "pillar": "grief-rituals",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Step-by-Step Grief Ritual Guide",
       "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-19",
+      "post_title": "The Power of Grief Rituals: How Ceremony Helps Us Heal",
+      "meta_description": "Discover how grief rituals and ceremony offer a profound path to emotional healing. Learn practical steps to complete your grief and find peace."
     },
     {
       "slug": "grief-processing-ritual-materials-timing-steps-aftercare-insights-by-omkar",
