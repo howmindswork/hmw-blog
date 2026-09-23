@@ -583,19 +583,19 @@ def inject_pillar_link(body_html):
             return body_html.replace('</article>', link_block + '</article>', 1)
     return body_html
 
-# Matches /posts/<slug>/ links, relative or absolute, plain or JSON-escaped (href=\"...\").
+# Matches /posts/<slug>/ links, relative or absolute, double- or single-quoted, plain or JSON-escaped (href=\"...\").
 _POST_LINK_RE = re.compile(
-    r'<a href=(\\?)"(?:https://blog\.howmindswork\.org)?/posts/([^"\\/#?]*)/?(?:[?#][^"\\]*)?\1"[^>]*>(.*?)</a>',
+    r'''<a href=(\\?)(["'])(?:https://blog\.howmindswork\.org)?/posts/([^"'\\/#?]*)/?(?:[?#][^"'\\]*)?\1\2[^>]*>(.*?)</a>''',
     re.DOTALL,
 )
 
 def strip_dead_internal_links(html):
     """The model invents related-post slugs; keep the anchor text, drop links to posts that don't exist."""
     def _repl(m):
-        slug = m.group(2)
+        slug = m.group(3)
         if slug and (POSTS_DIR / slug / "index.html").exists():
             return m.group(0)
-        return m.group(3)
+        return m.group(4)
     return _POST_LINK_RE.sub(_repl, html)
 
 def update_sitemap(data):
