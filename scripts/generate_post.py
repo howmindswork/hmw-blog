@@ -583,6 +583,21 @@ def inject_pillar_link(body_html):
             return body_html.replace('</article>', link_block + '</article>', 1)
     return body_html
 
+# Matches /posts/<slug>/ links, relative or absolute, plain or JSON-escaped (href=\"...\").
+_POST_LINK_RE = re.compile(
+    r'<a href=(\\?)"(?:https://blog\.howmindswork\.org)?/posts/([^"\\/#?]*)/?(?:[?#][^"\\]*)?\1"[^>]*>(.*?)</a>',
+    re.DOTALL,
+)
+
+def strip_dead_internal_links(html):
+    """The model invents related-post slugs; keep the anchor text, drop links to posts that don't exist."""
+    def _repl(m):
+        slug = m.group(2)
+        if slug and (POSTS_DIR / slug / "index.html").exists():
+            return m.group(0)
+        return m.group(3)
+    return _POST_LINK_RE.sub(_repl, html)
+
 def update_sitemap(data):
     published = [k for k in data["keywords"] if k.get("published")]
     urls = ["""  <url>
@@ -680,7 +695,7 @@ def main():
 
     post_dir = POSTS_DIR / kw["slug"]
     post_dir.mkdir(parents=True, exist_ok=True)
-    html = render_html(post, kw, date_str, date_iso, post_url)
+    html = strip_dead_internal_links(render_html(post, kw, date_str, date_iso, post_url))
     (post_dir / "index.html").write_text(html)
     print(f"Written: blog/posts/{kw['slug']}/index.html")
     make_og(post["title"], kw["slug"])
