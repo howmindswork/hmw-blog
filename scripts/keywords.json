@@ -2976,11 +2976,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-09-25",
+      "post_title": "Can Somatic Therapy Heal Grief in Your Body?",
+      "meta_description": "Somatic therapy for grief helps release buried pain. Discover how your body holds onto loss and the transformative healing available through emotional completion. Find calm again."
     },
     {
       "slug": "from-skepticism-to-healing-my-journey-with-somatic-yoga-and-grief-citywomen-blog",

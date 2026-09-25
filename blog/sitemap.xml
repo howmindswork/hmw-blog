@@ -1788,4 +1788,13 @@
       <image:loc>https://blog.howmindswork.org/assets/posts/somatic-exercises-for-grief-anthe-somatic-coaching-academy-podcast-apple-podcast-og.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://blog.howmindswork.org/posts/somatic-therapy-for-grief-transformative-healing/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blog.howmindswork.org/assets/posts/somatic-therapy-for-grief-transformative-healing-og.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
