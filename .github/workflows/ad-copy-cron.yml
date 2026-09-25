@@ -24,7 +24,7 @@ jobs:
     # its own internal fallback (generator -> fixed bank). If BOTH fail, the
     # job must go red so a double-failure is actually visible, not silently green.
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 

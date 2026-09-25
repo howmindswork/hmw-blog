@@ -16,7 +16,7 @@ jobs:
     # continue-on-error intentionally removed. failures must surface.
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           token: ${{ secrets.GH_PAT }}
 
