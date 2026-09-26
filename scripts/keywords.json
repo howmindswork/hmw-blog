@@ -3006,11 +3006,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-09-26",
+      "post_title": "Jillian, What is Somatic Grief Healing Training?",
+      "meta_description": "Jillian, discover how somatic grief healing training transforms loss into empowerment. Learn to guide others and offer a certificate. Feel desire again."
     },
     {
       "slug": "why-movement-and-somatic-regulation-help-during-the-grieving",
