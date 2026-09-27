@@ -3036,11 +3036,14 @@
       "pillar": "somatic-healing",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "The Wanting Signal (free)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting",
+      "published_date": "2026-09-27",
+      "post_title": "A Somatic Guide to Grief and Heartbreak",
+      "meta_description": "Your body holds grief. Discover a somatic guide to healing heartbreak, processing loss, and finding emotional completion."
     },
     {
       "slug": "the-wooded-mountains-ancestral-spirits-and-community-yi-religious-ecology-in-the",
