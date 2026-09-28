@@ -3081,11 +3081,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-28",
+      "post_title": "Grieving Someone Still Alive: Moving On Without Closure",
+      "meta_description": "Learn to process the pain of grieving someone still alive. Discover strategies for emotional completion and finding peace even without traditional closure."
     },
     {
       "slug": "grief-without-closure-still-needs-tending-psychology-today-canada",
