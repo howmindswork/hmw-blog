@@ -3096,11 +3096,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-09-29",
+      "post_title": "Grief Without Closure Still Needs Tending",
+      "meta_description": "Unresolved loss often feels forgotten, but your grief demands attention. Learn how to tend to grief without closure and find emotional completion."
     },
     {
       "slug": "how-to-cope-with-grief-resilience-skills-for-life-after-loss",
