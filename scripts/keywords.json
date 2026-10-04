@@ -3126,11 +3126,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-10-04",
+      "post_title": "How Undergrieving Keeps You Stuck: Psychology Today Explained",
+      "meta_description": "Undergrieving traps the body and mind. Discover why it keeps you stuck, how to spot it, and the science\u2011backed steps to break free."
     },
     {
       "slug": "grieving-loss-when-theres-no-clean-goodbye-psychology-today",
