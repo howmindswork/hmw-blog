@@ -5270,6 +5270,42 @@
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "somatic-grief-therapy-release-the-weight-of-loss",
+      "keyword": "somatic grief therapy: release the weight of loss",
+      "pillar": "somatic-healing",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Emotional Completion Protocol",
+      "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "breathwork-for-grief-release-that-feels-safe-nalu-breathwork",
+      "keyword": "breathwork for grief release that feels safe - nalu breathwork",
+      "pillar": "breathwork",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Permission to Stop",
+      "product_url": "https://come-down.pages.dev",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "how-to-feel-again-healing-emotional-numbness-after-loss-how-minds-work",
+      "keyword": "how to feel again: healing emotional numbness after loss, how minds work",
+      "pillar": "how-to-feel-again",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Invisible Grief Companion",
+      "product_url": "https://invisible-grief-companion.pages.dev/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
     }
   ]
 }
