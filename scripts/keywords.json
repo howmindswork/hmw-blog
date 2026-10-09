@@ -3186,11 +3186,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-10-09",
+      "post_title": "Grief Work: The Brave Inner Work of Mourning What Was Lost",
+      "meta_description": "Grief work means confronting deep loss. Learn how to complete your grief, feel again, and process what was lost with concrete, somatic practices."
     },
     {
       "slug": "breathwork-for-grief-by-brian-d-smith-grief-2-growth",
