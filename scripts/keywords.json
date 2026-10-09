@@ -3171,11 +3171,14 @@
       "pillar": "emotional-completion",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "Emotional Completion Protocol",
       "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-10-09",
+      "post_title": "How to Process Grief and Loss: 6 Real Ways That Help",
+      "meta_description": "Learn how to process grief and loss with 6 real, actionable strategies. Discover somatic rituals and find emotional completion for heavy feelings."
     },
     {
       "slug": "grief-work-the-brave-inner-work-of-mourning-what-was-lost-lonerwolf",
