@@ -3216,11 +3216,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-10-10",
+      "post_title": "Can 9D Breathwork Heal Grief and Emotional Loss?",
+      "meta_description": "Explore 9D breathwork for grief and emotional loss. Learn how breath can release stored trauma and why true emotional completion goes deeper."
     },
     {
       "slug": "breathwork-for-grief-a-healing-path-through-loss-the-guide-holistic-therapies",
