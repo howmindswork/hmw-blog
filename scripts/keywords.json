@@ -3201,11 +3201,14 @@
       "pillar": "breathwork",
       "is_pillar": false,
       "phase": 1,
-      "published": false,
+      "published": true,
       "product_name": "The Permission to Stop",
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
-      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio",
+      "published_date": "2026-10-10",
+      "post_title": "How Breathwork Can Help You Process Grief",
+      "meta_description": "Discover how breathwork for grief can help you release stored pain and find emotional completion. Learn specific techniques to heal."
     },
     {
       "slug": "9d-breathwork-for-grief-and-emotional-loss-kora-wellness",
