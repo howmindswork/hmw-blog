@@ -5408,6 +5408,42 @@
       "product_url": "https://come-down.pages.dev",
       "free_product_name": "Star Feeding Ritual (free audio)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "the-little-book-of-loss-rituals-sourcebooks-llc",
+      "keyword": "the little book of loss rituals  |  sourcebooks, llc.",
+      "pillar": "grief-rituals",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "complete-unresolved-grief-how-minds-work",
+      "keyword": "complete unresolved grief, how minds work",
+      "pillar": "emotional-completion",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Emotional Completion Protocol",
+      "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "how-to-reconnect-when-you-feel-emotionally-numb",
+      "keyword": "how to reconnect when you feel emotionally numb",
+      "pillar": "how-to-feel-again",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Invisible Grief Companion",
+      "product_url": "https://invisible-grief-companion.pages.dev/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
     }
   ]
 }
