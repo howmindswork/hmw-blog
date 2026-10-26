@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "date": "2026-10-26",
+    "anchor_id": "volkan_1972_linking_objects",
+    "angle_id": "object_as_anchor",
+    "hook": [
+      "That object isn't helping.",
+      "It's a 'linking object'.",
+      "Science says let it go."
+    ],
+    "caption_excerpt": "They never tell you this about grief:\n\nThat cherished item? The one you can't let go of, that feels like a piece of them? It might be the very thing anchoring your pain.\n\nIn 1972, psychiatrist Vamik V",
+    "platform": null,
+    "format": null,
+    "pain_point": "The object you're holding onto may be the block",
+    "visual_style": null,
+    "caption_structure": "forbidden-knowledge / named-enemy / protocol / identity-close",
+    "cta": "Comment RELEASE and I will send you the guide.",
+    "views": 0,
+    "watch_time": 0,
+    "shares": 0,
+    "saves": 0,
+    "comments": 0,
+    "cta_comments": 0,
+    "dms": 0,
+    "link_clicks": 0,
+    "purchases": 0,
+    "revenue": 0,
+    "classification": "CONTROL"
+  }
+]
