@@ -6698,6 +6698,54 @@
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "the-little-book-of-loss-rituals-75-practices-for-grieving-mourning-and-healing-b",
+      "keyword": "the little book of loss rituals: 75 practices for grieving, mourning, and healing | barnes & noble\u00ae",
+      "pillar": "grief-rituals",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "grief-somatic-exercises-how-minds-work",
+      "keyword": "grief somatic exercises | how minds work",
+      "pillar": "somatic-healing",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Emotional Completion Protocol",
+      "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "somatic-grief-healing-how-the-body-holds-and-releases-grief",
+      "keyword": "somatic grief healing: how the body holds and releases grief",
+      "pillar": "somatic-healing",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Emotional Completion Protocol",
+      "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "dealing-with-grief-why-am-i-feeling-numb",
+      "keyword": "dealing with grief: why am i feeling numb",
+      "pillar": "how-to-feel-again",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "The Invisible Grief Companion",
+      "product_url": "https://invisible-grief-companion.pages.dev/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
     }
   ]
 }
