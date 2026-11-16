@@ -6746,6 +6746,42 @@
       "product_url": "https://invisible-grief-companion.pages.dev/",
       "free_product_name": "The Wanting Signal (free)",
       "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "the-little-book-of-loss-rituals-75-practices-for-grieving-mourning-and-healing-t",
+      "keyword": "the little book of loss rituals: 75 practices for grieving, mourning, and healing (the little books of rituals)",
+      "pillar": "grief-rituals",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
+    },
+    {
+      "slug": "somatic-grief-how-loss-lives-in-the-body",
+      "keyword": "somatic grief: how loss lives in the body",
+      "pillar": "somatic-healing",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Emotional Completion Protocol",
+      "product_url": "https://ritual.howmindswork.org/emotional-completion-protocol/",
+      "free_product_name": "The Wanting Signal (free)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/wanting"
+    },
+    {
+      "slug": "somatic-therapy",
+      "keyword": "somatic therapy",
+      "pillar": "breathwork grief",
+      "is_pillar": false,
+      "phase": 1,
+      "published": false,
+      "product_name": "Step-by-Step Grief Ritual Guide",
+      "product_url": "https://lukeisthere.gumroad.com/l/EmotionalCompletionGuide",
+      "free_product_name": "Star Feeding Ritual (free audio)",
+      "free_product_url": "https://lukeisthere.gumroad.com/l/StoneReleaseRitualAudio"
     }
   ]
 }
