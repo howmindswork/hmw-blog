@@ -50,5 +50,33 @@
     "purchases": 0,
     "revenue": 0,
     "classification": "CONTROL"
+  },
+  {
+    "date": "2026-11-20",
+    "anchor_id": "doka_1989_disenfranchised_grief",
+    "angle_id": "hidden_grief",
+    "hook": [
+      "The grief you hid.",
+      "No one gave you a ritual.",
+      "Now you give yourself one."
+    ],
+    "caption_excerpt": "\ud83e\udd2f The unspoken truth about your deepest sorrows.\n\nThere's a specific term for the loss you endured but felt forced to hide. It's called 'disenfranchised grief.'\n\nCoined by K. J. Doka in 1989 in 'Disen",
+    "platform": null,
+    "format": null,
+    "pain_point": "The loss you had to act fine about",
+    "visual_style": null,
+    "caption_structure": "forbidden-knowledge / named-enemy / protocol / identity-close",
+    "cta": "Comment RITUAL to get your guide.",
+    "views": 0,
+    "watch_time": 0,
+    "shares": 0,
+    "saves": 0,
+    "comments": 0,
+    "cta_comments": 0,
+    "dms": 0,
+    "link_clicks": 0,
+    "purchases": 0,
+    "revenue": 0,
+    "classification": "CONTROL"
   }
 ]
